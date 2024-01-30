@@ -1,0 +1,292 @@
+DATA_SOURCE_CODE|DATA_SOURCE_IDENTIFIER|EMAIL_ADDRESS|SOURCE_NAME|CREDATE
+ARS|ARS100|irdsupport@niaidceirs.org|National Animal Disease Center-CEIRS2 |
+ARS|ARS200|irdsupport@niaidceirs.org|United States Department of Agriculture, Agricultural Research Service|1-Dec-22
+ATL|ATL022|irdsupport@niaidceirs.org|Emory University-CEIRS1|29-Apr-10
+ATL|ATL023|irdsupport@niaidceirs.org|University of Georgia-CEIRS1|18-Jan-10
+ATL|ATL024|irdsupport@niaidceirs.org|University of Florida-CEIRS1|19-Nov-09
+ATL|ATL025|irdsupport@niaidceirs.org|National Taiwan University-CEIRS1|29-Apr-10
+ATL|ATL100|irdsupport@niaidceirs.org|Emory University-CEIRS2|
+ATL|ATL101|irdsupport@niaidceirs.org|University of Georgia-CEIRS2|
+ATL|ATL102|irdsupport@niaidceirs.org|Harbin Veterinary Research Institute-CEIRS2|
+ATL|ATL103|irdsupport@niaidceirs.org|Georgia State University-CEIRS2|
+ATL|ATL200|irdsupport@niaidceirs.org|Emory University|1-Dec-22
+ATL|ATL210|irdsupport@niaidceirs.org|Center for Family Health Research Zambia (CFHR-Z) (Lusaka)|1-Dec-22
+ATL|ATL211|irdsupport@niaidceirs.org|Center for Family Health Research Zambia (CFHR-Z) (Ndola)|1-Dec-22
+ATL|ATL212|irdsupport@niaidceirs.org|Pennsylvania State University|1-Dec-22
+BIT|BIT001|irdsupport@niaidceirs.org|BROAD INSTITUTE|8-Jun-12
+BIT|BIT002|irdsupport@niaidceirs.org|University of Massachusetts Medical School, Center for Infectious Disease and Vaccine Research, Worcester, MA|11-Jun-12
+BIT|BIT003|irdsupport@niaidceirs.org|Virology Unit, Institut Pasteur in Cambodia, Ohnom Penh, Cambodia|11-Jun-12
+BIT|BIT004|irdsupport@niaidceirs.org|Division of Infectious Diseases, School of Public Health, University of California, Berkeley, CA|11-Jun-12
+BIT|BIT005|irdsupport@niaidceirs.org|Centers for Disease Control and Prevention, Division of Vector-Borne Infectious Disease, San Juan, PR|11-Jun-12
+BIT|BIT006|irdsupport@niaidceirs.org|Oxford University Clinical Research Unit, Hospital for Tropical Diseases, Ho Chi Minh City, VietNam|11-Jun-12
+BIT|BIT007|irdsupport@niaidceirs.org|Dept. of Microbiology, Harvard Medical School, Boston, MA|11-Jun-12
+BIT|BIT008|irdsupport@niaidceirs.org|Division of Vaccine Discovery, La Jolla Institute for Allergy and Immunology, La Jolla, CA|11-Jun-12
+BIT|BIT009|irdsupport@niaidceirs.org|D-Lab, Massachusetts Institute of Technology, Cambridge, MA|11-Jun-12
+BIT|BIT010|irdsupport@niaidceirs.org|Massachusetts Institute of Technology|25-Apr-14
+CID|CID200|irdsupport@niaidceirs.org|University of Georgia|1-Dec-22
+CID|CID201|irdsupport@niaidceirs.org|University of Rochester|1-Dec-22
+CID|CID202|irdsupport@niaidceirs.org|Boston Children's Hospital|1-Dec-22
+CID|CID203|irdsupport@niaidceirs.org|University of Melbourne|1-Dec-22
+CID|CID204|irdsupport@niaidceirs.org|Monash University|1-Dec-22
+CID|CID205|irdsupport@niaidceirs.org|Menzies School of Health Research|1-Dec-22
+CID|CID206|irdsupport@niaidceirs.org|St. Jude Children's Research Hospital|1-Dec-22
+CID|CID207|irdsupport@niaidceirs.org|Fundacion Salud Para el Tropico|1-Dec-22
+CIP|CIP032|irdsupport@niaidceirs.org|University of California, Davis-CEIRS1|29-Apr-10
+CIP|CIP043|irdsupport@niaidceirs.org|Vector Laboratory, Russia-CEIRS1|29-Apr-10
+CIP|CIP044|irdsupport@niaidceirs.org|Obihiro Agricultural and Veterinary University-CEIRS1|29-Apr-10
+CIP|CIP045|irdsupport@niaidceirs.org|Mt. Sinai School of Medicine-CEIRS1|18-Jan-10
+CIP|CIP046|irdsupport@niaidceirs.org|University of Maryland-CEIRS1|29-Apr-10
+CIP|CIP047|irdsupport@niaidceirs.org|Erasmus University-CEIRS1|19-Nov-09
+CIP|CIP048|irdsupport@niaidceirs.org|University of Wisconsin-CEIRS1|29-Apr-10
+CIP|CIP049|irdsupport@niaidceirs.org|University of Guatemala-CEIRS1|19-Nov-09
+CIP|CIP050|irdsupport@niaidceirs.org|Institute of Microbiology and Virology, Kazakhstan-CEIRS1|19-Nov-09
+CIP|CIP051|irdsupport@niaidceirs.org|INTA-National Institute of Agricultural Technology, Argentina-CEIRS1|29-Apr-10
+CIP|CIP052|irdsupport@niaidceirs.org|Wetlands International-CEIRS1|29-Apr-10
+CIP|CIP053|irdsupport@niaidceirs.org|Uppsala University-CEIRS1|29-Apr-10
+CIP|CIP054|irdsupport@niaidceirs.org|NIOZ Nieuwersluis-CEIRS1|10-Dec-09
+CIP|CIP055|irdsupport@niaidceirs.org|University of Alaska, Fairbanks-CEIRS1|24-Nov-09
+CIP|CIP056|irdsupport@niaidceirs.org|Pontificia Universidad Catolica de Chile-CEIRS1|29-Apr-10
+CIP|CIP057|irdsupport@niaidceirs.org|Alaskan Bird Observatory (ABO), Fairbanks, AK-CEIRS1|29-Apr-10
+CIP|CIP058|irdsupport@niaidceirs.org|Prince William Sound Science Center (PWSSC), Cordova, AK-CEIRS1|29-Apr-10
+CIP|CIP059|irdsupport@niaidceirs.org|INIA, Madrid, Spain-CEIRS1|21-Dec-10
+CIP|CIP060|irdsupport@niaidceirs.org|Laboratorios HIPRA, Spain-CEIRS1|21-Dec-10
+CIP|CIP061|irdsupport@niaidceirs.org|MIT-CEIRS1|14-Dec-11
+CIP|CIP100|irdsupport@niaidceirs.org|Mt. Sinai School of Medicine-CEIRS2|
+CIP|CIP101|irdsupport@niaidceirs.org|University of California-CEIRS2, Davis|
+CIP|CIP102|irdsupport@niaidceirs.org|University of Georgia-CEIRS2|
+CIP|CIP103|irdsupport@niaidceirs.org|Erasmus University Medical Center-CEIRS2|
+CIP|CIP104|irdsupport@niaidceirs.org|University of Wisconsin-CEIRS2|
+CIP|CIP105|irdsupport@niaidceirs.org|Tufts University-CEIRS2|
+CIP|CIP106|irdsupport@niaidceirs.org|University of Alaska-CEIRS2, Anchorage|
+CIP|CIP107|irdsupport@niaidceirs.org|University of Cambridge-CEIRS2|
+CIP|CIP108|irdsupport@niaidceirs.org|Pontificia Universidad Catolica de Chile-CEIRS2|
+CIP|CIP109|irdsupport@niaidceirs.org|Airlangga University-CEIRS2|
+CIP|CIP110|irdsupport@niaidceirs.org|National Institute Of Hygiene And Epidemiology-CEIRS2|
+CIP|CIP111|irdsupport@niaidceirs.org|Instituto Nacional de Investigaciones Agrarias-CEIRS2|
+CIP|CIP112|irdsupport@niaidceirs.org|Instituto Nacional de Tecnologia Agropecuaria-CEIRS2|
+CIP|CIP113|irdsupport@niaidceirs.org|Universidad Del Valle Guatemala-CEIRS2|
+CIP|CIP116|irdsupport@niaidceirs.org|University of Cambridge-CEIRS2|
+CIP|CIP117|irdsupport@niaidceirs.org|Deakin University-CEIRS2|
+CIP|CIP118|irdsupport@niaidceirs.org|Hubbs Sea World Research Institute-CEIRS2|
+CIP|CIP119|irdsupport@niaidceirs.org|Marine Mammal Center-CEIRS2|
+CIP|CIP120|irdsupport@niaidceirs.org|Prince William Sound Science Center-CEIRS2|
+CIP|CIP121|irdsupport@niaidceirs.org|University of New England-CEIRS2|
+CIP|CIP122|irdsupport@niaidceirs.org|Mystic Aquarium-CEIRS2|
+CIP|CIP123|irdsupport@niaidceirs.org|Obihiro University-CEIRS2|
+CIP|CIP124|irdsupport@niaidceirs.org|National Oceanic and Atmospheric Administration-CEIRS2|
+CIP|CIP125|irdsupport@niaidceirs.org|Cornell University-CEIRS2|24-Jun-16
+CIP|CIP126|irdsupport@niaidceirs.org|Laboratorio Central do Estado-CEIRS2|31-May-17
+CIP|CIP127|irdsupport@niaidceirs.org|Chico State University-CEIRS2|31-May-17
+CIP|CIP128|irdsupport@niaidceirs.org|United States Geological Survey-CEIRS2|31-May-17
+CIP|CIP129|irdsupport@niaidceirs.org|National Oceanic and Atmospheric Administration-CEIRS2|31-May-17
+CIP|CIP200|irdsupport@niaidceirs.org|Icahn School of Medicine at Mount Sinai|1-Dec-22
+CIP|CIP201|irdsupport@niaidceirs.org|Guangxi University|1-Dec-22
+CIP|CIP202|irdsupport@niaidceirs.org|University of Georgia|1-Dec-22
+CIP|CIP203|irdsupport@niaidceirs.org|Erasmus University, Medical Center|1-Dec-22
+CIP|CIP204|irdsupport@niaidceirs.org|University of Wisconsin|1-Dec-22
+CIP|CIP205|irdsupport@niaidceirs.org|Tufts University|1-Dec-22
+CIP|CIP206|irdsupport@niaidceirs.org|University of Alaska, Anchorage|1-Dec-22
+CIP|CIP207|irdsupport@niaidceirs.org|University of Cambridge|1-Dec-22
+CIP|CIP208|irdsupport@niaidceirs.org|Pontificia Universidad Catolica de Chile|1-Dec-22
+CIP|CIP210|irdsupport@niaidceirs.org|Nationwide Children's Hospital|1-Dec-22
+CIP|CIP211|irdsupport@niaidceirs.org|Instituto Nacional de Investigacion y Tecnologia Agraria (INIA)|1-Dec-22
+CIP|CIP212|irdsupport@niaidceirs.org|New York University|1-Dec-22
+CIP|CIP213|irdsupport@niaidceirs.org|Texas Biomedical Research Institute|1-Dec-22
+CIP|CIP214|irdsupport@niaidceirs.org|University of Chicago|1-Dec-22
+CIP|CIP215|irdsupport@niaidceirs.org|University of Seville|1-Dec-22
+CIP|CIP216|irdsupport@niaidceirs.org|University of the Western Cape|1-Dec-22
+CIP|CIP230|irdsupport@niaidceirs.org|Washington University in St. Louis|1-Dec-22
+CIP|CIP232|irdsupport@niaidceirs.org|National Institutes of Health, National Center for Biotechnology Information|1-Dec-22
+CIP|CIP233|irdsupport@niaidceirs.org|University of Maryland|1-Dec-22
+CIP|CIP234|irdsupport@niaidceirs.org|Columbia University|1-Dec-22
+CIP|CIP235|irdsupport@niaidceirs.org|University of Rochester|1-Dec-22
+CIP|CIP236|irdsupport@niaidceirs.org|University of Maryland, Baltimore|1-Dec-22
+CIP|CIP237|irdsupport@niaidceirs.org|Beth Israel Deaconess Medical Center|1-Dec-22
+CLA|CLA029|irdsupport@niaidceirs.org|Wildlife Conservation Society-CEIRS1|19-Nov-09
+CLA|CLA032|irdsupport@niaidceirs.org|University of California, Davis-CEIRS1|17-Sep-09
+CLA|CLA037|irdsupport@niaidceirs.org|University of California, Los Angeles-CEIRS1|18-Jan-10
+CLA|CLA039|irdsupport@niaidceirs.org|Los Alamos National Lab-CEIRS1|29-Apr-10
+CLA|CLA041|irdsupport@niaidceirs.org|Istituto Zooprofilattico Sperimentale delle Venezie, Italy-CEIRS1|29-Apr-10
+CLA|CLA042|irdsupport@niaidceirs.org|USDA, Southeast Poultry Research Lab-CEIRS1|29-Apr-10
+CLA|CLA043|irdsupport@niaidceirs.org|Vector Laboratory, Russia-CEIRS1|29-Apr-10
+CLA|CLA044|irdsupport@niaidceirs.org|Obihiro Agricultural and Veterinary University-CEIRS1|29-Apr-10
+CLA|CLA055|irdsupport@niaidceirs.org|University of Alaska, Fairbanks-CEIRS1|12-Jan-10
+DBAS|DBAS|vdesborough@@virusbrc.org hzhao@virusbrc.org|DBAs|14-Apr-11
+DPCC|DPCC|irdsupport@niaidceirs.org|DPCC|26-Oct-15
+FDA|FDA100|irdsupport@niaidceirs.org|Food and Drug Administration-CEIRS2|
+JCV|JCV002|irdsupport@niaidceirs.org|UC Davis|31-Aug-11
+JCV|JCV003|irdsupport@niaidceirs.org|Wadsworth Center, NYSDOH|31-Aug-11
+JCV|JCV004|irdsupport@niaidceirs.org|SDI|31-Aug-11
+JCV|JCV005|irdsupport@niaidceirs.org|California Department of Public Health Viral and Rickettsial Disease Laboratory|31-Aug-11
+JCV|JCV006|irdsupport@niaidceirs.org|Sustainable Sciences Institute|31-Aug-11
+JCV|JCV007|irdsupport@niaidceirs.org|Beth Israel Deaconess Medical Center|12-Sep-11
+JCV|JCV008|irdsupport@niaidceirs.org|Secretaria de Salud e Instituto de Ciencia y Tecnologia del Distrito Federal|12-Sep-11
+JCV|JCV009|irdsupport@niaidceirs.org|Children's Hospital Boston|13-Sep-11
+JCV|JCV010|irdsupport@niaidceirs.org|IPB-LACEN/RS|2-Nov-12
+JCV|JCV011|irdsupport@niaidceirs.org|Universidad Autonoma de San Luis Potosi|4-Oct-13
+JCV|JCV012|irdsupport@niaidceirs.org|Penn State University|7-Jan-14
+JCV|JCV013|irdsupport@niaidceirs.org|Naval Medical Research Unit and National Institutes of Health, Fogarty International Center|7-May-14
+JCV|JCV014|irdsupport@niaidceirs.org|Vanderbilt University School of Medicine|7-May-14
+JCV|JCV015|irdsupport@niaidceirs.org|Harvard Medical School|24-Apr-15
+JCV|JCV016|irdsupport@niaidceirs.org|Icahn School of Medicine at Mount Sinai|27-Apr-15
+JCV|JCV017|irdsupport@niaidceirs.org|Naval Health Research Center|14-May-15
+JCV|JCVI|irdsupport@niaidceirs.org|JCVI|28-Jan-09
+JCV|JCVI001|irdsupport@niaidceirs.org|J Craig Venter Institute|6-May-11
+JHU|JHU100|irdsupport@niaidceirs.org|Johns Hopkins University-CEIRS2|
+JHU|JHU101|irdsupport@niaidceirs.org|Chang-Gung Memorial Hospital-CEIRS2|
+JHU|JHU102|irdsupport@niaidceirs.org|Johns Hopkins Applied Physics Laboratory-CEIRS2|
+JHU|JHU103|irdsupport@niaidceirs.org|Harvard University-CEIRS2|
+JHU|JHU104|irdsupport@niaidceirs.org|Macha Research Trust-CEIRS2|18-Mar-21
+JHU|JHU200|irdsupport@niaidceirs.org|Johns Hopkins University|1-Dec-22
+JHU|JHU201|irdsupport@niaidceirs.org|Chang-Gung Memorial Hospital|1-Dec-22
+JHU|JHU202|irdsupport@niaidceirs.org|Johns Hopkins University, Applied Physics Laboratory|1-Dec-22
+JHU|JHU204|irdsupport@niaidceirs.org|Macha Research Trust|1-Dec-22
+PEN|PEN200|irdsupport@niaidceirs.org|University of Pennsylvania|1-Dec-22
+PEN|PEN201|irdsupport@niaidceirs.org|University of Chicago|1-Dec-22
+PEN|PEN202|irdsupport@niaidceirs.org|Stanford University|1-Dec-22
+PEN|PEN203|irdsupport@niaidceirs.org|Scripps Research Institute|1-Dec-22
+PEN|PEN204|irdsupport@niaidceirs.org|Iowa State University|1-Dec-22
+PEN|PEN205|irdsupport@niaidceirs.org|University of Pittsburgh|1-Dec-22
+PEN|PEN206|irdsupport@niaidceirs.org|University of Arizona|1-Dec-22
+PEN|PEN207|irdsupport@niaidceirs.org|Royal Veterinary College of London|1-Dec-22
+PEN|PEN208|irdsupport@niaidceirs.org|Animal and Plant Health Agency|1-Dec-22
+PEN|PEN209|irdsupport@niaidceirs.org|Institut Pasteur du Cambodge|1-Dec-22
+PEN|PEN210|irdsupport@niaidceirs.org|University of Hong Kong|1-Dec-22
+PEN|PEN211|irdsupport@niaidceirs.org|Institute of Epidemiology, Disease Control and Research (IEDCR)|1-Dec-22
+PEN|PEN212|irdsupport@niaidceirs.org|Chattogram Veterinary and Animal Sciences University (CVASU)|1-Dec-22
+PEN|PEN213|irdsupport@niaidceirs.org|Fred Hutchinson Cancer Research Center|1-Dec-22
+PEN|PEN214|irdsupport@niaidceirs.org|University of Michigan|1-Dec-22
+ROC|ROC034|irdsupport@niaidceirs.org|University of Rochester-CEIRS1|29-Apr-10
+ROC|ROC035|irdsupport@niaidceirs.org|Cornell University-CEIRS1|29-Apr-10
+ROC|ROC036|irdsupport@niaidceirs.org|University of Tennessee-CEIRS1|29-Apr-10
+ROC|ROC100|irdsupport@niaidceirs.org|University of Rochester-CEIRS2|
+ROC|ROC101|irdsupport@niaidceirs.org|University of Chicago-CEIRS2|
+ROC|ROC102|irdsupport@niaidceirs.org|University of Massachusetts-CEIRS2|
+ROC|ROC103|irdsupport@niaidceirs.org|University of Washington-CEIRS2|
+ROC|ROC104|irdsupport@niaidceirs.org|Cornell University-CEIRS2|
+SDI|SDI|irdsupport@niaidceirs.org|SDI|28-Jan-09
+SEP|SEP100|irdsupport@niaidceirs.org|Southeast Poultry Research Laboratory-CEIRS2|
+SEP|SEP200|irdsupport@niaidceirs.org|United States Department of Agriculture, Southeast Poultry Research Laboratory|1-Dec-22
+SJC|SJC001|irdsupport@niaidceirs.org|St. Jude Children's Research Hospital-CEIRS1|18-Jan-10
+SJC|SJC002|irdsupport@niaidceirs.org|Hong Kong University-CEIRS1|7-Apr-10
+SJC|SJC003|irdsupport@niaidceirs.org|Shantou, China (via HKU)-CEIRS1|29-Apr-10
+SJC|SJC004|irdsupport@niaidceirs.org|Airlangga University, Indonesia (via HKU)-CEIRS1|29-Apr-10
+SJC|SJC005|irdsupport@niaidceirs.org|University of Kelaniya, Sri Lanka (via HKU)-CEIRS1|29-Apr-10
+SJC|SJC006|irdsupport@niaidceirs.org|National Institute of Veterinary Research, Vietnam (via HKU)-CEIRS1|7-Apr-10
+SJC|SJC007|irdsupport@niaidceirs.org|National Institute of Virology, India (via HKU)-CEIRS1|29-Apr-10
+SJC|SJC008|irdsupport@niaidceirs.org|Kansas State University, Manhattan, KS-CEIRS1|29-Apr-10
+SJC|SJC009|irdsupport@niaidceirs.org|National Research Centre, Egypt-CEIRS1|29-Apr-10
+SJC|SJC010|irdsupport@niaidceirs.org|Environment Canada-CEIRS1|29-Apr-10
+SJC|SJC011|irdsupport@niaidceirs.org|Bowling Green State University, Bowling Green, OH-CEIRS1|29-Apr-10
+SJC|SJC012|irdsupport@niaidceirs.org|Chungbuk National University, South Korea-CEIRS1|29-Apr-10
+SJC|SJC013|irdsupport@niaidceirs.org|Central Veterinary Research Laboratory, United Arab Emirates-CEIRS1|29-Apr-10
+SJC|SJC014|irdsupport@niaidceirs.org|University of Iowa College of Public Health, Coralville, IA (UI)-CEIRS1|29-Apr-10
+SJC|SJC015|irdsupport@niaidceirs.org|University of Florida, Gainesville, FL (UF)-CEIRS1|29-Apr-10
+SJC|SJC016|irdsupport@niaidceirs.org|CHPPH, University of Babes-Bolyai, Romania-CEIRS1|29-Apr-10
+SJC|SJC017|irdsupport@niaidceirs.org|Institute of Veterinary Medicine, Mongolia-CEIRS1|29-Apr-10
+SJC|SJC018|irdsupport@niaidceirs.org|University of Memphis, Memphis, TN (U of M)-CEIRS1|29-Apr-10
+SJC|SJC019|irdsupport@niaidceirs.org|Carthage Veterinary Services, Ltd., Carthage, IL-CEIRS1|29-Apr-10
+SJC|SJC020|irdsupport@niaidceirs.org|Departmento de Microbiologia, Universidade de Sao Paulo, Brazil-CEIRS1|29-Apr-10
+SJC|SJC021|irdsupport@niaidceirs.org|Environmental Science and Research (ESR), New Zealand-CEIRS1|29-Apr-10
+SJC|SJC022|irdsupport@niaidceirs.org|University of Minnesota Veterinary Diagnostic Lab-CEIRS1|29-Apr-10
+SJC|SJC023|irdsupport@niaidceirs.org|National Animal Disease Center (USDA)-CEIRS1|29-Apr-10
+SJC|SJC024|irdsupport@niaidceirs.org|National Diagnostic and Research Veterinary Medical Institute, Bulgaria-CEIRS1|29-Apr-10
+SJC|SJC025|irdsupport@niaidceirs.org|Jahangirnagar University, Bangladesh-CEIRS1|29-Apr-10
+SJC|SJC026|irdsupport@niaidceirs.org|Makerere University, Walter Reed Project, Influenza Research Laboratory, Kampala Uganda-CEIRS1|29-Apr-10
+SJC|SJC027|irdsupport@niaidceirs.org|LADISERO, Benin-CEIRS1|29-Apr-10
+SJC|SJC028|irdsupport@niaidceirs.org|LANADA, Cote d'Ivoire-CEIRS1|29-Apr-10
+SJC|SJC029|irdsupport@niaidceirs.org|Laboratoire veterinaire de Lome, Togo-CEIRS1|29-Apr-10
+SJC|SJC030|irdsupport@niaidceirs.org|Noguchi Memorial Institute for Medical Research, University of Ghana, Ghana-CEIRS1|29-Apr-10
+SJC|SJC031|irdsupport@niaidceirs.org|University of California, Los Angeles, California (UCLA)-CEIRS1|29-Apr-10
+SJC|SJC032|irdsupport@niaidceirs.org|Congo (UCLA)-CEIRS1|29-Apr-10
+SJC|SJC033|irdsupport@niaidceirs.org|DR Congo (UCLA)-CEIRS1|29-Apr-10
+SJC|SJC034|irdsupport@niaidceirs.org|Cameroon (UCLA)-CEIRS1|29-Apr-10
+SJC|SJC035|irdsupport@niaidceirs.org|American University of Beirut, Beirut, Lebanon-CEIRS1|29-Apr-10
+SJC|SJC036|irdsupport@niaidceirs.org|National Reference Laboratory for Poultry Diseases, Pakistan-CEIRS1|29-Apr-10
+SJC|SJC037|irdsupport@niaidceirs.org|National Animal Health Center, Lao PDR-CEIRS1|29-Apr-10
+SJC|SJC038|irdsupport@niaidceirs.org|University of Tennessee Medical Center, Memphis TN (UTMC)-CEIRS1|29-Apr-10
+SJC|SJC039|irdsupport@niaidceirs.org|University Malaysia Sarawak, Malaysia-CEIRS1|29-Apr-10
+SJC|SJC040|irdsupport@niaidceirs.org|Kimron Veterinary Institute, Ministry of Agriculture, Israel-CEIRS1|29-Apr-10
+SJC|SJC041|irdsupport@niaidceirs.org|DUKE-NUS, Singapore-CEIRS1|29-Apr-10
+SJC|SJC042|irdsupport@niaidceirs.org|National Centre for Animal Health, Bhutan-CEIRS1|29-Apr-10
+SJC|SJC043|irdsupport@niaidceirs.org|VECTOR, Novosibirsk, Russia-CEIRS1|29-Apr-10
+SJC|SJC044|irdsupport@niaidceirs.org|I.I. Mechnikov Anti-Plague Scientific Research Institute of Ukraine, Ukraine-CEIRS1|29-Apr-10
+SJC|SJC045|irdsupport@niaidceirs.org|Institute of Technology in Monterrey, Mexico-CEIRS1|29-Apr-10
+SJC|SJC046|irdsupport@niaidceirs.org|University of Wisconsin-Madison (UW)-CEIRS1|29-Apr-10
+SJC|SJC047|irdsupport@niaidceirs.org|Universidad de los Llanos, Villavicencio, Colombia (UW)-CEIRS1|29-Apr-10
+SJC|SJC048|irdsupport@niaidceirs.org|Universidad de Antioquia Medical and Veterinary Schools in Medellin, Colombia (UW)-CEIRS1|29-Apr-10
+SJC|SJC049|irdsupport@niaidceirs.org|Pasteur Institute, Senegal-CEIRS1|29-Apr-10
+SJC|SJC050|irdsupport@niaidceirs.org|Papua New Guinea Institute of Medical Research-CEIRS1|22-Aug-11
+SJC|SJC051|irdsupport@niaidceirs.org|University of California, Berkeley, California (Nicaragua)-CEIRS1|22-Aug-11
+SJC|SJC052|irdsupport@niaidceirs.org|AU Clinical Research Centre, Africa University, Mutare, Zimbabwe-CEIRS1|10-Sep-12
+SJC|SJC053|irdsupport@niaidceirs.org|University of South Dakota-CEIRS1|26-Oct-12
+SJC|SJC055|irdsupport@niaidceirs.org|South Dakota State University-CEIRS1|26-Oct-12
+SJC|SJC056|irdsupport@niaidceirs.org|Lowe Consulting, Ltd. -CEIRS1|21-Dec-12
+SJC|SJC062|irdsupport@niaidceirs.org|Institut Nationale de la Recherche Agronomique (INRA), Toulouse, France-CEIRS1|12-Sep-13
+SJC|SJC101|irdsupport@niaidceirs.org|St. Jude Children's Research Hospital-CEIRS2|
+SJC|SJC102|irdsupport@niaidceirs.org|University of Hong Kong-CEIRS2|
+SJC|SJC108|irdsupport@niaidceirs.org|Kansas State University-CEIRS2|
+SJC|SJC109|irdsupport@niaidceirs.org|National Research Centre-CEIRS2|
+SJC|SJC110|irdsupport@niaidceirs.org|Canadian Wildlife Services-CEIRS2, Environment Canada|
+SJC|SJC119|irdsupport@niaidceirs.org|Lowe Consulting Ltd-CEIRS2|
+SJC|SJC122|irdsupport@niaidceirs.org|University of Minnesota-CEIRS2|
+SJC|SJC125|irdsupport@niaidceirs.org|Jahangirnagar University-CEIRS2|
+SJC|SJC126|irdsupport@niaidceirs.org|Makerere University Walter Reed Project (MUWRP)-CEIRS2|31-May-17
+SJC|SJC127|irdsupport@niaidceirs.org|Laboratoire de Diagnostic veterinaire et de Serosurveillance (LADISERO)-CEIRS2|31-May-17
+SJC|SJC128|irdsupport@niaidceirs.org|Laboratoire National d'Appui au Developpement Agricole (LANADA)-CEIRS2|31-May-17
+SJC|SJC129|irdsupport@niaidceirs.org|Laboratoire veterinaire de Lome-CEIRS2|31-May-17
+SJC|SJC141|irdsupport@niaidceirs.org|Duke-National University Singapore-CEIRS2|
+SJC|SJC146|irdsupport@niaidceirs.org|University of Wisconsin-CEIRS2|
+SJC|SJC148|irdsupport@niaidceirs.org|Programa de Estudio y Control de Enfermedades Tropicales (PECET), Universidad de Antioquia-CEIRS2|31-May-17
+SJC|SJC157|irdsupport@niaidceirs.org|University of Texas-CEIRS2|
+SJC|SJC160|irdsupport@niaidceirs.org|The Royal Society for the Conservation of Nature-CEIRS2|
+SJC|SJC168|irdsupport@niaidceirs.org|Ohio State University-CEIRS2|
+SJC|SJC169|irdsupport@niaidceirs.org|University of Georgia-CEIRS2|
+SJC|SJC170|irdsupport@niaidceirs.org|University of Sfax-CEIRS2|
+SJC|SJC171|irdsupport@niaidceirs.org|University of Badji Mokhtar-CEIRS2|
+SJC|SJC172|irdsupport@niaidceirs.org|University of Michigan-CEIRS2|
+SJC|SJC173|irdsupport@niaidceirs.org|Human Link-CEIRS2|
+SJC|SJC174|irdsupport@niaidceirs.org|Laboratorio De Diagnostico E Investigacion Animed Ltda-CEIRS2|
+SJC|SJC175|irdsupport@niaidceirs.org|Fundación Salud Para el Trópico-CEIRS2|
+SJC|SJC176|irdsupport@niaidceirs.org|University of Chile-CEIRS2|12-Sep-16
+SJC|SJC177|irdsupport@niaidceirs.org|University of Hong Kong-CEIRS2|12-Sep-16
+SJC|SJC179|irdsupport@niaidceirs.org|Monash University-CEIRS2|31-May-17
+SJC|SJC180|irdsupport@niaidceirs.org|Ecole nationale veterinaire de Toulouse (ENVT)-CEIRS2|31-May-17
+SJC|SJC181|irdsupport@niaidceirs.org|Sustainable Sciences Institute-CEIRS2|31-May-17
+SJC|SJC201|irdsupport@niaidceirs.org|St. Jude Children's Research Hospital|1-Dec-22
+SJC|SJC202|irdsupport@niaidceirs.org|University of Hong Kong|1-Dec-22
+SJC|SJC204|irdsupport@niaidceirs.org|University of Missouri|1-Dec-22
+SJC|SJC208|irdsupport@niaidceirs.org|Kansas State University|1-Dec-22
+SJC|SJC209|irdsupport@niaidceirs.org|National Research Centre|1-Dec-22
+SJC|SJC221|irdsupport@niaidceirs.org|Institute of Environmental Science and Research|1-Dec-22
+SJC|SJC225|irdsupport@niaidceirs.org|Jahangirnagar University|1-Dec-22
+SJC|SJC241|irdsupport@niaidceirs.org|Duke-National University of Singapore|1-Dec-22
+SJC|SJC268|irdsupport@niaidceirs.org|Ohio State University|1-Dec-22
+SJC|SJC269|irdsupport@niaidceirs.org|University of Georgia|1-Dec-22
+SJC|SJC272|irdsupport@niaidceirs.org|University of Michigan|1-Dec-22
+SJC|SJC273|irdsupport@niaidceirs.org|Human Link|1-Dec-22
+SJC|SJC275|irdsupport@niaidceirs.org|Fundacion Salud Para el Tropico|1-Dec-22
+SJC|SJC276|irdsupport@niaidceirs.org|University of Chile|1-Dec-22
+SJC|SJC281|irdsupport@niaidceirs.org|Washington University in St. Louis|1-Dec-22
+SJC|SJC282|irdsupport@niaidceirs.org|Ben-Gurion University of the Negev|1-Dec-22
+SJC|SJC292|irdsupport@niaidceirs.org|La Jolla Institute for Immunology|1-Dec-22
+SJC|SJC293|irdsupport@niaidceirs.org|University of Iowa|1-Dec-22
+SJC|SJC295|irdsupport@niaidceirs.org|University of Tennessee Health Science Center|1-Dec-22
+SJC|SJC296|irdsupport@niaidceirs.org|University of Texas Medical Branch|1-Dec-22
+SJC|SJC297|irdsupport@niaidceirs.org|Duke University School of Medicine|1-Dec-22
+UMB|UMB001|irdsupport@niaidceirs.org|UMB|28-Nov-11
+UMB|UMB002|irdsupport@niaidceirs.org|University of Wisconsin-Madison School of Medicine & Public Health|4-Jan-12
+UMI|UMI200|irdsupport@niaidceirs.org|Sustainable Sciences Institute|1-Dec-22
+UMN|UMN023|irdsupport@niaidceirs.org|University of Georgia-CEIRS1|19-Nov-09
+UMN|UMN026|irdsupport@niaidceirs.org|University of Minnesota-CEIRS1|18-Jan-10
+UMN|UMN028|irdsupport@niaidceirs.org|Chulalongkorn University-CEIRS1|7-Dec-09
+UMN|UMN029|irdsupport@niaidceirs.org|Wildlife Conservation Society-CEIRS1|7-Dec-09
+UMN|UMN030|irdsupport@niaidceirs.org|National Wildlife Health Center-CEIRS1|29-Apr-10
+UMN|UMN031|irdsupport@niaidceirs.org|University of Iowa-CEIRS1|29-Apr-10
+UMN|UMN032|irdsupport@niaidceirs.org|University of California, Davis-CEIRS1|29-Apr-10
+UMN|UMN033|irdsupport@niaidceirs.org|Ohio State University-CEIRS1|7-Dec-09
+UMN|UMN034|irdsupport@niaidceirs.org|Hong Kong University-CEIRS1|29-Apr-10
+UMN|UMN035|irdsupport@niaidceirs.org|CDC-Kenya (KEMRI)-CEIRS1|14-Jan-11
+USAFSAM|USAFSAM|irdsupport@niaidceirs.org|US Air Force School of Aerospace Medicine|31-May-13
+USG|USG100|irdsupport@niaidceirs.org|National Wildlife Health Center-CEIRS2|13-Oct-16
+USG|USG200|irdsupport@niaidceirs.org|United States Geological Survey, Alaska Science Center|1-Dec-22

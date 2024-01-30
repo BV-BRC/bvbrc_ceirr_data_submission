@@ -1,0 +1,39 @@
+#Category,#serology_fields,solr_schema,attribute,array
+Sample Info,Study_Identifier,project_identifier,,N
+,Contributing_Institution,contributing_institution,,N
+,Sample_Identifier,sample_identifier,,N
+,Study_Identifier,project_identifier,,N
+Sample Collection,Collection_City,collection_city,,N
+,Collection_State,collection_state,,N
+,Collection_Country,collection_country,,N
+,Collection_Date,collection_date,,N
+,Collection_Year,collection_year,,N
+,Embargo_End_Date,additional_metadata,Embargo_End_Date,N
+Host,Host_Identifier,host_identifier,,N
+,Host_Age,host_age,,N
+,Host_Common_Name,host_common_name,,N
+,Host_Group,host_type,host_group,N
+,Host_Health,host_health,,N
+,Host_Sex,host_sex,,N
+,Host_Species,host_species,,N
+,Source_Type,host_type,source,N
+Sample_Test,Influenza_Type,test_pathogen,,N
+,Influenza_Test_Interpretation,test_interpretation,,N
+,Influenza_Test_Result,test_result,,N
+,Influenza_Test_Type,test_type,,N
+,Influenza_Test_Antigen,test_antigen,,N
+,BV_Accession,sample_accession,,N
+,Definition_of_Positive_Sample,positive_definition,,N
+,Definition_of_Seropositive_Sample,positive_definition,,N
+,Influenza_Subtype,serotype,Influenza_Subtype,N
+,HPAI_H5N1,serotype,HPAI_H5N1,N
+,FLU_HA_SUBTYPE,serotype,FLU_HA_SUBTYPE,N
+,FLU_NA_SUBTYPE,serotype,FLU_NA_SUBTYPE,N
+Virus Data,Genbank_Accession_Numbers,genbank_accession,,Y
+,Virus_Identifier,virus_identifier,,N
+,Strain_Name,strain,,N
+Other Data,Comments,comments,,N
+,HA_SUBTYPE_METHOD,additional_metadata,HA_SUBTYPE_METHOD,N
+,NA_SUBTYPE_METHOD,additional_metadata,NA_SUBTYPE_METHOD,N
+,CREATE_DATE,additional_metadata,Create_date,N
+,FILE_NAME,additional_metadata,File_name,N
