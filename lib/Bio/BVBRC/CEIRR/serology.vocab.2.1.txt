@@ -1,0 +1,7 @@
+Influenza_Test_Antigen=U,NA
+Influenza_Test_Result=U,NA
+Influenza_Test_Interpretation=P,N,U,NA
+Definition_of_Positive_Sample=NA
+Influenza_Subtype=MERS,NA
+Comments=NA
+Embargo_End_Date=NA

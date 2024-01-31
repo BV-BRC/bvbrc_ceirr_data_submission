@@ -1,0 +1,32 @@
+{
+  "id": "CEIRRDataSubmission",
+  "label": "CEIRR Data Submission",
+  "script": "App-CEIRRDataSubmission",
+  "description": "CEIRR Data Submission",
+  "parameters": [
+    {
+      "id": "ceirr_data",
+      "label": "CEIRR data file in CSV format",
+      "allow_multiple": true,
+      "required": 1,
+      "default": null,
+      "type": "wsid"
+    },
+    {
+      "id": "output_path",
+      "label": "Output Folder",
+      "required": 1,
+      "default": null,
+      "desc": "Path to which the output will be written. Defaults to the directory containing the input data. ",
+      "type": "folder"
+    },
+    {
+      "id": "output_file",
+      "label": "File Basename",
+      "required": 1,
+      "default": null,
+      "desc": "Basename for the generated output files. Defaults to the basename of the input data.",
+      "type": "wsid"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Influenza_Test_Result=U,NA
+Influenza_Test_Interpretation=P,N,U,NA
+Definition_of_Positive_Sample=NA
+Strain_Name=U,NA
+Virus_Identifier=NA
+Genbank_Accession_Numbers=NA
+HPAI_H5N1=U,NA
+Comments=NA
+Embargo_End_Date=NA

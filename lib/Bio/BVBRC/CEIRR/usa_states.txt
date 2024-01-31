@@ -1,0 +1,52 @@
+#STATE_CODE|STATE_NAME|COUNTRY_NAME|COUNTRY_CODE
+AK|Alaska|United States of America|USA
+AL|Alabama|United States of America|USA
+AR|Arkansas|United States of America|USA
+AZ|Arizona|United States of America|USA
+CA|California|United States of America|USA
+CO|Colorado|United States of America|USA
+CT|Connecticut|United States of America|USA
+DC|District of Columbia|United States of America|USA
+DE|Delaware|United States of America|USA
+FL|Florida|United States of America|USA
+GA|Georgia|United States of America|USA
+HI|Hawaii|United States of America|USA
+IA|Iowa|United States of America|USA
+ID|Idaho|United States of America|USA
+IL|Illinois|United States of America|USA
+IN|Indiana|United States of America|USA
+KS|Kansas|United States of America|USA
+KY|Kentucky|United States of America|USA
+LA|Louisiana|United States of America|USA
+MA|Massachusetts|United States of America|USA
+MD|Maryland|United States of America|USA
+ME|Maine|United States of America|USA
+MI|Michigan|United States of America|USA
+MN|Minnesota|United States of America|USA
+MO|Missouri|United States of America|USA
+MS|Mississippi|United States of America|USA
+MT|Montana|United States of America|USA
+NC|North Carolina|United States of America|USA
+ND|North Dakota|United States of America|USA
+NE|Nebraska|United States of America|USA
+NH|New Hampshire|United States of America|USA
+NJ|New Jersey|United States of America|USA
+NM|New Mexico|United States of America|USA
+NV|Nevada|United States of America|USA
+NY|New York|United States of America|USA
+OH|Ohio|United States of America|USA
+OK|Oklahoma|United States of America|USA
+OR|Oregon|United States of America|USA
+PA|Pennsylvania|United States of America|USA
+RI|Rhode Island|United States of America|USA
+SC|South Carolina|United States of America|USA
+SD|South Dakota|United States of America|USA
+TN|Tennessee|United States of America|USA
+TX|Texas|United States of America|USA
+UT|Utah|United States of America|USA
+VA|Virginia|United States of America|USA
+VT|Vermont|United States of America|USA
+WA|Washington|United States of America|USA
+WI|Wisconsin|United States of America|USA
+WV|West Virginia|United States of America|USA
+WY|Wyoming|United States of America|USA

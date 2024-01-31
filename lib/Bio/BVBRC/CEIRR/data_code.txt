@@ -1,0 +1,605 @@
+#DATA_TYPE|DATA_CODE|DATA_EXPANDED_VAL
+CAPTURE_STATUS|M|Market Sample
+CAPTURE_STATUS|K|Opportunistically sampled
+CAPTURE_STATUS|F|Farm Sample
+CAPTURE_STATUS|Z|Sample obtained from a zoo
+CAPTURE_STATUS|AB|Abattoir
+CAPTURE_STATUS|O|Sample collected in response to outbreak
+CAPTURE_STATUS|SEH|Semi-enclosed housing
+CAPTURE_STATUS|A|Active surveillance
+CAPTURE_STATUS|P|Sample obtained from a pet
+CAPTURE_STATUS|OT|Other
+CAPTURE_STATUS|U|Undetermined
+HOST_FACTOR_CURATION|icSARS Cov_WT|icSARS Cov_WT
+HOST_FACTOR_CURATION|icSARS delta-ORF6_Mut|icSARS delta-ORF6_Mut
+HOST_FACTOR_CURATION|icSARS CoV urbani|icSARS CoV urbani
+HOST_FACTOR_CURATION|VN1203|VN1203  (H5N1)
+HOST_FACTOR_CURATION|SARS CoV MA15|SARS CoV MA15
+HOST_FACTOR_CURATION|A/Vietnam/1203-CIP048_RG4/2004 (H5N1)|VN1203-CIP048_RG4  (H5N1)
+HOST_FACTOR_CURATION|A/Puerto Rico/8/34 (PR8)   |PR8 (H1N1)
+HOST_FACTOR_CURATION|A/Netherlands/602/2009|NL602 (H1N1)
+HOST_FACTOR_CURATION|A/CA/04/09|CA04 (H1N1)
+HOST_FACTOR_CURATION|A/A/Vietnam/1203/2004 (H5N1)|VN1203-CIP048_RG2  (H5N1)
+HOST_FACTOR_CURATION|A/A/Vietnam/1203-CIP048_RG3/2004 (H5N1)|VN1203-CIP048_RG3  (H5N1)
+HOST_FACTOR_CURATION|icSARSBatSRBD|icSARSBatSRBD
+HOST_FACTOR_CURATION|A/Aichi/02/68 (HA, NA) x A/Puerto Rico/8/34 (X31)|HKx31 (H3N2)
+HOST_FACTOR_CURATION|A/Vietnam/1203/04 (HA ?Vn1203, NA) x A/Puerto Rico/8/34  (VN6+2)|rg/VN1203(6+2) (H5N1)
+IEDB_ASSAY_HOST|Alpaca|Vicugna pacos
+IEDB_ASSAY_HOST|Aves|Bird
+IEDB_ASSAY_HOST|Bird|Aves
+IEDB_ASSAY_HOST|Bos taurus|Cow
+IEDB_ASSAY_HOST|Camel|Camelus dromedarius
+IEDB_ASSAY_HOST|Cat|Felis catus
+IEDB_ASSAY_HOST|Cattle|Ruminantia
+IEDB_ASSAY_HOST|Chicken|Gallus gallus
+IEDB_ASSAY_HOST|Chicken|Gallus gallus H.B15
+IEDB_ASSAY_HOST|Chicken|Gallus gallus Leghorn
+IEDB_ASSAY_HOST|Chicken|Gallus gallus P2a
+IEDB_ASSAY_HOST|Chicken|Gallus gallus White Leghorn
+IEDB_ASSAY_HOST|Chimpanzee|Pan troglodytes
+IEDB_ASSAY_HOST|Cotton rat|Sigmodon
+IEDB_ASSAY_HOST|Cow|Bos taurus
+IEDB_ASSAY_HOST|Cow|Bos taurus Friesian
+IEDB_ASSAY_HOST|Cow|Bos taurus Hereford
+IEDB_ASSAY_HOST|Cow|Bos taurus Holstein
+IEDB_ASSAY_HOST|Cow|Bos taurus Holstein-Friesian
+IEDB_ASSAY_HOST|Cow|Bos taurus Jersey
+IEDB_ASSAY_HOST|Deer mouse|Peromyscus maniculatus
+IEDB_ASSAY_HOST|Dog|Canis familiaris beagle
+IEDB_ASSAY_HOST|Dog|Canis lupus familiaris
+IEDB_ASSAY_HOST|Duck|Anas platyrhynchos
+IEDB_ASSAY_HOST|Felis catus|Cat
+IEDB_ASSAY_HOST|Ferret|Mustela putorius furo
+IEDB_ASSAY_HOST|Fish|Maccullochella macquariensis
+IEDB_ASSAY_HOST|Fish|Oncorhynchus mykiss
+IEDB_ASSAY_HOST|Gallus gallus|Chicken
+IEDB_ASSAY_HOST|Geese|Anser sp.
+IEDB_ASSAY_HOST|Giant Panda|Ailuropoda melanoleuca
+IEDB_ASSAY_HOST|Goat|Capra hircus
+IEDB_ASSAY_HOST|Goat|Capra hircus Saanen
+IEDB_ASSAY_HOST|Guinea pig|Cavia porcellus
+IEDB_ASSAY_HOST|Guinea pig|Cavia porcellus Duncan-Hartley
+IEDB_ASSAY_HOST|Guinea pig|Cavia porcellus Hartley
+IEDB_ASSAY_HOST|Hamster|Cricetulus migratorius
+IEDB_ASSAY_HOST|Hamster|Mesocricetus auratus DSN
+IEDB_ASSAY_HOST|Horse|Equus caballus
+IEDB_ASSAY_HOST|Human|Homo sapiens
+IEDB_ASSAY_HOST|Human|Homo sapiens Black
+IEDB_ASSAY_HOST|Human|Homo sapiens Caucasian
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus (CBA/J X C57BL/6J) human IgH Tg human IgL Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus BALB/c A2/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 A11/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A*0201/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A*0201/Kb Tg X BALB/c
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A*1101/Kb Tg X BALB/c
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A2 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A2.1/Db Tg HLA-DR1 Tg H2-I null H2-II null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A2.1/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A2.1/Kb Tg Db null Kb null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-A2/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-B*0702/Kb Tg X BALB/c
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-B*07021/Kb Tg Db null Kb null 
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-B*27052/Kb Tg Db null Kb null 
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-B27 Tg H-2 Kb null Db null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-B27 Tg human beta2m Tg human CD8 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 HLA-DR4 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6 human IgCkappa Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus C57BL/6-Tg(HLA-A2.1)1Enge
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus CBA/Ca 2Kb/HLA-G Tg human beta2m Tg human CD8alpha Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus FVB/N HLA-DR1 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA Transgenic
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*0201 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*0201/DRB1*0101
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*0201/Db-human b2m Tg (HHD)
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*0201/Db-human b2m Tg Db null b2m null (HHD-2)
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*0201/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*020101 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*1101/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A*2402/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A11/Kb transgenic
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2 Tg human CD8 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1 Tg H2-I null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1 Tg HLA-DP4 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1 Tg HLA-DR1 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1/Db (AAD) Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1/Db Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2.1/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A2/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-A24 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-B*0702 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-B*0702 Tg H2-I null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-B*0702 Tg H2-I null 
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-B*0702/Kb Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-B7 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DQ6 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR1 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR1 Tg H2-II null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR2 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR3 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR4 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR4 Tg human CD4 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR4/IE Tg H2-II null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DR51 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DRA*0101/HLA-DRB*0401
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DRB1*0101 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DRB1*0301 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DRB1*0401 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DRB1*0401 Tg CD4Tg I-Abeta null
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HLA-DRB1*1501 Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus HuMAb (Medarex)
+IEDB_ASSAY_HOST|Humanized (transgene)|Mus musculus RIP-CD80 LCMV-GP Tg
+IEDB_ASSAY_HOST|Humanized (transgene)|Oryctolagus cuniculus New Zealand White HLA-A*0201 Tg
+IEDB_ASSAY_HOST|Japanese white rabbit|Oryctolagus cuniculus Japanese white
+IEDB_ASSAY_HOST|Llama|Lama glama
+IEDB_ASSAY_HOST|Monkey|Callithrix jacchus
+IEDB_ASSAY_HOST|Monkey|Macaca
+IEDB_ASSAY_HOST|Monkey|Macaca cyclopis
+IEDB_ASSAY_HOST|Monkey|Macaca fascicularis
+IEDB_ASSAY_HOST|Monkey|Macaca mulatta
+IEDB_ASSAY_HOST|Monkey|Saguinus oedipus
+IEDB_ASSAY_HOST|Mouse|Mus
+IEDB_ASSAY_HOST|Mouse|Mus musculus
+IEDB_ASSAY_HOST|Mouse|Mus musculus (BALB/c x B10.G)F1-B10.G bone marrow chimera
+IEDB_ASSAY_HOST|Mouse|Mus musculus (C57BL/6 X 129/SV) p53 null
+IEDB_ASSAY_HOST|Mouse|Mus musculus (C57BL/6 X A/J)
+IEDB_ASSAY_HOST|Mouse|Mus musculus (C57BL/6 X BALB/c) H2bm8
+IEDB_ASSAY_HOST|Mouse|Mus musculus 129
+IEDB_ASSAY_HOST|Mouse|Mus musculus 129 GIX+
+IEDB_ASSAY_HOST|Mouse|Mus musculus 129/Sv
+IEDB_ASSAY_HOST|Mouse|Mus musculus A.BY/SnJ
+IEDB_ASSAY_HOST|Mouse|Mus musculus A/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus Antibody Transgenic
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10 X B10.S
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.A
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.A(2R)
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.A(4R)
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.A(5R)
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.BR
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.BR-SCID  bone marrow chimera
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.D2
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.G
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.M
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.PL
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.R111
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.RIII
+IEDB_ASSAY_HOST|Mouse|Mus musculus B10.S
+IEDB_ASSAY_HOST|Mouse|Mus musculus B6.129S2-Cd28tm1Mak
+IEDB_ASSAY_HOST|Mouse|Mus musculus B6.129S2-Igh-6tm1Cgn
+IEDB_ASSAY_HOST|Mouse|Mus musculus B6.C-H-2bm1
+IEDB_ASSAY_HOST|Mouse|Mus musculus B6.PL Thy1a/Cy
+IEDB_ASSAY_HOST|Mouse|Mus musculus BA
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB.B
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB.K
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c IFNgamma null
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c Thy 1.1
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c X A/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c X C3H
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c X C57BL/10
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c X DBA/2
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c beta2m null
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/c-H2dm2
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/cAnN
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/cByJ
+IEDB_ASSAY_HOST|Mouse|Mus musculus BALB/cJ
+IEDB_ASSAY_HOST|Mouse|Mus musculus BDF1
+IEDB_ASSAY_HOST|Mouse|Mus musculus Biozzi AB/H
+IEDB_ASSAY_HOST|Mouse|Mus musculus C.AL-Igho/SmnJ
+IEDB_ASSAY_HOST|Mouse|Mus musculus C3H
+IEDB_ASSAY_HOST|Mouse|Mus musculus C3H.SW
+IEDB_ASSAY_HOST|Mouse|Mus musculus C3H/DiSn
+IEDB_ASSAY_HOST|Mouse|Mus musculus C3H/FeJ X C57BL/6
+IEDB_ASSAY_HOST|Mouse|Mus musculus C3H/He
+IEDB_ASSAY_HOST|Mouse|Mus musculus C3H/HeJ
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/10
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/10 X DBA/2
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/10.A
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 Db null
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 HLA-B*2705 Tg
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 IAbeta null
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 IFNgamma null
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 Kb null
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 OX40 null
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 Perforin null
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X 129
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X BALB/c
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X BALB/c-H2dm2
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X BALB/cByJ
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X C3H
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X CBA
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 X DBA/2
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6 bg
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6-Cd28tm1Mak
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6J
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6J IAbeta null 
+IEDB_ASSAY_HOST|Mouse|Mus musculus C57BL/6N
+IEDB_ASSAY_HOST|Mouse|Mus musculus CBA
+IEDB_ASSAY_HOST|Mouse|Mus musculus CBA/Ca
+IEDB_ASSAY_HOST|Mouse|Mus musculus CBA/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus CD-1
+IEDB_ASSAY_HOST|Mouse|Mus musculus CD1
+IEDB_ASSAY_HOST|Mouse|Mus musculus DBA
+IEDB_ASSAY_HOST|Mouse|Mus musculus DBA/1
+IEDB_ASSAY_HOST|Mouse|Mus musculus DBA/2
+IEDB_ASSAY_HOST|Mouse|Mus musculus DBA/2J
+IEDB_ASSAY_HOST|Mouse|Mus musculus DQB1*0602 Tg
+IEDB_ASSAY_HOST|Mouse|Mus musculus F1sc H-2b scid chimera
+IEDB_ASSAY_HOST|Mouse|Mus musculus FVB
+IEDB_ASSAY_HOST|Mouse|Mus musculus FVB/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus HLA-B Transgenic
+IEDB_ASSAY_HOST|Mouse|Mus musculus ICR
+IEDB_ASSAY_HOST|Mouse|Mus musculus IFNR null
+IEDB_ASSAY_HOST|Mouse|Mus musculus Kb null
+IEDB_ASSAY_HOST|Mouse|Mus musculus Kunming
+IEDB_ASSAY_HOST|Mouse|Mus musculus NHI Swiss
+IEDB_ASSAY_HOST|Mouse|Mus musculus NOD
+IEDB_ASSAY_HOST|Mouse|Mus musculus Nude
+IEDB_ASSAY_HOST|Mouse|Mus musculus OF1
+IEDB_ASSAY_HOST|Mouse|Mus musculus Outbred
+IEDB_ASSAY_HOST|Mouse|Mus musculus PL
+IEDB_ASSAY_HOST|Mouse|Mus musculus PL/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus PL/J X SJL
+IEDB_ASSAY_HOST|Mouse|Mus musculus PL/J X SJL/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus RAG-1 null
+IEDB_ASSAY_HOST|Mouse|Mus musculus RSV-M187 TCR Tg
+IEDB_ASSAY_HOST|Mouse|Mus musculus SJL
+IEDB_ASSAY_HOST|Mouse|Mus musculus SJL/J
+IEDB_ASSAY_HOST|Mouse|Mus musculus STU
+IEDB_ASSAY_HOST|Mouse|Mus musculus Swiss
+IEDB_ASSAY_HOST|Mouse|Mus musculus Swiss Webster
+IEDB_ASSAY_HOST|Mouse|Mus musculus Swiss albino
+IEDB_ASSAY_HOST|Mouse|Mus musculus TO
+IEDB_ASSAY_HOST|Mouse|Mus musculus TRBV13-2 TCR Tg
+IEDB_ASSAY_HOST|Mouse|Mus musculus Tapasin null
+IEDB_ASSAY_HOST|Mouse|Mus musculus gp150 TCR
+IEDB_ASSAY_HOST|Mouse|Mus musculus µMT
+IEDB_ASSAY_HOST|Mouse|Mus musculus �MT
+IEDB_ASSAY_HOST|Mouse (Transgene)|Mus musculus HLA-A2 NOD/SCID/HHD
+IEDB_ASSAY_HOST|Mouse (Transgene)|Mus musculus HLA-B27 Tg
+IEDB_ASSAY_HOST|Mouse (Transgene)|Mus musculus NOD-PI/NOD8.3
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus (C57BL/10 X DBA/2) InsHA Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus 318 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus 6.5 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus 6218 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus AG129
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus B6.HOD
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus B6;D2-Tg(TcrLCMV)327Sdz/JDvsJ
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus B6Smn.C3-Faslgld
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BALB/c HA(110-120)-specific TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BALB/c HA(110-120)-specific TCR Tg/ Flu  HA Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BALB/c HA(111-119) specific TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BALB/c TCR Transgenic
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BALB/c Thy 1.2 CD4/HNT TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BALB/c Thy-LCMV NP Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus BM3.3 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57/BL/6 LCMV NP Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/1Flu NP(328-498) Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/6 F5 TCR Tg RAG-1 null
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/6 HSV-1 gB(498-505)-specific TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/6 IL-4 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/6 RIP-LCMV-NP Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/6 TCR transgenic
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus C57BL/6-Tg(TcraTcrb)1100Mjb/J
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus CTL-9 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus Clone 19 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus Clone 4 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus F5 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus F5 TCR Tg RAG null
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus FLU HA 127-137 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus FLU HA 127-137 TCR Tg HA Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus Flu HAmemb Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus Flu HAtrunc Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus H2-Kb OVA SIINFEKL Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HA 518-526 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HLA-A*0101 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HLA-A*0201 Tg NOD.HHD
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HLA-B*40:01 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HLA-DQ8 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HLA-DQB1*03:02 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HLA-DR15 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HNT TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus HPV 16 E7 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus Influenza A HA TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus InsHA
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus LCMV GP33 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus LCMV TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus MBP AC1-11 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus N15 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus NOD-Ealpha Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus NOD.Cg-Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus OT-1 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus P14 TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus Rg PA(224-233) specific TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus SMARTA TCR Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus SV40 Tg
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus TCR Tg for VSV NP
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus TCR Tg for VSV8
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus TCR transgenic
+IEDB_ASSAY_HOST|Mouse (transgene)|Mus musculus gBT-I TCR Tg
+IEDB_ASSAY_HOST|Night Monkey|Aotus nancymaae
+IEDB_ASSAY_HOST|Pig|Sus scrofa
+IEDB_ASSAY_HOST|Pig|Sus scrofa Babraham
+IEDB_ASSAY_HOST|Pig|Sus scrofa Landrace X Large White
+IEDB_ASSAY_HOST|Pig|Sus scrofa Large White X Duroc
+IEDB_ASSAY_HOST|Pig|Sus scrofa NIH miniature pig
+IEDB_ASSAY_HOST|Pig|Sus scrofa Yorkshire
+IEDB_ASSAY_HOST|Pig|Sus scrofa domesticus
+IEDB_ASSAY_HOST|Rabbit|Oryctolagus cuniculus
+IEDB_ASSAY_HOST|Rabbit|Oryctolagus cuniculus Chinchilla
+IEDB_ASSAY_HOST|Rabbit|Oryctolagus cuniculus Groot Chinchilla
+IEDB_ASSAY_HOST|Rabbit|Oryctolagus cuniculus New Zealand
+IEDB_ASSAY_HOST|Rabbit|Oryctolagus cuniculus New Zealand White
+IEDB_ASSAY_HOST|Rabbit|Oryctolagus cuniculus Sandy Half-Lop
+IEDB_ASSAY_HOST|Rat|Rattus norvegicus
+IEDB_ASSAY_HOST|Rat|Rattus norvegicus Lewis
+IEDB_ASSAY_HOST|Rat|Rattus norvegicus Sprague-Dawley
+IEDB_ASSAY_HOST|Rat|Rattus norvegicus Wistar
+IEDB_ASSAY_HOST|Rat|Rattus norvegicus Wistar Kyoto
+IEDB_ASSAY_HOST|Rat (transgene)|Rattus norvegicus LOU/C
+IEDB_ASSAY_HOST|Sheep|Ovis aries
+IEDB_ASSAY_HOST|Sheep|Ovis aries Mallorquina
+IEDB_ASSAY_HOST|Sheep|Ovis aries Romanov
+IEDB_ASSAY_HOST|Silver Orfe|Ctenopharyngodon idella
+IEDB_ASSAY_HOST|Turkey|Meleagris gallopavo
+IEDB_ASSAY_HOST|Vole|Myodes glareolus
+IEDB_ASSAY_HOST|Wild Bactrian camel|Camelus ferus
+IEDB_ASSAY_HOST|duck|Anas
+IEDB_ASSAY_HOST|mouse|Mus musculus AKR
+IEDB_ASSAY_HOST|mouse|Mus musculus C57BL/6 bm14
+IEDB_ASSAY_HOST|mouse|Mus musculus C57BL/6 x SJL
+IEDB_ASSAY_HOST|mouse|Mus musculus FVB Db Tg
+SAMPLE_TYPE|B|Blood
+SAMPLE_TYPE|mosquito|mosquito
+SAMPLE_TYPE|C|Cloacal Swab
+SAMPLE_TYPE|CF|Cloacal and fecal samples
+SAMPLE_TYPE|COP|Cloacal and oral-pharyngeal samples
+SAMPLE_TYPE|CS|Cell supernatant
+SAMPLE_TYPE|F|Feces
+SAMPLE_TYPE|L|Lungs
+SAMPLE_TYPE|NL|Nasal Lavage
+SAMPLE_TYPE|NOS|Nose
+SAMPLE_TYPE|NS|Nasal Pharyngeal swab
+SAMPLE_TYPE|NS|Nasal swab
+SAMPLE_TYPE|NS|Nasopharyngeal Swab
+SAMPLE_TYPE|NS|Nose swab or fluid
+SAMPLE_TYPE|NS|nasopharyngeal swab
+SAMPLE_TYPE|NW|NASAL WASHING
+SAMPLE_TYPE|NW|Nasal wash
+SAMPLE_TYPE|NW|Nasopharyngeal Aspirate
+SAMPLE_TYPE|O|O
+SAMPLE_TYPE|OP|Oral-pharyngeal
+SAMPLE_TYPE|Other:Cell Supernatant|Other:Cell Supernatant
+SAMPLE_TYPE|PLA|Plasma
+SAMPLE_TYPE|Plasma:Plasma|Plasma:Plasma
+SAMPLE_TYPE|RS|Rectal swab
+SAMPLE_TYPE|S|Soil
+SAMPLE_TYPE|SPU|Sputum
+SAMPLE_TYPE|SR|Serum
+SAMPLE_TYPE|Serum:From SST|Serum:From SST
+SAMPLE_TYPE|TB|Tissue from brain
+SAMPLE_TYPE|THS|THS
+SAMPLE_TYPE|TO|Other tissue
+SAMPLE_TYPE|TS|Traceal swabs
+SAMPLE_TYPE|TT|Endotracheal Tube Aspiration
+SAMPLE_TYPE|TT|Tissue from trachea
+SAMPLE_TYPE|U|Unknown
+SAMPLE_TYPE|W|Water
+SAMPLE_TYPE|Whole Blood:PBMC|Whole Blood:PBMC
+SAMPLE_TYPE|BAL|Bronchoalveolar lavage
+TEST_TYPE|rRT-PCR/H11|rRT-PCR/H11
+TEST_TYPE|rRT-PCR/H12|RT-PCR/Influenza A-H12
+TEST_TYPE|rRT-PCR/H12|rRT-PCR/H12
+TEST_TYPE|rRT-PCR/H2|RT-PCR/Influenza A-H2
+TEST_TYPE|rRT-PCR/H3|RT-PCR/Influenza A-H3
+TEST_TYPE|rRT-PCR/H4|RT-PCR/Influenza A-H4
+TEST_TYPE|rRT-PCR/H5|RT-PCR/Influenza A-H5
+TEST_TYPE|rRT-PCR/H5|RT-PCR/Influenza A-H5 segment
+TEST_TYPE|rRT-PCR/H6|RT-PCR/Influenza A-H6
+TEST_TYPE|rRT-PCR/H7|RT-PCR/Influenza A-H7
+TEST_TYPE|rRT-PCR/H7|RT-PCR/Influenza A-H7 segment
+TEST_TYPE|rRT-PCR/H8|RT-PCR/Influenza A-H8
+TEST_TYPE|rRT-PCR/H9|RT-PCR/Influenza A-H9
+TEST_TYPE|rRT-PCR/H9|rRT-PCR/H9
+TEST_TYPE|rRT-PCR/HA2|RT-PCR/Influenza A-HA2
+TEST_TYPE|rRT-PCR/HumH1|RT-PCR/Influenza A-HumH1
+TEST_TYPE|rRT-PCR/HumH3|RT-PCR/Influenza A-HumH3
+TEST_TYPE|rRT-PCR/MA|RT-PCR/Influenza A-M segment
+TEST_TYPE|rRT-PCR/MA (R0)|RT-PCR/Influenza A-M segment (R0)
+TEST_TYPE|rRT-PCR/MA (R1)|RT-PCR/Influenza A-M segment (R1)
+TEST_TYPE|rRT-PCR/MA (R2)|RT-PCR/Influenza A-M segment (R2)
+TEST_TYPE|rRT-PCR/MA (R3)|RT-PCR/Influenza A-M segment (R3)
+TEST_TYPE|rRT-PCR/MA (pooled)|RT-PCR/Influenza A-M segment (pooled)
+TEST_TYPE|rRT-PCR/PA|RT-PCR/Influenza PA
+TEST_TYPE|rRT-PCR/PB2|RT-PCR/Influenza PB2
+TEST_TYPE|rRT-PCR/Seasonal H1|RT-PCR/Influenza A-Seasonal H1
+TEST_TYPE|rRT-PCR/Seasonal H3|RT-PCR/Influenza A-Seasonal H3
+TEST_TYPE|rRT-PCR/SwFluA|RT-PCR/Influenza A-swine
+TEST_TYPE|rRT-PCR/SwH1|RT-PCR/Influenza A-swine H1
+TEST_TYPE|rRT-PCR/pdm H1|RT-PCR/Influenza A-2009 H1N1 pandemic
+TEST_TYPE|RAT/U|A Rapid Antigen Test targeting an unknown antigen
+TEST_TYPE|RAT/antigen|A Rapid Antigen Test targeting an antigen
+TEST_TYPE|RRT-PCR/H5|Real time reverse-transcription polymerase chain reaction assay targeting H5-specific hemagglutinin gene
+TEST_TYPE|RRT-PCR/H7|Real time reverse-transcription polymerase chain reaction assay targeting H7-specific hemagglutinin gene
+TEST_TYPE|RRT-PCR/HA|Real time reverse-transcription polymerase chain reaction assay targeting hemagglutinin gene
+TEST_TYPE|RRT-PCR/MP|Real time reverse-transcription polymerase chain reaction assay targeting matrix gene
+TEST_TYPE|RRT-PCR/N1|Real time reverse-transcription polymerase chain reaction assay targeting N1-specific neuraminidase gene
+TEST_TYPE|RRT-PCR/NA|Real time reverse-transcription polymerase chain reaction assay targeting neuraminidase gene
+TEST_TYPE|RRT-PCR/NP|RRT-PCR/NP
+TEST_TYPE|RRT-PCR/NS|RRT-PCR/NS
+TEST_TYPE|RRT-PCR/PB1|Real time reverse-transcription polymerase chain reaction assay targeting PB1 gene
+TEST_TYPE|RRT-PCR/U|Real time reverse-transcription polymerase chain reaction assay targeting an unknown analyte
+TEST_TYPE|RRT-PCR/multiple genes|RRT-PCR/multiple genes
+TEST_TYPE|RRT-PCR/PA
+TEST_TYPE|RRT-PCR/PB2
+TEST_TYPE|RT-PCR/Sequencing/MA|RT-PCR/Sequencing/Influenza A-M segment
+TEST_TYPE|RT-PCR/H1|Reverse transcribed polymerase chain reaction assay targeting H1-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H10|Reverse transcribed polymerase chain reaction assay targeting H10-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H11|Reverse transcribed polymerase chain reaction assay targeting H11-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H12|Reverse transcribed polymerase chain reaction assay targeting H12-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H13|Reverse transcribed polymerase chain reaction assay targeting H13-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H14|Reverse transcribed polymerase chain reaction assay targeting H14-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H16|Reverse transcribed polymerase chain reaction assay targeting H16-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H2|Reverse transcribed polymerase chain reaction assay targeting H2-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H3|Reverse transcribed polymerase chain reaction assay targeting H3-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H4|Reverse transcribed polymerase chain reaction assay targeting H4-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H5|Reverse transcribed polymerase chain reaction assay targeting H5-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H6|Reverse transcribed polymerase chain reaction assay targeting H6-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H8|Reverse transcribed polymerase chain reaction assay targeting H8-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/H9|Reverse transcribed polymerase chain reaction assay targeting H9-specific hemagglutinin gene
+TEST_TYPE|RT-PCR/HA|Reverse transcribed polymerase chain reaction assay targeting hemagglutinin gene
+TEST_TYPE|RT-PCR/MP|Reverse transcribed polymerase chain reaction assay targeting matrix gene
+TEST_TYPE|RT-PCR/N1|Reverse transcribed polymerase chain reaction assay targeting N1-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N2|Reverse transcribed polymerase chain reaction assay targeting N2-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N3|Reverse transcribed polymerase chain reaction assay targeting N3-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N4|Reverse transcribed polymerase chain reaction assay targeting N4-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N5|Reverse transcribed polymerase chain reaction assay targeting N5-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N6|Reverse transcribed polymerase chain reaction assay targeting N6-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N7|Reverse transcribed polymerase chain reaction assay targeting N7-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N8|Reverse transcribed polymerase chain reaction assay targeting N8-specific neuraminidase gene
+TEST_TYPE|RT-PCR/N9|Reverse transcribed polymerase chain reaction assay targeting N9-specific neuraminidase gene
+TEST_TYPE|RT-PCR/NA|Reverse transcribed polymerase chain reaction assay targeting neuraminidase gene
+TEST_TYPE|RT-PCR/PB1|Reverse transcribed polymerase chain reaction assay targeting PB1 gene
+TEST_TYPE|RT-PCR/U|Reverse transcribed polymerase chain reaction assay targeting an unknown analyte
+TEST_TYPE|RT-PCR/multiple genes|Reverse transcribed polymerase chain reaction assay targeting multiple genes
+TEST_TYPE|Rapid Detect|Rapid Detect/
+TEST_TYPE|SER|Ser
+TEST_TYPE|Sequencing|Sequencing
+TEST_TYPE|U/U|U/U
+TEST_TYPE|VI|Virus isolation - not otherwise specified
+TEST_TYPE|VI-MDCK|Virus isolation - MDCK
+TEST_TYPE|VI-egg|Virus isolation - eggs
+TEST_TYPE|VI/ECE|Virus isolation using embryonated chicken eggs 
+TEST_TYPE|VI/FluA|Virus isolation - not otherwise specified/Influenza A
+TEST_TYPE|VI/MDCK|Virus isolation using MDCK cells
+TEST_TYPE|VI/U|Virus Isolate
+TEST_TYPE|rRT-PCR|RT-PCR
+TEST_TYPE|rRT-PCR/FluA|RT-PCR/Influenza A
+TEST_TYPE|rRT-PCR/FluB|RT-PCR/Influenza B
+TEST_TYPE|rRT-PCR/H1|RT-PCR/Influenza A-H1
+TEST_TYPE|rRT-PCR/H11|RT-PCR/Influenza A-H11
+TEST_TYPE|AIV-AB-ELISA-KIT/antibody|A commercial ELISA kit to test for antibodies to avian viruses
+TEST_TYPE|Antigen Capture|Antigen Capture
+TEST_TYPE|ELISA|ELISA
+TEST_TYPE|ELISA/HA|ELISA assay targeting hemagglutinin antigen
+TEST_TYPE|ELISA/NP|ELISA assay targeting nucleocapsid protein
+TEST_TYPE|ELISA/U|ELISA assay targeting an unknown analyte
+TEST_TYPE|ELISA/antibody|ELISA assay targeting an antibody
+TEST_TYPE|ELISA/antigen|ELISA assay targeting an antigen
+TEST_TYPE|ELISA/MP|ELISA/MP
+TEST_TYPE|ELLA/N1|Enzyme-linked lectin assay targeting  N1 neuraminidase
+TEST_TYPE|ELLA/N6|Enzyme-linked lectin assay targeting  N6 neuraminidase
+TEST_TYPE|ELLA/N8|Enzyme-linked lectin assay targeting  N8 neuraminidase
+TEST_TYPE|ELLA/NA|Enzyme-linked lectin assay targeting neuraminidase
+TEST_TYPE|ELLA/U|Enzyme-linked lectin assay targeting unknown analyte
+TEST_TYPE|ELLA/antibody|Enzyme-linked lectin assay targeting an antibody
+TEST_TYPE|ESI-MS/multiple genes|Electrospray ionization mass spectrometry assay targeting multiple genes
+TEST_TYPE|HA|Hemagglutination Inhibition
+TEST_TYPE|HA/HA|Viral hemagglutination assay targeting hemagglutinin
+TEST_TYPE|HI/A/Brisbane/10/2007(H3N2)|Hemagglutination Inhibition/A/Brisbane/10/2007(H3N2)
+TEST_TYPE|HI/A/Brisbane/59/2007(H1N1)|Hemagglutination Inhibition/A/Brisbane/59/2007(H1N1)
+TEST_TYPE|HI/A/Panama/2007/99(H3N2)|Hemagglutination Inhibition/A/Panama/2007/99(H3N2)
+TEST_TYPE|HI/H1|An HI test targeting H1 hemagglutinin
+TEST_TYPE|HI/H3|An HI test targeting H3 hemagglutinin
+TEST_TYPE|HI/H4|An HI test targeting H4 hemagglutinin
+TEST_TYPE|HI/HA|An HI test targeting hemagglutinin
+TEST_TYPE|HI/HA-B-VIC|HI/HA-B-Vic
+TEST_TYPE|HI/HA-B-YAM|HI/HA-B-Yam
+TEST_TYPE|HI/U|An HI test targeting an unknown analyte 
+TEST_TYPE|HI/antibody|Viral hemagglutination inhibition assay targeting an antibody
+TEST_TYPE|IFA/U|Immunofluorescence assay targeting unknown analyte
+TEST_TYPE|IFA/antigen|IFA/antigen
+TEST_TYPE|MN/A/BWTE/Ohio/07/495762-6(H7N3)|Microneutralization/A/BWTE/Ohio/07/495762-6(H7N3)
+TEST_TYPE|MN/A/C290-2/95(H11N3)|Microneutralization/A/C290-2/95(H11N3)
+TEST_TYPE|MN/A/CK/CA/32213-1/00(H6N2)|Microneutralization/A/CK/CA/32213-1/00(H6N2)
+TEST_TYPE|MN/A/GF/NJ/14190-23/96(H4N8)|Microneutralization/A/GF/NJ/14190-23/96(H4N8)
+TEST_TYPE|MN/A/Nopi/Mn/07/462960-2(H5N2)|Microneutralization/A/Nopi/Mn/07/462960-2(H5N2)
+TEST_TYPE|MN/A/Rhea/MA/44017-12/94(H10N4)|Microneutralization/A/Rhea/MA/44017-12/94(H10N4)
+TEST_TYPE|MN/A/Ty/CO/173105/02(H8N4)|Microneutralization/A/Ty/CO/173105/02(H8N4)
+TEST_TYPE|MN/A/Ty/MN/38391-6/95(H9N2)|Microneutralization/A/Ty/MN/38391-6/95(H9N2)
+TEST_TYPE|Microarray|Viral Microarray
+TEST_TYPE|NA|NA indicates serum sample
+TEST_TYPE|NI/N1|An NI test targeting N1 neuraminidase
+TEST_TYPE|NI/N6|An NI test targeting N6 neuraminidase
+TEST_TYPE|NI/N8|An NI test targeting N8 neuraminidase
+TEST_TYPE|Nucleotide sequencing/multiple genes|DNA Sequencing assay targeting multiple genes
+TEST_TYPE|Nucleotide sequencing/NA|DNA Sequencing assay targeting neuraminidase gene
+TEST_TYPE|Nucleotide sequencing/U|DNA Sequencing assay targeting unknown gene
+TEST_TYPE|Nucleotide sequencing/HA|DNA Sequencing assay targeting hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/N1|DNA Sequencing assay targeting N1-specific neuraminidase gene
+TEST_TYPE|Nucleotide sequencing/N2|DNA Sequencing assay targeting N2-specific neuraminidase gene
+TEST_TYPE|Nucleotide sequencing/N3|DNA Sequencing assay targeting N3-specific neuraminidase gene
+TEST_TYPE|Nucleotide sequencing/N4|DNA Sequencing assay targeting N4-specific neuraminidase gene
+TEST_TYPE|Nucleotide sequencing/N5|DNA Sequencing assay targeting N5-specific neuraminidase gene
+TEST_TYPE|Nucleotide sequencing/H6|DNA Sequencing assay targeting H6-specific hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/H7|DNA Sequencing assay targeting H7-specific hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/H8|DNA Sequencing assay targeting H8-specific hemagglutinin gene
+TEST_TYPE|Nucleotide Sequencing/H9|DNA Sequencing assay targeting H9-specific hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/H10|DNA Sequencing assay targeting H10-specific hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/H11|DNA Sequencing assay targeting H11-specific hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/H13|DNA Sequencing assay targeting H13-specific hemagglutinin gene
+TEST_TYPE|Nucleotide sequencing/H15|DNA Sequencing assay targeting H15-specific hemagglutinin gene
+TEST_TYPE|UNKNOWN|UNKNOWN
+TEST_TYPE|U|U
+TEST_TYPE|NT|NT
+TEST_TYPE|NA|NA
+TEST_TYPE|MNA/NA|MNA/NA
+TEST_TYPE|MNA/HA|96-well microneutralization assay
+TEST_TYPE|MNA/antigen|96-well microneutralization assay
+TEST_TYPE|NI/NA|viral neuraminidase inhibition assay
+TEST_TYPE|NI/antibody|viral neuraminidase inhibition assay
+TEST_TYPE|RRT-PCR/H1|real time reverse-transcription polymerase chain reaction assay
+TEST_TYPE|IFA/NP|Fluorescent immunoassay
+TEST_TYPE|bELISA/antibody|Blocking Enzyme-Linked ImmunoSorbent Assay
+TEST_TYPE|sequencing/multiple genes|Multiple genes
+TEST_TYPE|RRT-PCR/HE|RRT-PCR/HE
+TEST_TYPE|RRT-PCR/P3|RRT-PCR/P3
+TEST_TYPE|RRT-PCR/P42|RRT-PCR/P42
+TEST_TYPE|ELISA/H5N1|Influenza A virus subytpe
+TEST_TYPE|RRT-PCR/BM2|BM2 matrix protein 2
+TEST_TYPE|RRT-PCR/CM1|viral matrix protein
+TEST_TYPE|RRT-PCR/CM2|surface glycoprotein
+TEST_TYPE|RRT-PCR/H10|Influenza A virus hemagglutinin H10 subtype
+TEST_TYPE|RRT-PCR/H11|Influenza A virus hemagglutinin H11 subtype
+TEST_TYPE|RRT-PCR/H12|Influenza A virus hemagglutinin H12 subtype
+TEST_TYPE|RRT-PCR/H13|Influenza A virus hemagglutinin H13 subtype
+TEST_TYPE|RRT-PCR/H14|Influenza A virus hemagglutinin H14 subtype
+TEST_TYPE|RRT-PCR/H15|Influenza A virus hemagglutinin H15 subtype
+TEST_TYPE|RRT-PCR/H16|Influenza A virus hemagglutinin H16 subtype
+TEST_TYPE|RRT-PCR/H17|Influenza A virus hemagglutinin H17 subtype
+TEST_TYPE|RRT-PCR/H18|Influenza A virus hemagglutinin H18 subtype
+TEST_TYPE|RRT-PCR/H2|Influenza A virus hemagglutinin H2 subtype
+TEST_TYPE|RRT-PCR/H3|Influenza A virus hemagglutinin H3 subtype
+TEST_TYPE|RRT-PCR/H4|Influenza A virus hemagglutinin H4 subtype
+TEST_TYPE|RRT-PCR/H6|Influenza A virus hemagglutinin H6 subtype
+TEST_TYPE|RRT-PCR/H8|Influenza A virus hemagglutinin H8 subtype
+TEST_TYPE|RRT-PCR/H9|Influenza A virus hemagglutinin H9 subtype
+TEST_TYPE|RRT-PCR/HA-B-Vic|Influenza B virus hemagglutinin B/Victoria lineage
+TEST_TYPE|RRT-PCR/HA-B-Yam|Influenza B virus hemagglutinin B/Yamagata lineage
+TEST_TYPE|RRT-PCR/M1|matrix protein 1
+TEST_TYPE|RRT-PCR/M2|matrix protein 2
+TEST_TYPE|RRT-PCR/M42|M42 protein
+TEST_TYPE|RRT-PCR/N10|Influenza A virus neuraminidase N10 subtype
+TEST_TYPE|RRT-PCR/N2|Influenza A virus neuraminidase N2 subtype
+TEST_TYPE|RRT-PCR/N3|Influenza A virus neuraminidase N3 subtype
+TEST_TYPE|RRT-PCR/N4|Influenza A virus neuraminidase N4 subtype
+TEST_TYPE|RRT-PCR/N5|Influenza A virus neuraminidase N5 subtype
+TEST_TYPE|RRT-PCR/N6|Influenza A virus neuraminidase N6 subtype
+TEST_TYPE|RRT-PCR/N7|Influenza A virus neuraminidase N7 subtype
+TEST_TYPE|RRT-PCR/N8|Influenza A virus neuraminidase N8 subtype
+TEST_TYPE|RRT-PCR/N9|Influenza A virus neuraminidase N9 subtype
+TEST_TYPE|RRT-PCR/NA-B-Vic|Influenza B virus neuraminidase B/Victoria lineage
+TEST_TYPE|RRT-PCR/NA-B-Yam|Influenza B virus neuraminidase B/Yamagata lineage
+TEST_TYPE|RRT-PCR/NB|NB protein
+TEST_TYPE|RRT-PCR/NS1|nonstructural protein 1
+TEST_TYPE|RRT-PCR/NS2|nonstructural protein 2
+TEST_TYPE|RRT-PCR/NS3|NS3 protease/helicase
+TEST_TYPE|VI/MDCK-SIAT|Madin-Darby canine kidney cells (MDCK) over expressing α-2,6-Sialyltransferase
+TEST_TYPE|VI/Mouse|Mouse (whole organism)
+TEST_TYPE|VI/PMK|primary monkey kidney cells
+TEST_TYPE|VI/VERO|Vero cells
