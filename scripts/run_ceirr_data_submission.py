@@ -14,7 +14,10 @@ INPUT_VALID_FILE_NAME = "sample_valid.csv"
 INPUT_PROCESSED_FILE_NAME = "sample_processed.csv"
 DATA_TEMPLATE_HEADER = "#DataTemplate:"
 
-SOLR_DB_URL = os.getenv("SOLR_DB_URL")
+if "P3_BASE_URL" in os.environ:
+  SOLR_DB_URL = "{0}/services/SolrProxy".format(os.environ["P3_BASE_URL"])
+else:
+  SOLR_DB_URL = "http://ash.cels.anl.gov:7099"
 SOLR_CORE_SURVEILLANCE_NAME = "surveillance_new"
 SOLR_CORE_SEROLOGY_NAME = "serology_new"
 
