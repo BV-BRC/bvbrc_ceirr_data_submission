@@ -2,7 +2,7 @@
 Sample Info,Project_Identifier,project_identifier,,N
 ,Study_Identifier,project_identifier,,N
 ,Contributing_Institution,contributing_institution,,N
-,BV_Accession,sample_accession,,N
+,BVBRC_Accession_ID,sample_accession,,N
 ,Sample_Identifier,sample_identifier,,N
 ,Sample_Material,sample_material,,N
 ,Sample_Receipt_Date,sample_receipt_date,,N
