@@ -8,14 +8,16 @@ use Benchmark;
 use Getopt::Std;
 use POSIX qw/strftime/;
 use File::Basename;
+use File::Copy ('copy', 'move');
 use JSON;
 use Text::CSV;
+use Fcntl qw(:flock SEEK_END);
 
 use Bio::BVBRC::CEIRR::Config; 
 
 sub usage{
   my $str = <<STR;
-Usage: convert_data.pl -f file -t type[human/animal/seroloy/viral]
+Usage: convert_data.pl -f file -t type[human/animal/seroloy/viral] -n number_of_data
 STR
 
   print STDERR $str;
@@ -25,15 +27,17 @@ my $para;
 my %options;
 my $processed_file = '';
 my $type = '';
+my $number_of_data;
 my $delimiter = ',';
 
-getopts("f:t:",\%options);
+getopts("f:t:n:",\%options);
 if ( !defined $options{t} ){
   usage();
   exit(1);
 } else{
   $processed_file = $options{f};
   $type = $options{t};
+  $number_of_data = $options{n};
 }
 
 my $json = JSON->new->allow_nonref;
@@ -47,16 +51,39 @@ my $jobDir = dirname($processed_file);
 my $error_log_file   = "$jobDir/error\_$type.log";
 my $warning_log_file = "$jobDir/warning\_$type.log";
 my $run_log_file     = "$jobDir/run\_$type.log";
+
+# create bvbrc accession file
+my $bvbrc_accession_file = "$jobDir/BVBRC_Accession_ID.csv";
+my $accession_info = "";
+if( $type =~ /human/ or $type eq "animal" ){
+  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID\n";
+}else{
+  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID,Virus_Identifier\n";
+}
+$para->write_to_file($bvbrc_accession_file ,"$accession_info", "new");
+
+my $sequence_id_file = "/vol/bvbrc/production/application-backend/bvbrc_ceirr_data_submission/sequence_id";
+open(FH, '+<', $sequence_id_file) or die "Failed to open $sequence_id_file: $!";
+flock(FH, LOCK_EX) or die "Cannot lock $sequence_id_file: $!";
+my $seq = <FH>;
+seek FH, 0, 0;
+truncate FH, 0;
+print FH $seq + $number_of_data;
+close FH;
+
 my $out_file = "${type}_${fdate}.json";
 
 my %look    = $para->getLookUp();
 my %country = $para->getCountryCode();
 my %country_mapping = $para->getCountryMapping();
+my %datasource = $para->getDataSourceCode();
+#To be able to lookup by inst name
+my %ds_by_value = reverse %datasource;
 
 my %header = $para->getFileHeader($type);
 my %map = $para->getMapToSolr();
-  
-print STDERR "Convert file $processed_file to json format\n";
+
+print STDERR "Convert file $processed_file of $number_of_data data to json format\n";
  
 if ( -e "${processed_file}" ){
   my @records = ();
@@ -72,7 +99,11 @@ if ( -e "${processed_file}" ){
   my $count = 0;
 
   # define csv parser objext
-  my $csv = Text::CSV->new({ sep_char => $delimiter});
+  my $csv = Text::CSV->new({ sep_char => $delimiter, eol => $/ });
+
+  # Tmp file to append BVBRC Accession ID
+  my $processed_file_tmp = "${processed_file}.tmp";
+  open(my $temp_file, ">", $processed_file_tmp) or die "Failed to open $processed_file_tmp: $!";
 
   open(FH, '<', "${processed_file}") or die "Failed to open $processed_file: $!";
   while( my $entry = <FH> ){
@@ -97,22 +128,30 @@ if ( -e "${processed_file}" ){
             } 
           }
         }
+        push(@attribs, ("BVBRC_Accession_ID"));
+        $csv->print($temp_file, \@attribs);
       }else{
         my $record;
         @values = $csv->fields(); 
+
+        my $row_number;
+        my $contributing_institution;
+        my $sampleid;
+        my $virusid;
+        my $influenza_test_type_val;
         #next unless scalar @attribs == scalar @values;
-    
         for (my $i=0; $i<scalar @attribs; $i++){
           if ( lc $attribs[$i] ne "row" ) {
             # skip if value is null or na
-            $values[$i]=~ s/^ *| *$//g;
-            $values[$i]=~ s/  */ /g;
-            $values[$i]=~ s/ *:  */:/g;
-            $values[$i]=~ s/^,|,$//g;
-            $values[$i]=~ s/^\,|\,$//g;
-            $values[$i]=~ s/^\,\,|\,\,$//g;
-            next if $values[$i]=~/^(-* *-*|null)$/i;
-            next if ( !$values[$i] );
+            my $value_check = $values[$i];
+            $value_check =~ s/^ *| *$//g;
+            $value_check =~ s/  */ /g;
+            $value_check =~ s/ *:  */:/g;
+            $value_check =~ s/^,|,$//g;
+            $value_check =~ s/^\,|\,$//g;
+            $value_check =~ s/^\,\,|\,\,$//g;
+            next if $value_check =~/^(-* *-*|null)$/i;
+            next if ( !$value_check );
        
             my $new_values; 
             if ( $map{lc $attribs[$i]}->{'role'} ){
@@ -160,8 +199,39 @@ if ( -e "${processed_file}" ){
                 }
               }
             }
+
+            #Assign values for accession id
+            if (lc $attribs[$i] eq "contributing_institution"){
+              $contributing_institution = $values[$i];
+            }elsif (lc $attribs[$i] eq "sample_identifier"){
+              $sampleid = $values[$i];
+            }elsif (lc $attribs[$i] eq "virus_identifier"){
+              $virusid = $values[$i];
+            }elsif (lc $attribs[$i] eq "influenza_test_type"){
+              $influenza_test_type_val = $values[$i];
+            }
+          }else{
+            $row_number = $values[$i];
           }
         }
+
+        # Assign BVBRC Acession ID
+        my $bvbrc_accession_info = "";
+        $seq++;
+        my $seq_ext = sprintf("%010d", $seq);
+        my $dcode = $ds_by_value{$contributing_institution};
+        my $bvbrc_accession_id = "BVBRC_".$dcode.$seq_ext;
+        if( $type =~ /human/ or $type eq "animal" ){
+          $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id\n";
+        }else{
+          $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id,$virusid\n";
+        }
+        $para->write_to_file($bvbrc_accession_file,$bvbrc_accession_info);
+        $record->{"sample_accession"} = $bvbrc_accession_id;
+        push(@values, ($bvbrc_accession_id));
+        $csv->print($temp_file, \@values);
+        print STDERR "Assigning accession id $bvbrc_accession_id to the sample $sampleid for row $row_number\n";
+
         push @records, $record;
       }
     }else{
@@ -169,6 +239,9 @@ if ( -e "${processed_file}" ){
     }
   }
   close FH;
+  close $temp_file;
+  move($processed_file_tmp, $processed_file) or die "Move failed from $processed_file_tmp to $processed_file: $!";
+
   if( $check eq "P" ){ 
     my $out = $json->pretty->encode(\@records);
     #my $out_file = "${type}_${fdate}.json";

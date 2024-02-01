@@ -22,7 +22,7 @@ Sample_Test,Influenza_Type,test_pathogen,,N
 ,Influenza_Test_Result,test_result,,N
 ,Influenza_Test_Type,test_type,,N
 ,Influenza_Test_Antigen,test_antigen,,N
-,BV_Accession,sample_accession,,N
+,BVBRC_Accession_ID,sample_accession,,N
 ,Definition_of_Positive_Sample,positive_definition,,N
 ,Definition_of_Seropositive_Sample,positive_definition,,N
 ,Influenza_Subtype,serotype,Influenza_Subtype,N

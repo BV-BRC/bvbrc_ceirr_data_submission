@@ -45,13 +45,9 @@ $para->setType($type);
 
 my $jobDir = dirname($file);
 
-my $brc_acc_file     = "BVBRC_Accession_ID.csv";
-
 my %header     = $para->getFileHeader($type);
 my %datasource = $para->getDataSourceCode();
 my %country    = $para->getCountryCode();
-
-my $seq = $para->getSequence();
 
 my $api = P3DataAPI->new;
 
@@ -86,15 +82,6 @@ for( my $i = 0; $i < $row_size; $i++ ){
   } 
 }
 
-# create bvbrc accession file header
-my $accession_info = "";
-if( $type =~ /human/ or $type eq "animal" ){
-  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID\n";
-}else{
-  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID,Virus_Identifier\n";
-}
-$para->write_to_file($brc_acc_file ,"$accession_info", "new");
-
 # temp file for solr 
 my $temp_file = "sample_processed.csv";
 open(my $processed_file, ">", $temp_file) or die "Failed to open $temp_file: $!";
@@ -103,17 +90,17 @@ my @new_header = @headers;
 push(@new_header, ("Create_Date", "File_Name"));
 
 if($type =~ /human/){
-  push(@new_header, ("Host_Group", "BV_Accession", "Collection_Date", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
+  push(@new_header, ("Host_Group", "Collection_Date", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
 }elsif($type eq "animal"){
-  push(@new_header, ("Host_Group", "BV_Accession", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
+  push(@new_header, ("Host_Group", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
 }else{
-  push(@new_header, ("Source_Type", "BV_Accession", "Host_Group", "Host_Identifier", "Host_Age", "Host_Common_Name", "Host_Health", "Host_Sex", "Host_Species", "Influenza_Type", "Collection_City", "Collection_State", "Collection_Country", "Collection_Date"));
+  push(@new_header, ("Source_Type", "Host_Group", "Host_Identifier", "Host_Age", "Host_Common_Name", "Host_Health", "Host_Sex", "Host_Species", "Influenza_Type", "Collection_City", "Collection_State", "Collection_Country", "Collection_Date"));
 }
 
 $csv->print($processed_file, \@new_header);
-my $last_row_number = 1;
 my %taxon_id_map;
 my %taxon_lineage_map;
+my $processed_sample_count = 0;
 for( my $s = 1; $s < $row_size; $s++ ){
   my @lines = @{$data[$s]};
 
@@ -328,12 +315,10 @@ for( my $s = 1; $s < $row_size; $s++ ){
     for(my $i = 0; $i < $size; $i++){
       my @new_line = ();
       my $j = 0;
-      my $influenza_test_type_val;
       foreach my $nval (@newlines){
         my $header_name = lc $headers[$j];
         if ( $header_name eq "influenza_test_type"){
           $nval = $tts[$i];
-          $influenza_test_type_val = $tts[$i];
         } elsif ( $header_name eq "influenza_test_result"){
           $nval = $trs[$i];
         } elsif ( $header_name eq "influenza_test_interpretation"){
@@ -350,41 +335,14 @@ for( my $s = 1; $s < $row_size; $s++ ){
         $j++;     
       }
 
-      # Assign new accession id
-      my $dcode = $hash_data{'contributing_institution'}->{$s};
-      my $sampleid = $hash_data{'sample_identifier'}->{$s};
-      my $virusid = $hash_data{'virus_identifier'}->{$s};
-      $seq++;
-
-      my $row_number = $hash_data{'row'}->{$s};
-
-      my $bvbrc_accession_info = "";
-      #print STDERR "BEFORE WHILE: $row_number,$last_row_number,$sampleid,ERROR: No accession id assigned.\n";
-      #while ($last_row_number < $row_number) {
-      #  $bvbrc_accession_info .= "$last_row_number,$sampleid,ERROR: No accession id assigned.\n";
-      #  print STDERR "$last_row_number,$sampleid,ERROR: No accession id assigned.\n";
-      #  $last_row_number++;
-      #}
-      my $seq_ext = sprintf("%010d", $seq);
-      my $brc_acc = "BVBRC_".$dcode.$seq_ext;
-      $hash_data{'bvbrc_accession'}->{$s} = $brc_acc;
-      if( $type =~ /human/ or $type eq "animal" ){
-        $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$brc_acc\n";
-      }else{
-        $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$brc_acc,$virusid\n";
-      }
-      $para->write_to_file($brc_acc_file,$bvbrc_accession_info);
-      print STDERR "Assigning accession id $brc_acc to the sample $sampleid for row $row_number\n";
-      $last_row_number++;
- 
       #Push create date and file name for additional_metadata 
       my $file_name = basename($original_file);
       push(@new_line, ($cdate, $file_name));
 
       if($type =~ /human/){
-        push(@new_line, ($type, $hash_data{'bvbrc_accession'}->{$s}, $hash_data{'collection_date'}->{$s}, $taxon_id, $ftype, $taxidlineage));
+        push(@new_line, ($type, $hash_data{'collection_date'}->{$s}, $taxon_id, $ftype, $taxidlineage));
       }elsif($type eq "animal"){
-        push(@new_line, ($type, $hash_data{'bvbrc_accession'}->{$s}, $taxon_id, $ftype, $taxidlineage));
+        push(@new_line, ($type, $taxon_id, $ftype, $taxidlineage));
       }else{
         #added Host_Group Host_Identifier Host_Age Host_Common_Name Host_Health Host_Sex Host_Species Influenza_Type Collection_City Collection_State  Collection_Country  Collection_Date
         my @res = $api->query('surveillance', ['eq', 'sample_identifier', $hash_data{'sample_identifier'}->{$s}]);
@@ -397,15 +355,18 @@ for( my $s = 1; $s < $row_size; $s++ ){
         }else{
           print STDERR "No sample found for $hash_data{'sample_identifier'}->{$s}\n";
         }
-        push(@new_line, ($type, $hash_data{'bvbrc_accession'}->{$s}, $surv{host_group}, $surv{host_identifier}, $surv{host_age}, $surv{host_common_name}, $surv{host_health}, $surv{host_sex}, $surv{host_species}, $surv{influenza_type}, $surv{collection_city}, $surv{collection_state}, $surv{collection_country}, $surv{collection_date}));
+        push(@new_line, ($type, $surv{host_group}, $surv{host_identifier}, $surv{host_age}, $surv{host_common_name}, $surv{host_health}, $surv{host_sex}, $surv{host_species}, $surv{influenza_type}, $surv{collection_city}, $surv{collection_state}, $surv{collection_country}, $surv{collection_date}));
       }
-      $csv->print($processed_file, \@new_line)
+      $csv->print($processed_file, \@new_line);
+
+      $processed_sample_count++;
     }
   }
 }
 close $processed_file;
-$para->setSequence($seq);
 print STDERR "Finished $file processing.\n";
+
+print $processed_sample_count;
 
 1;
 

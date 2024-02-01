@@ -277,24 +277,4 @@ sub getMapToSolr () {
    return %map;
 }
 
-sub getSequence {
-   my ($self) = @_;
-   my $libdir = $para->{'LIB_DIR'};
-
-   open(FH, '<', "$libdir/sequence") or die $!;
-   my $seq = <FH>;
-   close FH;
-
-   return $seq; 
-}
-
-sub setSequence {
-   my ($self,$seq) = @_;
-   my $libdir = $para->{'LIB_DIR'};
-
-   open(FH, '>', "$libdir/sequence") or die $!;
-   print FH $seq;
-   close FH;
-}
-
 1;

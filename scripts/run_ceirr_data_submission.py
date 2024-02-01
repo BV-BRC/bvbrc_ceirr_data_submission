@@ -114,7 +114,7 @@ if __name__ == "__main__":
     #Process data
     try:
       process_data_cmd = [PROCESS_DATA_SCRIPT, "-f", input_file_valid, "-t", submission_type, "-u", input_file]
-      output = subprocess.check_output(process_data_cmd, shell=False)
+      processed_sample_count = subprocess.check_output(process_data_cmd, shell=False)
     except Exception as e:
       print("Error running process_ceirr_data for %s:\n %s" %(input_file_valid, e))
       sys.exit(-1)
@@ -126,7 +126,7 @@ if __name__ == "__main__":
       if os.path.getsize(input_file_processed) == 0:
         print("Processed input file is empty.")
 
-      convert_data_cmd = [CONVERT_DATA_SCRIPT, "-f", input_file_processed, "-t", submission_type]
+      convert_data_cmd = [CONVERT_DATA_SCRIPT, "-f", input_file_processed, "-t", submission_type, '-n', processed_sample_count]
       json_file_name = subprocess.check_output(convert_data_cmd, shell=False)
     except Exception as e:
       print("Error running convert_ceirr_data for %s:\n %s" %(input_file_valid, e))
