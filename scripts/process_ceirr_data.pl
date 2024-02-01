@@ -100,6 +100,7 @@ if($type =~ /human/){
 $csv->print($processed_file, \@new_header);
 my %taxon_id_map;
 my %taxon_lineage_map;
+my $processed_sample_count = 0;
 for( my $s = 1; $s < $row_size; $s++ ){
   my @lines = @{$data[$s]};
 
@@ -356,12 +357,16 @@ for( my $s = 1; $s < $row_size; $s++ ){
         }
         push(@new_line, ($type, $surv{host_group}, $surv{host_identifier}, $surv{host_age}, $surv{host_common_name}, $surv{host_health}, $surv{host_sex}, $surv{host_species}, $surv{influenza_type}, $surv{collection_city}, $surv{collection_state}, $surv{collection_country}, $surv{collection_date}));
       }
-      $csv->print($processed_file, \@new_line)
+      $csv->print($processed_file, \@new_line);
+
+      $processed_sample_count++;
     }
   }
 }
 close $processed_file;
 print STDERR "Finished $file processing.\n";
+
+print $processed_sample_count;
 
 1;
 

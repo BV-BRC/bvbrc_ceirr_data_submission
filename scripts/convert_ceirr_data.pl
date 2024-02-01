@@ -11,12 +11,13 @@ use File::Basename;
 use File::Copy ('copy', 'move');
 use JSON;
 use Text::CSV;
+use Fcntl qw(:flock SEEK_END);
 
 use Bio::BVBRC::CEIRR::Config; 
 
 sub usage{
   my $str = <<STR;
-Usage: convert_data.pl -f file -t type[human/animal/seroloy/viral]
+Usage: convert_data.pl -f file -t type[human/animal/seroloy/viral] -n number_of_data
 STR
 
   print STDERR $str;
@@ -26,15 +27,17 @@ my $para;
 my %options;
 my $processed_file = '';
 my $type = '';
+my $number_of_data;
 my $delimiter = ',';
 
-getopts("f:t:",\%options);
+getopts("f:t:n:",\%options);
 if ( !defined $options{t} ){
   usage();
   exit(1);
 } else{
   $processed_file = $options{f};
   $type = $options{t};
+  $number_of_data = $options{n};
 }
 
 my $json = JSON->new->allow_nonref;
@@ -59,7 +62,14 @@ if( $type =~ /human/ or $type eq "animal" ){
 }
 $para->write_to_file($bvbrc_accession_file ,"$accession_info", "new");
 
-my $seq = $para->getSequence();
+my $sequence_id_file = "/vol/bvbrc/production/application-backend/bvbrc_ceirr_data_submission/sequence_id";
+open(FH, '+<', $sequence_id_file) or die "Failed to open $sequence_id_file: $!";
+flock(FH, LOCK_EX) or die "Cannot lock $sequence_id_file: $!";
+my $seq = <FH>;
+seek FH, 0, 0;
+truncate FH, 0;
+print FH $seq + $number_of_data;
+close FH;
 
 my $out_file = "${type}_${fdate}.json";
 
@@ -73,7 +83,7 @@ my %ds_by_value = reverse %datasource;
 my %header = $para->getFileHeader($type);
 my %map = $para->getMapToSolr();
 
-print STDERR "Convert file $processed_file to json format\n";
+print STDERR "Convert file $processed_file of $number_of_data data to json format\n";
  
 if ( -e "${processed_file}" ){
   my @records = ();
@@ -231,7 +241,7 @@ if ( -e "${processed_file}" ){
   close FH;
   close $temp_file;
   move($processed_file_tmp, $processed_file) or die "Move failed from $processed_file_tmp to $processed_file: $!";
-  $para->setSequence($seq);
+
   if( $check eq "P" ){ 
     my $out = $json->pretty->encode(\@records);
     #my $out_file = "${type}_${fdate}.json";
