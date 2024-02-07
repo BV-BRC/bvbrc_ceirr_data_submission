@@ -83,7 +83,7 @@ my %ds_by_value = reverse %datasource;
 my %header = $para->getFileHeader($type);
 my %map = $para->getMapToSolr();
 
-print STDERR "Convert file $processed_file of $number_of_data data to json format\n";
+print STDERR "Convert file $processed_file of valid $number_of_data data to json format\n";
  
 if ( -e "${processed_file}" ){
   my @records = ();
@@ -106,6 +106,8 @@ if ( -e "${processed_file}" ){
   open(my $temp_file, ">", $processed_file_tmp) or die "Failed to open $processed_file_tmp: $!";
 
   open(FH, '<', "${processed_file}") or die "Failed to open $processed_file: $!";
+
+  my %accession_id_map = {};
   while( my $entry = <FH> ){
     chomp $entry;
     $count++;
@@ -216,17 +218,22 @@ if ( -e "${processed_file}" ){
         }
 
         # Assign BVBRC Acession ID
-        my $bvbrc_accession_info = "";
-        $seq++;
-        my $seq_ext = sprintf("%010d", $seq);
-        my $dcode = $ds_by_value{$contributing_institution};
-        my $bvbrc_accession_id = "BVBRC_".$dcode.$seq_ext;
-        if( $type =~ /human/ or $type eq "animal" ){
-          $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id\n";
-        }else{
-          $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id,$virusid\n";
+        my $bvbrc_accession_id = $accession_id_map{$sampleid};
+        if ($bvbrc_accession_id eq ''){
+          my $bvbrc_accession_info = "";
+          $seq++;
+          my $seq_ext = sprintf("%010d", $seq);
+          my $dcode = $ds_by_value{$contributing_institution};
+          $bvbrc_accession_id = "BVBRC_".$dcode.$seq_ext;
+          if( $type =~ /human/ or $type eq "animal" ){
+            $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id\n";
+          }else{
+            $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id,$virusid\n";
+          }
+          $para->write_to_file($bvbrc_accession_file,$bvbrc_accession_info);
+
+          $accession_id_map{$sampleid} = $bvbrc_accession_id;
         }
-        $para->write_to_file($bvbrc_accession_file,$bvbrc_accession_info);
         $record->{"sample_accession"} = $bvbrc_accession_id;
         push(@values, ($bvbrc_accession_id));
         $csv->print($temp_file, \@values);
