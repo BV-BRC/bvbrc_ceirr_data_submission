@@ -56,13 +56,14 @@ my $run_log_file     = "$jobDir/run\_$type.log";
 my $bvbrc_accession_file = "$jobDir/BVBRC_Accession_ID.csv";
 my $accession_info = "";
 if( $type =~ /human/ or $type eq "animal" ){
-  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID\n";
+  $accession_info .= "Row,Sample_Identifier,BVBRC_Accession_ID\n";
 }else{
-  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID,Virus_Identifier\n";
+  $accession_info .= "Row,Sample_Identifier,BVBRC_Accession_ID,Virus_Identifier\n";
 }
 $para->write_to_file($bvbrc_accession_file ,"$accession_info", "new");
 
 my $sequence_id_file = "/vol/bvbrc/production/application-backend/bvbrc_ceirr_data_submission/sequence_id";
+
 open(FH, '+<', $sequence_id_file) or die "Failed to open $sequence_id_file: $!";
 flock(FH, LOCK_EX) or die "Cannot lock $sequence_id_file: $!";
 my $seq = <FH>;
@@ -140,7 +141,6 @@ if ( -e "${processed_file}" ){
         my $contributing_institution;
         my $sampleid;
         my $virusid;
-        my $influenza_test_type_val;
         #next unless scalar @attribs == scalar @values;
         for (my $i=0; $i<scalar @attribs; $i++){
           if ( lc $attribs[$i] ne "row" ) {
@@ -209,8 +209,6 @@ if ( -e "${processed_file}" ){
               $sampleid = $values[$i];
             }elsif (lc $attribs[$i] eq "virus_identifier"){
               $virusid = $values[$i];
-            }elsif (lc $attribs[$i] eq "influenza_test_type"){
-              $influenza_test_type_val = $values[$i];
             }
           }else{
             $row_number = $values[$i];
@@ -226,9 +224,9 @@ if ( -e "${processed_file}" ){
           my $dcode = $ds_by_value{$contributing_institution};
           $bvbrc_accession_id = "BVBRC_".$dcode.$seq_ext;
           if( $type =~ /human/ or $type eq "animal" ){
-            $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id\n";
+            $bvbrc_accession_info .= "$row_number,$sampleid,$bvbrc_accession_id\n";
           }else{
-            $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id,$virusid\n";
+            $bvbrc_accession_info .= "$row_number,$sampleid,$bvbrc_accession_id,$virusid\n";
           }
           $para->write_to_file($bvbrc_accession_file,$bvbrc_accession_info);
 
