@@ -143,4 +143,4 @@ Other_Data,Scientific_Name,additional_metadata,,Y
 ,FILE_NAME,additional_metadata,File_name,Y
 ,Taxon_ID,additional_metadata,Taxon_ID,Y
 ,Taxon_Lineage_IDs,taxon_lineage_ids,,Y
-,Comments,comments,,N
+,Comments,comments,,Y
