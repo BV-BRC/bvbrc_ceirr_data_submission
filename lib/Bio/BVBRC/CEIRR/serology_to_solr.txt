@@ -12,11 +12,10 @@ Sample Collection,Collection_City,collection_city,,N
 Host,Host_Identifier,host_identifier,,N
 ,Host_Age,host_age,,N
 ,Host_Common_Name,host_common_name,,N
-,Host_Group,host_type,host_group,N
+,Host_Group,host_type,,N
 ,Host_Health,host_health,,N
 ,Host_Sex,host_sex,,N
 ,Host_Species,host_species,,N
-,Source_Type,host_type,source,N
 Sample_Test,Influenza_Type,test_pathogen,,N
 ,Influenza_Test_Interpretation,test_interpretation,,N
 ,Influenza_Test_Result,test_result,,N
@@ -32,7 +31,8 @@ Sample_Test,Influenza_Type,test_pathogen,,N
 Virus Data,Genbank_Accession_Numbers,genbank_accession,,Y
 ,Virus_Identifier,virus_identifier,,N
 ,Strain_Name,strain,,N
-Other Data,Comments,comments,,N
+Other Data,Comments,comments,comments,Y
+,Source_Type,comments,source,Y
 ,HA_SUBTYPE_METHOD,additional_metadata,HA_SUBTYPE_METHOD,N
 ,NA_SUBTYPE_METHOD,additional_metadata,NA_SUBTYPE_METHOD,N
 ,CREATE_DATE,additional_metadata,Create_date,N

@@ -56,13 +56,14 @@ my $run_log_file     = "$jobDir/run\_$type.log";
 my $bvbrc_accession_file = "$jobDir/BVBRC_Accession_ID.csv";
 my $accession_info = "";
 if( $type =~ /human/ or $type eq "animal" ){
-  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID\n";
+  $accession_info .= "Row,Sample_Identifier,BVBRC_Accession_ID\n";
 }else{
-  $accession_info .= "Row,Sample_Identifier,Influenza_Test_Type,BVBRC_Accession_ID,Virus_Identifier\n";
+  $accession_info .= "Row,Sample_Identifier,BVBRC_Accession_ID,Virus_Identifier\n";
 }
 $para->write_to_file($bvbrc_accession_file ,"$accession_info", "new");
 
 my $sequence_id_file = "/vol/bvbrc/production/application-backend/bvbrc_ceirr_data_submission/sequence_id";
+
 open(FH, '+<', $sequence_id_file) or die "Failed to open $sequence_id_file: $!";
 flock(FH, LOCK_EX) or die "Cannot lock $sequence_id_file: $!";
 my $seq = <FH>;
@@ -83,7 +84,7 @@ my %ds_by_value = reverse %datasource;
 my %header = $para->getFileHeader($type);
 my %map = $para->getMapToSolr();
 
-print STDERR "Convert file $processed_file of $number_of_data data to json format\n";
+print STDERR "Convert file $processed_file of valid $number_of_data data to json format\n";
  
 if ( -e "${processed_file}" ){
   my @records = ();
@@ -106,6 +107,8 @@ if ( -e "${processed_file}" ){
   open(my $temp_file, ">", $processed_file_tmp) or die "Failed to open $processed_file_tmp: $!";
 
   open(FH, '<', "${processed_file}") or die "Failed to open $processed_file: $!";
+
+  my %accession_id_map = {};
   while( my $entry = <FH> ){
     chomp $entry;
     $count++;
@@ -138,7 +141,6 @@ if ( -e "${processed_file}" ){
         my $contributing_institution;
         my $sampleid;
         my $virusid;
-        my $influenza_test_type_val;
         #next unless scalar @attribs == scalar @values;
         for (my $i=0; $i<scalar @attribs; $i++){
           if ( lc $attribs[$i] ne "row" ) {
@@ -207,8 +209,6 @@ if ( -e "${processed_file}" ){
               $sampleid = $values[$i];
             }elsif (lc $attribs[$i] eq "virus_identifier"){
               $virusid = $values[$i];
-            }elsif (lc $attribs[$i] eq "influenza_test_type"){
-              $influenza_test_type_val = $values[$i];
             }
           }else{
             $row_number = $values[$i];
@@ -216,17 +216,22 @@ if ( -e "${processed_file}" ){
         }
 
         # Assign BVBRC Acession ID
-        my $bvbrc_accession_info = "";
-        $seq++;
-        my $seq_ext = sprintf("%010d", $seq);
-        my $dcode = $ds_by_value{$contributing_institution};
-        my $bvbrc_accession_id = "BVBRC_".$dcode.$seq_ext;
-        if( $type =~ /human/ or $type eq "animal" ){
-          $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id\n";
-        }else{
-          $bvbrc_accession_info .= "$row_number,$sampleid,$influenza_test_type_val,$bvbrc_accession_id,$virusid\n";
+        my $bvbrc_accession_id = $accession_id_map{$sampleid};
+        if ($bvbrc_accession_id eq ''){
+          my $bvbrc_accession_info = "";
+          $seq++;
+          my $seq_ext = sprintf("%010d", $seq);
+          my $dcode = $ds_by_value{$contributing_institution};
+          $bvbrc_accession_id = "BVBRC_".$dcode.$seq_ext;
+          if( $type =~ /human/ or $type eq "animal" ){
+            $bvbrc_accession_info .= "$row_number,$sampleid,$bvbrc_accession_id\n";
+          }else{
+            $bvbrc_accession_info .= "$row_number,$sampleid,$bvbrc_accession_id,$virusid\n";
+          }
+          $para->write_to_file($bvbrc_accession_file,$bvbrc_accession_info);
+
+          $accession_id_map{$sampleid} = $bvbrc_accession_id;
         }
-        $para->write_to_file($bvbrc_accession_file,$bvbrc_accession_info);
         $record->{"sample_accession"} = $bvbrc_accession_id;
         push(@values, ($bvbrc_accession_id));
         $csv->print($temp_file, \@values);
