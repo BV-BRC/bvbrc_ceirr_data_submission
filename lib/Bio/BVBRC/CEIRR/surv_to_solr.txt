@@ -22,10 +22,8 @@ Sample Collection,Collector_Name,collector_name,,Y
 ,,collector_institution,,N
 ,,contact_email_address,,N
 Sample Tests,Influenza_Test_Type,pathogen_test_type,Influenza,Y
-,Other_Pathogens_Tested,pathogen_test_type,Other_Pathogens,Y
 ,SARS-CoV-2_Test_Type,pathogen_test_type,SARS-CoV-2,Y
 ,Influenza_Test_Result,pathogen_test_result,Influenza,Y
-,Other_Pathogen_Test_Result,pathogen_test_result,Other_Pathogen,Y
 ,SARS-CoV-2_Test_Result,pathogen_test_result,SARS-CoV-2,Y
 ,Influenza_Test_Interpretation,pathogen_test_interpretation,Influenza,Y
 ,SARS-CoV-2_Test_Interpretation,pathogen_test_interpretation,SARS-CoV-2,Y
@@ -142,5 +140,7 @@ Other_Data,Scientific_Name,additional_metadata,,Y
 ,CREATE_DATE,additional_metadata,Create_date,Y
 ,FILE_NAME,additional_metadata,File_name,Y
 ,Taxon_ID,additional_metadata,Taxon_ID,Y
+,Other_Pathogens_Tested,additional_metadata,Other_Pathogens_Tested,Y
+,Other_Pathogen_Test_Result,additional_metadata,Other_Pathogen_Test_Result,Y
 ,Taxon_Lineage_IDs,taxon_lineage_ids,,Y
 ,Comments,comments,,Y
