@@ -18,8 +18,8 @@ if "P3_BASE_URL" in os.environ:
   SOLR_DB_URL = "{0}/services/SolrProxy".format(os.environ["P3_BASE_URL"])
 else:
   SOLR_DB_URL = "http://ash.cels.anl.gov:7099"
-SOLR_CORE_SURVEILLANCE_NAME = "surveillance_new"
-SOLR_CORE_SEROLOGY_NAME = "serology_new"
+SOLR_CORE_SURVEILLANCE_NAME = "surveillance"
+SOLR_CORE_SEROLOGY_NAME = "serology"
 
 def determineType(input_file):
   with open(input_file) as f:
