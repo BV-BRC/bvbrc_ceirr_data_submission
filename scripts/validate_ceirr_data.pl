@@ -488,7 +488,7 @@ sub validate_value{
          #SERVICE#print STDERR " passed\n";
          $check =  $vocab{virus_identifier}->{lc $dval};
       }else{
-         my @res = $api->query('serology_2024_0104', ['eq', 'virus_identifier', $dval], ['select', 'virus_identifier']);
+         my @res = $api->query('serology', ['eq', 'virus_identifier', $dval], ['select', 'virus_identifier']);
          my $res_size = scalar @res;
          if ( $res_size > 0 ){
             #SERVICE#print STDERR "  invalid virus_identifier: existing $dval\n";
