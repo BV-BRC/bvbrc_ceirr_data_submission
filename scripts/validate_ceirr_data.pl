@@ -1473,7 +1473,7 @@ sub validate_value{
                $v =~ s/\s+$//g;   
                if ( "$v" =~ /^(([\w\s]+?),[-]?(\d+),(\d+))|(([\w\s]+?),[-]?(\d+),U)|(([\w\s]+?),U,[-]?(\d+))|(([\w\s]+?),U,U)/ ){
                   #SERVICE#print STDERR "  passed\n";
-                  $check .= "$v,";
+                  $check .= "$v;";
                }else{
                   #SERVICE#print STDERR "  invalid data entry: $v\n";
                   $check .= "Invalid: Symptoms data must be corrected. (Error_93_INVALID_SYMPTOM_OTHER),";

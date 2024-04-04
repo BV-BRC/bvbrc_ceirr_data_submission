@@ -1,0 +1,82 @@
+sample_material,AIR,Air
+sample_material,BAL,Bronchoalveolar lavage
+sample_material,BLO,Blood
+sample_material,FEC,Feces
+sample_material,LLF,Lung lavage fluid
+sample_material,LUN,Lungs
+sample_material,NAL,Nasal lavage
+sample_material,NAS,Nasal swab
+sample_material,NPH,Nasopharyngeal swab
+sample_material,NTS,Combined nasal throat swab
+sample_material,ORP,Oral-pharyngeal
+sample_material,OTT,Other tissue
+sample_material,PLS,Plasma
+sample_material,RCS,Rectal swab
+sample_material,SER,Serum
+sample_material,SLU,Slurry
+sample_material,SPU,Sputum
+sample_material,TFB,Tissue from brain
+sample_material,TFT,Tissue from trachea
+sample_material,TRS,Tracheal swab
+sample_material,U,Unknown
+host_sex,M,Male
+host_sex,F,Female
+longitudinal_study,Y,Yes
+longitudinal_study,N,No
+pathogen_test_interpretation,P,Positive
+pathogen_test_interpretation,N,Negative
+pathogen_test_interpretation,U,Unknown or inconclusive
+pathogen_test_interpretation,NA,Not Applicable
+exposure,Y,Yes
+exposure,N,No
+pathogen_test_result,P,Positive
+pathogen_test_result,N,Negative
+pathogen_test_result,U,Unknown or inconclusive
+pathogen_test_result,NA,Not Applicable
+exposure_type,BYF,Backyard flock
+exposure_type,CAF,Confined animal feeding operation or large farms
+exposure_type,FAR,Farm
+exposure_type,FPR,Food preparation
+exposure_type,SLA,Slaughterhouse
+exposure_type,NA,Not Applicable
+disease_status,DIE,Died
+disease_status,REC,Recovered
+disease_status,RWS,Recovered with sequelae
+treatment,AMA,Amantadine
+treatment,NON,None
+treatment,OSE,Oseltamivir
+treatment,PMV,Peramivir
+treatment,RIM,Rimantadine
+treatment,ZAN,Zanamivir
+source_of_vaccine_information,DOC,Documented
+source_of_vaccine_information,SRP,Self reported
+source_of_vaccine_information,NA,Not Applicable
+chronic_conditions,ALL,Allergies
+chronic_conditions,ASM,Asthma
+chronic_conditions,CAN,Cancer
+chronic_conditions,CDV,Cardiovascular disease 
+chronic_conditions,DER,Dermatologic disorder 
+chronic_conditions,DGS,Digestive System disease 
+chronic_conditions,END,Endocrine Metabolic disorder
+chronic_conditions,HEM,Hematological disease 
+chronic_conditions,HPT,Hepatobiliary disease 
+chronic_conditions,IMS,Immunosuppression
+chronic_conditions,MSK,Musculoskeletal disorder 
+chronic_conditions,NRL,Neurologic disorder 
+chronic_conditions,OBS,Obesity
+chronic_conditions,PNC,Pancreatic disease 
+chronic_conditions,RSP,Respiratory disease 
+chronic_conditions,URO,Urogenital disease 
+education,ILL,Illiterate
+education,ESS,Some elementary school
+education,ESC,Completed elementary school
+education,ESN,Elementary education not specified
+education,HSS,Some high school
+education,HSC,Completed high school
+education,HSN,High school education not specified
+education,HES,Some higher education
+education,HEC,Completed higher education
+education,HEN,Higher education not specified
+education,TSS,Some technical school
+education,TSC,Completed technical school
+education,TSN,Technical education not specified

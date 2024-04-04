@@ -1,0 +1,4 @@
+pathogen_test_interpretation,P,Positive
+pathogen_test_interpretation,N,Negative
+pathogen_test_interpretation,U,Unknown or inconclusive
+pathogen_test_interpretation,NA,Not Applicable
