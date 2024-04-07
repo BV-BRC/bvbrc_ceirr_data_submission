@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #======================================================================
-# convert_data.pl -t [human/animal/seroloy/viral]
+# convert_ceirr_data.pl -f file -t [human/human-sh/animal/seroloy/viral] -n number_of_data
 #======================================================================
 use strict;
 use Data::Dumper;
@@ -17,7 +17,7 @@ use Bio::BVBRC::CEIRR::Config;
 
 sub usage{
   my $str = <<STR;
-Usage: convert_data.pl -f file -t type[human/animal/seroloy/viral] -n number_of_data
+Usage: convert_ceirr_data.pl -f file -t type[human/human-sh/animal/seroloy/viral] -n number_of_data
 STR
 
   print STDERR $str;
@@ -117,7 +117,6 @@ if ( -e "${processed_file}" ){
       if( $count==1 ){
         $entry=~s/ *\/ */_/g;
         $entry=~s/ +/_/g;
-
         @attribs = $csv->fields(); 
 
         for (my $i=0; $i<scalar @attribs; $i++){
@@ -145,6 +144,7 @@ if ( -e "${processed_file}" ){
         for (my $i=0; $i<scalar @attribs; $i++){
           if ( lc $attribs[$i] ne "row" ) {
             # skip if value is null or na
+	    $values[$i]  =~ s/\"//g;
             my $value_check = $values[$i];
             $value_check =~ s/^ *| *$//g;
             $value_check =~ s/  */ /g;
@@ -157,12 +157,8 @@ if ( -e "${processed_file}" ){
        
             my $new_values; 
             if ( $map{lc $attribs[$i]}->{'role'} ){
-              $new_values = lookup($type, $solr[$i], "$values[$i]");
-              if($map{lc $attribs[$i]}->{'role'} eq "Influenza"){
-                push @{$record->{$solr[$i]}}, "$new_values";
-              }else{
-                push @{$record->{$solr[$i]}}, $map{lc $attribs[$i]}->{'role'}.":"."$new_values";
-              }
+              $new_values = lookup($solr[$i], "$values[$i]");
+              push @{$record->{$solr[$i]}}, $map{lc $attribs[$i]}->{'role'}.":"."$new_values";
             }else{
               if (lc $attribs[$i] eq "collection_date" || lc $attribs[$i] eq "submission_date" || lc $attribs[$i] eq "embargo_end_date" ){
                 if ($values[$i] and $values[$i] =~ /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$/){
@@ -170,27 +166,36 @@ if ( -e "${processed_file}" ){
                    $values[$i] = '';
                 }
               }
-              if ($type =~ /human/ && lc $attribs[$i] eq "host_group" && $values[$i] eq "human"){
-                $record->{host_group}= "Human";
+	      next if ( !$values[$i] );
+
+              if ($type =~ /human/ && lc $attribs[$i] eq "host_group"){
+                $record->{host_group} = "Human";
+		if ( $type eq "human-sh" ){
+                   $record->{host_group} = "Human Southern Hemisphere";
+                }
                 $record->{host_species} = "Homo sapiens";
                 $record->{host_common_name} = "Human";
+              }elsif ($type eq 'animal' && lc $attribs[$i] eq "host_group"){
+                $record->{host_group} = "Animal";
               }else{
                 if ( $map{lc $attribs[$i]}->{'flag'} eq "Y" ){
                   my @arr;
                   if (lc $attribs[$i] eq "taxon_lineage_ids"){
                     @arr = split /\s/, $values[$i];
+		  }elsif ( $solr[$i] eq "host_race" ){
+		    @arr = $values[$i];
                   }else{
                     @arr = split /,/, $values[$i];
                   }
                   foreach my $av (@arr){
                     $av =~ s/^\s+//g;
                     $av =~ s/\s+$//g;
-                    push @{$record->{$solr[$i]}},$av;
+                    push @{$record->{$solr[$i]}},lookup($solr[$i], "$av");
                   }
                 }else{
                   #Ignore collection_latitude and collection_longitude if NA, since SOLR accepts only number
                   if (not ((lc $attribs[$i] eq "collection_latitude" or lc $attribs[$i] eq "collection_longitude") and $values[$i] eq "NA")) {
-                    $new_values = lookup($type, $solr[$i], "$values[$i]");
+                    $new_values = lookup($solr[$i], "$values[$i]");
                     $record->{$solr[$i]} = $new_values;
 
                     #Add geographic_group
@@ -262,13 +267,15 @@ print $out_file;
 1;
 
 sub lookup {
-   my ($type,$attr,$data) = @_;
-   
+   my ($attr,$data) = @_;
+
    my %common = ( 'Y'   => 'Yes',
      'N'   => 'No',
      'NON' => 'None',
      'U'   => 'Unknown',
      'NA'  => 'Not Applicable',
+     'P'   => 'Positive',
+     'N'   => 'Negative',
    );
 
    my $new_v; 
@@ -278,6 +285,9 @@ sub lookup {
       }else{
          $new_v = $data.",";
       }
+   }elsif($attr eq "host_common_name"){
+     $data =~ s/(\S+)/\u\L$1/g;
+     $new_v = $data.",";
    }elsif($attr eq "host_age" ){
       my %age = ( 'A'   => 'Adult',
                   'ADL' => 'Adult',
@@ -307,5 +317,6 @@ sub lookup {
       }
    } 
    chop $new_v;
+   $new_v =~ s/\"//g;
    return $new_v;
 }

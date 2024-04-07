@@ -16,7 +16,7 @@ use Bio::BVBRC::CEIRR::Config;
 
 sub usage{
   my $str = <<STR;
-Usage: process_data.pl -f file -t type[human,animal,serology,viral] -u user_file
+Usage: process_data.pl -f file -t type[human,human-sh,animal,serology,viral] -u user_file
 STR
 
   print STDERR $str;
@@ -90,9 +90,9 @@ my @new_header = @headers;
 push(@new_header, ("Create_Date", "File_Name"));
 
 if($type =~ /human/){
-  push(@new_header, ("Host_Group", "Collection_Date", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
+  push(@new_header, ("Antiviral_Treatment_Type", "Vasoactive_Treatment_Type","Host_Group", "Collection_Date", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
 }elsif($type eq "animal"){
-  push(@new_header, ("Host_Group", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
+  push(@new_header, ("Antiviral_Treatment_Type", "Vasoactive_Treatment_Type","Host_Group", "TAXON_ID", "Influenza_Type", "Taxon_Lineage_IDs"));
 }else{
   push(@new_header, ("Source_Type", "Host_Group", "Host_Identifier", "Host_Age", "Host_Common_Name", "Host_Health", "Host_Sex", "Host_Species", "Influenza_Type", "Collection_City", "Collection_State", "Collection_Country", "Collection_Date"));
 }
@@ -106,13 +106,13 @@ for( my $s = 1; $s < $row_size; $s++ ){
 
   my $dcode = $hash_data{'contributing_institution'}->{$s};
   my $species = $hash_data{'host_species'}->{$s};
-  my $taxon_id = getTaxonIDByName($species);
+  my $taxon_id;
   my $sample_id = $hash_data{'sample_identifier'}->{$s};
  
   my $strain  =  uc $hash_data{'strain_name'}->{$s};
   my $subtype =  uc $hash_data{'influenza_subtype'}->{$s};
 
-  my $ftype = "Influenza virus";
+  my $ftype = "unidentified influenza virus";
   if($strain){
     if($strain eq "FLU A" || $strain =~ /^A[\/w+]/){
       $ftype = "Influenza A virus"; 
@@ -183,8 +183,19 @@ for( my $s = 1; $s < $row_size; $s++ ){
   my $st = $hash_data{'influenza_subtype'}->{$s}; 
   my @sts= split (',',$st);
 
+  # added to split Sars-Covid-2 for  Southern Hemisphere
+  # SARS-CoV-2_Test_Type, SARS-CoV-2_Test_Result, SARS-CoV-2_Test_Interpretation
+  my $sctt  = $hash_data{'sars-cov-2_test_type'}->{$s};
+  my @sctts = split (',', $sctt);
+  my $sctr  = $hash_data{'sars-cov-2_test_result'}->{$s};
+  my @sctrs = split (',', $sctr);
+  my $scti  = $hash_data{'sars-cov-2_test_interpretation'}->{$s};
+  my @sctis = split (',', $scti);
+
   my $j = 0;
   my $newval;
+  my $antiviral;  #added for treatment_type
+  my $vasoactive; #added for treatment_type
   foreach my $val (@lines){
     my $header_value = lc $headers[$j];
 
@@ -292,6 +303,25 @@ for( my $s = 1; $s < $row_size; $s++ ){
         $nval = $val;
       }
     }
+    # added for treatment_type
+    if ( lc $headers[$j] eq "antiviral_treatment" ){
+       my @ant = split /,/, $nval;
+       my @new;
+       foreach my $v (@ant){
+          push @new, "Antiviral";
+       }
+       $antiviral = join(',',@new);
+       $antiviral = '"'.$antiviral.'"';
+    }
+    if ( lc $headers[$j] eq "vasoactive_treatment" ){
+       my @vas = split /,/, $nval;
+       my @new;
+       foreach my $v (@vas){
+          push @new, "Vasoactive";
+       }
+       $vasoactive = join(',',@new);
+       $vasoactive = '"'.$vasoactive.'"';
+    }
     if ( $nval =~ /,/) {
       $newval .= '"'.$nval.'"'.$delimiter;
     } else {
@@ -303,7 +333,8 @@ for( my $s = 1; $s < $row_size; $s++ ){
 
   chop $newval;
 
-  my $size = @tts; 
+  my $size1 = @tts;
+  my $size2 = @sctts; # added for sars-cov-2
   my @newlines;
   if ( $csv->parse($newval)) {
     @newlines = $csv->fields();
@@ -311,8 +342,8 @@ for( my $s = 1; $s < $row_size; $s++ ){
     die "New line could not be parsed: $newval\n"
   }
 
-  if($size){ 
-    for(my $i = 0; $i < $size; $i++){
+  if($size1){
+    for(my $i = 0; $i < $size1; $i++){
       my @new_line = ();
       my $j = 0;
       foreach my $nval (@newlines){
@@ -328,6 +359,9 @@ for( my $s = 1; $s < $row_size; $s++ ){
         } elsif ( $header_name eq "influenza_subtype"){
           $nval = $sts[$i];
         }
+        if ( lc ($headers[$j]) =~ /^sars-cov-2_test_[type|result|interpretation]/ ){
+          $nval = "";
+        }
         #if ( $nval =~ /,/ and $nval !~ /^"/){
         #  $nval = '"'.$nval.'"';
         #}
@@ -340,9 +374,63 @@ for( my $s = 1; $s < $row_size; $s++ ){
       push(@new_line, ($cdate, $file_name));
 
       if($type =~ /human/){
-        push(@new_line, ($type, $hash_data{'collection_date'}->{$s}, $taxon_id, $ftype, $taxidlineage));
+        push(@new_line, ($antiviral, $vasoactive, $type, $hash_data{'collection_date'}->{$s}, $taxon_id, $ftype, $taxidlineage));
       }elsif($type eq "animal"){
-        push(@new_line, ($type, $taxon_id, $ftype, $taxidlineage));
+        push(@new_line, ($antiviral, $vasoactive, $type, $taxon_id, $ftype, $taxidlineage));
+      }else{
+        #added Host_Group Host_Identifier Host_Age Host_Common_Name Host_Health Host_Sex Host_Species Influenza_Type Collection_City Collection_State  Collection_Country  Collection_Date
+        my @res = $api->query('surveillance', ['eq', 'sample_identifier', $hash_data{'sample_identifier'}->{$s}]);
+        my %surv;
+        if(scalar @res > 0){
+          my $res_obj = $res[0];
+          while (my ($k, $v) = each %$res_obj){
+            $surv{$k} = $v;
+          }
+        }else{
+          print STDERR "No sample found for $hash_data{'sample_identifier'}->{$s}\n";
+        }
+        push(@new_line, ($type, $surv{host_group}, $surv{host_identifier}, $surv{host_age}, $surv{host_common_name}, $surv{host_health}, $surv{host_sex}, $surv{host_species}, $surv{influenza_type}, $surv{collection_city}, $surv{collection_state}, $surv{collection_country}, $surv{collection_date}));
+      }
+      $csv->print($processed_file, \@new_line);
+
+      $processed_sample_count++;
+    }
+  }
+
+  # added for sars-cov-2
+  if($size2){
+    my $taxon_id = "2697049";
+    my $ftype = "SARS-CoV-2";
+    my $taxidlineage  = getTaxonLineageById($taxon_id);
+
+    for(my $i = 0; $i < $size2; $i++){
+      my @new_line = ();
+      my $j = 0;
+      foreach my $nval (@newlines){
+        my $header = lc $headers[$j];
+        if ( $header eq "sars-cov-2_test_type"){
+           $nval = $sctts[$i];
+        } elsif ( $header eq "sars-cov-2_test_result"){
+           $nval = $sctrs[$i];
+        } elsif ( $header eq "sars-cov-2_test_interpretation"){
+           $nval = $sctis[$i];
+        }
+        print STDERR "HEADER: $header\n";
+        if ( $header =~ /^influenza_test_(type|result|interpretation)$/ ){
+           $nval ="";
+        }
+        push(@new_line, ($nval));
+        $j++;
+      }
+
+      #Push create date and file name for additional_metadata
+      my $file_name = basename($original_file);
+      push(@new_line, ($cdate, $file_name));
+
+      if($type =~ /human/){
+        push(@new_line, ($antiviral, $vasoactive, $type, $hash_data{'collection_date'}->{$s}, $taxon_id, $ftype, $taxidlineage));
+      }elsif($type eq "animal"){
+        push(@new_line, ($antiviral, $vasoactive, $type, $taxon_id, $ftype, $taxidlineage));
       }else{
         #added Host_Group Host_Identifier Host_Age Host_Common_Name Host_Health Host_Sex Host_Species Influenza_Type Collection_City Collection_State  Collection_Country  Collection_Date
         my @res = $api->query('surveillance', ['eq', 'sample_identifier', $hash_data{'sample_identifier'}->{$s}]);

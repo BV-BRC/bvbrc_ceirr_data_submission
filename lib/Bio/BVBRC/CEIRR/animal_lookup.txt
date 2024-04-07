@@ -1,0 +1,70 @@
+sample_material,AIR,Air
+sample_material,BAL,Bronchoalveolar lavage
+sample_material,BLO,Blood
+sample_material,CCF,Combined cloacal and fecal
+sample_material,CCO,Combined cloacal and oral-pharyngeal 
+sample_material,CCT,Combined cloacal and tracheal
+sample_material,CLO,Cloacal
+sample_material,FEC,Feces
+sample_material,LLF,Lung lavage fluid
+sample_material,LUN,Lungs
+sample_material,NAL,Nasal lavage
+sample_material,NAS,Nasal swab
+sample_material,NTS,Combined nasal throat swab
+sample_material,ORP,Oral-pharyngeal
+sample_material,OTT,Other tissue
+sample_material,PLS,Plasma
+sample_material,RCS,Rectal swab
+sample_material,SER,Serum
+sample_material,SLU,Slurry
+sample_material,SOI,Soil
+sample_material,SPU,Sputum
+sample_material,TFB,Tissue from brain
+sample_material,TFT,Tissue from trachea
+sample_material,TRS,Tracheal swab
+sample_material,WAT,Water
+sample_material,U,Unknown
+sample_transport_medium,ETH,Ethanol
+sample_transport_medium,GUA,Guanidine
+sample_transport_medium,SER,Serum
+sample_transport_medium,VTM,Viral transport medium
+sample_transport_medium,U,Unknown
+host_capture_status,ABT,Abattoir
+host_capture_status,ACT,Active surveillance
+host_capture_status,FRM,Farm sample
+host_capture_status,HUN,Opportunistically sampled
+host_capture_status,MRK,Market sample
+host_capture_status,OBK,Sample collected in response to outbreak
+host_capture_status,PET,Sample obtained from a pet
+host_capture_status,SEH,Semi-enclosed housing
+host_capture_status,ZOO,Sample obtained from a zoo
+host_capture_status,U,Unknown
+host_health,DED,Dead
+host_health,HLT,Healthy
+host_health,SIC,Sick
+host_health,U,Unknown
+host_natural_state,CPW,Captive wild animals
+host_natural_state,DMF,Domestic feral
+host_natural_state,DOM,Domestic Indisputably
+host_natural_state,WLD,Wild indisputably
+host_natural_state,U,Unknown
+host_habitat,FRF,Farm free-range
+host_habitat,FRI,Farm indoor
+host_habitat,MAR,Live market
+host_habitat,MIG,Migratory
+host_habitat,RES,Resident
+host_habitat,SEH,Semi-enclosed housing
+host_habitat,U,Unknown
+host_sex,M,Male
+host_sex,F,Female
+host_sex,U,Unknown
+host_age,ADL,Adult
+host_age,JUV,Juvenile
+host_age,PUP,Pup
+host_age,SAD,Subadult
+host_age,WNL,Weanling
+host_age,U,Unknown/undetermined
+pathogen_test_interpretation,P,Positive
+pathogen_test_interpretation,N,Negative
+pathogen_test_interpretation,U,Unknown or inconclusive
+pathogen_test_interpretation,NA,Not Applicable
