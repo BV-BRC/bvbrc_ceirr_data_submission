@@ -415,7 +415,6 @@ for( my $s = 1; $s < $row_size; $s++ ){
         } elsif ( $header eq "sars-cov-2_test_interpretation"){
            $nval = $sctis[$i];
         }
-        print STDERR "HEADER: $header\n";
         if ( $header =~ /^influenza_test_(type|result|interpretation)$/ ){
            $nval ="";
         }
