@@ -533,10 +533,10 @@ sub validate_value{
          } 
       }
    }
-   ## Subject_Unique_Identifier
+   ## Subject_Identifier
    ## Allowed characters include alphanumeric, hyphen, and underscore: a-z, A-Z, 0-9, -, _
    ## Maximum allowed length: 50 characters
-   if ( $header =~ m/subject_unique_identifier/ ){
+   if ( $header =~ m/subject_identifier/ ){
       if ( $val_len > 50 ){
          #SERVICE#print STDERR "  invalid data entry: $dval (maximum length: 30 characters)\n";
          $check = "Invalid: Value length is $val_len. Maximum allowed length is 50 characters (Error_70_INVALID_FIELD_LENGTH)";
