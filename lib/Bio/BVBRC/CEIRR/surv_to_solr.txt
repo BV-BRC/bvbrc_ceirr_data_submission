@@ -34,7 +34,7 @@ Sample Tests,Influenza_Test_Type,pathogen_test_type,,Y
 ,Influenza_Type,pathogen_type,,N
 ,Genbank_Accession_Numbers,sequence_accession,,Y
 ,Influenza_Subtype,subtype,,N
-Host Info,Subject_Unique_Identifier,host_identifier,,N
+Host Info,Subject_Identifier,host_identifier,,N
 ,Host_Identifier,host_identifier,,N
 ,Host_ID_Type,host_id_type,,N
 ,Host_Species,host_species,,N
