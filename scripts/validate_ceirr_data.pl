@@ -1661,17 +1661,7 @@ sub validate_value{
          #SERVICE#print STDERR "  invalid data entry: $dval (maximum length: 2000 characters)\n";
          $check = "Invalid: Value length is $val_len. Maximum allowed length is 2000 characters (Error_70_INVALID_FIELD_LENGTH)";
       }else{
-         if ( $vocab{'comments'}->{lc $dval} ){
-            #SERVICE#print STDERR " passed\n";
-            $check = $vocab{'comments'}->{lc $dval};
-         }else{
-            if ( $dval =~ /^\w+/ ){
-               #SERVICE#print STDERR " passed\n";
-            }else{
-               #SERVICE#print STDERR "  invalid data entry: $dval\n";
-               $check = "Invalid: Please correct the value based on iDPCC data standards. (Error_1_INVALID_VALUE)";
-            }
-         }
+         #SERVICE#print STDERR " passed\n";
       }
    }
    ## Collection_Latitude, Collection_Longitude
