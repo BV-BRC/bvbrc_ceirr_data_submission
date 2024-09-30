@@ -1772,6 +1772,10 @@ sub validate_value{
             }elsif ( uc $parse_v eq "WLD" and uc($dval) =~ /MIG|RES|U/ ){
                #SERVICE#print STDERR " passed\n";
                $check = uc $dval;
+            }elsif ( uc $parse_v eq "CPW" and uc($dval) =~ /MAR|RES|U/ ){
+               $check = uc $dval;
+            }elsif ( uc $parse_v eq "DMF" and uc $dval eq "U" ){
+               $check = uc $dval;
             }else{
                #SERVICE#print STDERR "  invalid data entry: $dval\n";
                $check = "Invalid: If Host_Natural_State is WLD; then Host_Habitat must be MIG/RES/U/OTH-text. If Host_Natural_State is DOM; then Host_Habitat must be FRF/FRI/SEH/MAR/U/OTH-text. If Host_Natural_State is U; then Host_Habitat should be U. (Error_71_HOST_NAT_STATE_WLD/Error_72_HOST_NAT_STATE_DOM/Error_73_HOST_NAT_STATE_U)";
