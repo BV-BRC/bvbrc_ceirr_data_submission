@@ -1595,12 +1595,7 @@ sub validate_value{
                $check = $vocab{'packs_per_day_for_how_many_years'}->{lc $dval};
             }
          }else{
-            if ( $dval =~ m/^(\d+|(\d+\.?\d+)) (pack|pk)\/day for (\d+|(\d+\.?\d+)) year/i ){
-               #SERVICE#print STDERR " passed\n";
-            }else{
-               #SERVICE#print STDERR "  invalid data entry: $dval\n";
-               $check = "Invalid: Please correct the value based on iDPCC data standards. (Error_1_INVALID_VALUE)";
-            }
+            #SERVICE#print STDERR " passed\n";
          }
       }
    }
