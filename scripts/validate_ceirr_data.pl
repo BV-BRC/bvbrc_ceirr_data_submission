@@ -763,9 +763,12 @@ sub validate_value{
                   if ( uc $re eq "NA"){
                      #SERVICE#print STDERR " passed\n";
                      $check .= "NA,";
+                  }elsif ( uc $re eq "U"){
+                     #SERVICE#print STDERR " passed\n";
+                     $check .= "U,";
                   }else{
                      #SERVICE#print STDERR "  invalid data entry: $rt (test type entry: NA)\n";
-                     $check .= "Invalid: $field value must be NA if test type is NA (Error_1_INVALID_VALUE),";
+                     $check .= "Invalid: $field value must be NA or U if test type is NA (Error_1_INVALID_VALUE),";
                   }
                }else{
                   #SERVICE#print STDERR " passed\n";
