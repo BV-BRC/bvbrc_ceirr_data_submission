@@ -12,6 +12,8 @@ crested goshawk|Accipiter trivirgatus|Accipitriformes|Accipitridae|Accipiter|tri
 golden eagle|Aquila chrysaetos|Accipitriformes|Accipitridae|Aquila|chrysaetos|175407|Avian
 eastern imperial eagle|Aquila heliaca|Accipitriformes|Accipitridae|Aquila|heliaca|175413|Avian
 common buzzard|Buteo buteo|Accipitriformes|Accipitridae|Buteo|buteo|175383|Avian
+red-tailed hawk|Buteo jamaicensis|Accipitriformes|Accipitridae|Buteo|jamaicensis|175350|Avian
+red-shouldered hawk|Buteo lineatus|Accipitriformes|Accipitridae|Buteo|lineatus|175359|Avian
 broad-winged hawk|Buteo platypterus|Accipitriformes|Accipitridae|Buteo|platypterus|175365|Avian
 western marsh harrier|Circus aeruginosus|Accipitriformes|Accipitridae|Circus|aeruginosus|559297|Avian
 hen harrier|Circus cyaneus|Accipitriformes|Accipitridae|Circus|cyaneus|175430|Avian
@@ -185,6 +187,7 @@ spectacled eider|Somateria fischeri|Anseriformes|Anatidae|Somateria|fischeri|175
 common eider|Somateria mollissima|Anseriformes|Anatidae|Somateria|mollissima|175155|Avian
 king eider|Somateria spectabilis|Anseriformes|Anatidae|Somateria|spectabilis|175160|Avian
 eider|Somateria sp.|Anseriformes|Anatidae|Somateria|Unknown|175154|Avian
+blue-winged teal|Spatula discors|Anseriformes|Anatidae|Spatula|discors|1192577|Avian
 freckled duck|Stictonetta naevosa|Anseriformes|Anatidae|Stictonetta|naevosa|175230|Avian
 ruddy shelduck|Tadorna ferruginea|Anseriformes|Anatidae|Tadorna|ferruginea|175056|Avian
 common shelduck|Tadorna tadorna|Anseriformes|Anatidae|Tadorna|tadorna|175055|Avian
@@ -198,28 +201,30 @@ little swift|Apus affinis|Apodiformes|Apodidae|Apus|affinis|555014|Avian
 common swift|Apus apus|Apodiformes|Apodidae|Apus|apus|178010|Avian
 house swift|Apus nipalensis|Apodiformes|Apodidae|Apus|nipalensis|555015|Avian
 short-tailed swift|Chaetura brachyura|Apodiformes|Apodidae|Chaetura|brachyura|178005|Avian
+chimney swift|Chaetura pelagica|Apodiformes|Apodidae|Chaetura|pelagica|178001|Avian
 Asian palm swift|Cypsiurus balasiensis|Apodiformes|Apodidae|Cypsiurus|balasiensis|555002|Avian
+ruby-throated hummingbird|Archilochus colubris|Apodiformes|Trochilidae|Archilochus|colubris|178032|Avian
 straight-billed hermit|Phaethornis bourcieri|Apodiformes|Trochilidae|Phaethornis|bourcieri|555037|Avian
 grey-chinned hermit|Phaethornis griseogularis|Apodiformes|Trochilidae|Phaethornis|griseogularis|555048|Avian
 hummingbird|Trochilidae|Apodiformes|Trochilidae|Unknown|Unknown|178028|Avian
-cow|Bos taurus|Artiodactyla|Bovidae|Bos|taurus|183838|Non-human_mammal
-water buffalo|Bubalus bubalis|Artiodactyla|Bovidae|Bubalus|bubalis|552476|Non-human_mammal
-goat|Capra hircus|Artiodactyla|Bovidae|Capra|hircus|180715|Non-human_mammal
-boer goat|Capra hircus aegagrus|Artiodactyla|Bovidae|Capra|hircus aegagrus|898774|Non-human_mammal
-sheep|Ovis aries|Artiodactyla|Bovidae|Ovis|aries|552475|Non-human_mammal
-cattle|Bovidae|Artiodactyla|Bovidae|Unknown|Unknown|180704|Non-human_mammal
-small ruminant|Bovidae|Artiodactyla|Bovidae|Unknown|Unknown|180704|Non-human_mammal
-Bactrian camel|Camelus bactrianus|Artiodactyla|Camelidae|Camelus|bactrianus|625026|Non-human_mammal
-dromedary camel|Camelus dromedarius|Artiodactyla|Camelidae|Camelus|dromedarius|625027|Non-human_mammal
-alpaca|Vicugna pacos|Artiodactyla|Camelidae|Vicugna|pacos|898279|Non-human_mammal
-white-tailed deer|Odocoileus virginianus|Artiodactyla|Cervidae|Odocoileus|virginianus|180699|Non-human_mammal
-Visayan warty pig|Sus cebifrons|Artiodactyla|Suidae|Sus|cebifrons|625014|Non-human_mammal
-pig|Sus scrofa|Artiodactyla|Suidae|Sus|scrofa|NA|Non-human_mammal
-swine|Sus scrofa|Artiodactyla|Suidae|Sus|scrofa|NA|Non-human_mammal
-wild boar|Sus scrofa|Artiodactyla|Suidae|Sus|scrofa|180722|Non-human_mammal
-swine|Sus scrofa domesticus|Artiodactyla|Suidae|Sus|scrofa domesticus|NA|Non-human_mammal
-pig|Sus scrofa scrofa|Artiodactyla|Suidae|Sus|scrofa scrofa|898310|Non-human_mammal
-swine|Sus scrofa scrofa|Artiodactyla|Suidae|Sus|scrofa scrofa|898310|Non-human_mammal
+cow|Bos taurus|Artiodactyla|Bovidae|Bos|taurus|183838|Non-human Mammal
+water buffalo|Bubalus bubalis|Artiodactyla|Bovidae|Bubalus|bubalis|552476|Non-human Mammal
+goat|Capra hircus|Artiodactyla|Bovidae|Capra|hircus|180715|Non-human Mammal
+boer goat|Capra hircus aegagrus|Artiodactyla|Bovidae|Capra|hircus aegagrus|898774|Non-human Mammal
+sheep|Ovis aries|Artiodactyla|Bovidae|Ovis|aries|552475|Non-human Mammal
+cattle|Bovidae|Artiodactyla|Bovidae|Unknown|Unknown|180704|Non-human Mammal
+small ruminant|Bovidae|Artiodactyla|Bovidae|Unknown|Unknown|180704|Non-human Mammal
+Bactrian camel|Camelus bactrianus|Artiodactyla|Camelidae|Camelus|bactrianus|625026|Non-human Mammal
+dromedary camel|Camelus dromedarius|Artiodactyla|Camelidae|Camelus|dromedarius|625027|Non-human Mammal
+alpaca|Vicugna pacos|Artiodactyla|Camelidae|Vicugna|pacos|898279|Non-human Mammal
+white-tailed deer|Odocoileus virginianus|Artiodactyla|Cervidae|Odocoileus|virginianus|180699|Non-human Mammal
+Visayan warty pig|Sus cebifrons|Artiodactyla|Suidae|Sus|cebifrons|625014|Non-human Mammal
+pig|Sus scrofa|Artiodactyla|Suidae|Sus|scrofa|NA|Non-human Mammal
+swine|Sus scrofa|Artiodactyla|Suidae|Sus|scrofa|NA|Non-human Mammal
+wild boar|Sus scrofa|Artiodactyla|Suidae|Sus|scrofa|180722|Non-human Mammal
+swine|Sus scrofa domesticus|Artiodactyla|Suidae|Sus|scrofa domesticus|NA|Non-human Mammal
+pig|Sus scrofa scrofa|Artiodactyla|Suidae|Sus|scrofa scrofa|898310|Non-human Mammal
+swine|Sus scrofa scrofa|Artiodactyla|Suidae|Sus|scrofa scrofa|898310|Non-human Mammal
 black guillemot|Cepphus grylle|Aves|Alcidae|Cepphus|grylle|176985|Avian
 bird|Aves|Aves|Unknown|Unknown|Unknown|174371|Avian
 common hoopoe|Upupa epops|Bucerotiformes|Upupidae|Upupa|epops|178117|Avian
@@ -227,82 +232,89 @@ hoopoe|Upupa epops|Bucerotiformes|Upupidae|Upupa|epops|178117|Avian
 European nightjar|Caprimulgus europaeus|Caprimulgiformes|Caprimulgidae|Caprimulgus|europaeus|555569|Avian
 gray nightjar|Caprimulgus indicus|Caprimulgiformes|Caprimulgidae|Caprimulgus|indicus|177964|Avian
 large-tailed nightjar|Caprimulgus macrurus|Caprimulgiformes|Caprimulgidae|Caprimulgus|macrurus|555578|Avian
+common nighthawk|Chordeiles minor|Caprimulgiformes|Caprimulgidae|Chordeiles|minor|177979|Avian
 great eared nightjar|Eurostopodus macrotis|Caprimulgiformes|Caprimulgidae|Eurostopodus|macrotis|555537|Avian
-red panda|Ailurus fulgens|Carnivora|Ailuridae|Ailurus|fulgens|621846|Non-human_mammal
-coyote|Canis latrans|Carnivora|Canidae|Canis|latrans|180559|Non-human_mammal
-dog|Canis lupus familiaris|Carnivora|Canidae|Canis|lupus familiaris|726821|Non-human_mammal
-gray fox|Urocyon cinereoargenteus|Carnivora|Canidae|Urocyon|cinereoargenteus|180609|Non-human_mammal
-red fox|Vulpes vulpes|Carnivora|Canidae|Vulpes|vulpes|180604|Non-human_mammal
-fennec fox|Vulpes zerda|Carnivora|Canidae|Vulpes|zerda|621865|Non-human_mammal
-cheetah|Acinonyx jubatus|Carnivora|Felidae|Acinonyx|jubatus|183813|Non-human_mammal
-cat|Felis catus|Carnivora|Felidae|Felis|catus|183798|Non-human_mammal
-serval|Leptailurus serval|Carnivora|Felidae|Leptailurus|serval|552766|Non-human_mammal
-bobcat|Lynx rufus|Carnivora|Felidae|Lynx|rufus|180582|Non-human_mammal
-lion|Panthera leo|Carnivora|Felidae|Panthera|leo|183803|Non-human_mammal
-leopard|Panthera pardus|Carnivora|Felidae|Panthera|pardus|183804|Non-human_mammal
-Malayan tiger|Panthera tigris tigris|Carnivora|Felidae|Panthera|tigris tigris|183806|Non-human_mammal
-mountain lion|Puma concolor|Carnivora|Felidae|Puma|concolor|552479|Non-human_mammal
-meerkat|Suricata suricatta|Carnivora|Herpestidae|Suricata|suricatta|621906|Non-human_mammal
-sea otter|Enhydra lutris|Carnivora|Mustelidae|Enhydra|lutris|180547|Non-human_mammal
-northern sea otter|Enhydra lutris kenyoni|Carnivora|Mustelidae|Enhydra|lutris kenyoni|622038|Non-human_mammal
-southern sea otter|Enhydra lutris nereis|Carnivora|Mustelidae|Enhydra|lutris nereis|202390|Non-human_mammal
-North American river otter|Lontra canadensis|Carnivora|Mustelidae|Lontra|canadensis|180549|Non-human_mammal
-black-footed ferret|Mustela nigripes|Carnivora|Mustelidae|Mustela|nigripes|180557|Non-human_mammal
-ferret|Mustela sp.|Carnivora|Mustelidae|Mustela|Unknown|180552|Non-human_mammal
-weasel|Mustela sp.|Carnivora|Mustelidae|Mustela|Unknown|180552|Non-human_mammal
-American mink|Mustela vison|Carnivora|Mustelidae|Mustela|vison|180553|Non-human_mammal
-fisher|Pekania pennanti|Carnivora|Mustelidae|Pekania|pennanti|1086061|Non-human_mammal
-mink|Mustelidae|Carnivora|Mustelidae|Unknown|Unknown|180545|Non-human_mammal
-otter|Mustelidae|Carnivora|Mustelidae|Unknown|Unknown|180545|Non-human_mammal
-Pacific walrus|Odobenus rosmarus divergens|Carnivora|Odobenidae|Odobenus|rosmarus divergens|622045|Non-human_mammal
-walrus|Odobenidae|Carnivora|Odobenidae|Unknown|Unknown|180637|Non-human_mammal
-Guadalupe fur seal|Arctocephalus townsendi|Carnivora|Otariidae|Arctocephalus|townsendi|180636|Non-human_mammal
-northern fur seal|Callorhinus ursinus|Carnivora|Otariidae|Callorhinus|ursinus|180627|Non-human_mammal
-Steller sea lion|Eumetopias jubatus|Carnivora|Otariidae|Eumetopias|jubatus|180625|Non-human_mammal
-South American sea lion|Otaria flavescens|Carnivora|Otariidae|Otaria|flavescens|180619|Non-human_mammal
-sea lion|Otariidae|Carnivora|Otariidae|Unknown|Unknown|180615|Non-human_mammal
-California sea lion|Zalophus californianus|Carnivora|Otariidae|Zalophus|californianus|180621|Non-human_mammal
-Galapagos sea lion|Zalophus wollebaeki|Carnivora|Otariidae|Zalophus|wollebaeki|622014|Non-human_mammal
-hooded seal|Cystophora cristata|Carnivora|Phocidae|Cystophora|cristata|180657|Non-human_mammal
-bearded seal|Erignathus barbatus|Carnivora|Phocidae|Erignathus|barbatus|180655|Non-human_mammal
-gray seal|Halichoerus grypus|Carnivora|Phocidae|Halichoerus|grypus|180653|Non-human_mammal
-ribbon seal|Histriophoca fasciata|Carnivora|Phocidae|Histriophoca|fasciata|622021|Non-human_mammal
-Weddell seal|Leptonychotes weddellii|Carnivora|Phocidae|Leptonychotes|weddellii|180669|Non-human_mammal
-northern elephant seal|Mirounga angustirostris|Carnivora|Phocidae|Mirounga|angustirostris|180672|Non-human_mammal
-southern elephant seal|Mirounga leonina|Carnivora|Phocidae|Mirounga|leonina|180671|Non-human_mammal
-Hawaiian monk seal|Monachus schauinslandi|Carnivora|Phocidae|Monachus|schauinslandi|180661|Non-human_mammal
-harp seal|Pagophilus groenlandicus|Carnivora|Phocidae|Pagophilus|groenlandicus|622022|Non-human_mammal
-spotted seal|Phoca largha|Carnivora|Phocidae|Phoca|largha|180642|Non-human_mammal
-harbor seal|Phoca vitulina|Carnivora|Phocidae|Phoca|vitulina|180649|Non-human_mammal
-Pacific harbor seal|Phoca vitulina richardii|Carnivora|Phocidae|Phoca|vitulina richardii|622092|Non-human_mammal
-ringed seal|Pusa hispida|Carnivora|Phocidae|Pusa|hispida|622018|Non-human_mammal
-seal|Phocidae|Carnivora|Phocidae|Unknown|Unknown|180640|Non-human_mammal
-raccoon|Procyon lotor|Carnivora|Procyonidae|Procyon|lotor|180575|Non-human_mammal
-carnivore|Carnivora|Carnivora|Unknown|Unknown|Unknown|180539|Non-human_mammal
-pinniped|Carnivora|Carnivora|Unknown|Unknown|Unknown|180539|Non-human_mammal
-sloth bear|Melursus ursinus|Carnivora|Ursidae|Melursus|ursinus|621848|Non-human_mammal
-black bear|Ursus americanus|Carnivora|Ursidae|Ursus|americanus|180544|Non-human_mammal
-civet|Paguma larvata|Carnivora|Viverridae|Paguma|larvata|621984|Non-human_mammal
-minke whale|Balaenoptera acutorostrata|Cetacea|Balaenopteridae|Balaenoptera|acutorostrata|180524|Non-human_mammal
-fin whale|Balaenoptera physalus|Cetacea|Balaenopteridae|Balaenoptera|physalus|180527|Non-human_mammal
-humpback whale|Megaptera novaeangliae|Cetacea|Balaenopteridae|Megaptera|novaeangliae|180530|Non-human_mammal
-short-beaked common dolphin|Delphinus delphis|Cetacea|Delphinidae|Delphinus|delphis|180438|Non-human_mammal
-dolphin|Delphinus sp.|Cetacea|Delphinidae|Delphinus|Unknown|180437|Non-human_mammal
-short-finned pilot whale|Globicephala macrorhynchus|Cetacea|Delphinidae|Globicephala|macrorhynchus|180466|Non-human_mammal
-long-finned pilot whale|Globicephala melas|Cetacea|Delphinidae|Globicephala|melas|552461|Non-human_mammal
-Atlantic white-sided dolphin|Lagenorhynchus acutus|Cetacea|Delphinidae|Lagenorhynchus|acutus|180443|Non-human_mammal
-northern right whale dolphin|Lissodelphis borealis|Cetacea|Delphinidae|Lissodelphis|borealis|180454|Non-human_mammal
-killer whale|Orcinus orca|Cetacea|Delphinidae|Orcinus|orca|180469|Non-human_mammal
-striped dolphin|Stenella coeruleoalba|Cetacea|Delphinidae|Stenella|coeruleoalba|180434|Non-human_mammal
-bottlenose dolphin|Tursiops truncatus|Cetacea|Delphinidae|Tursiops|truncatus|180426|Non-human_mammal
-dolphin|Delphinidae|Cetacea|Delphinidae|Unknown|Unknown|180415|Non-human_mammal
-gray whale|Eschrichtius robustus|Cetacea|Eschrichtiidae|Eschrichtius|robustus|180521|Non-human_mammal
-North Atlantic beaked whale|Mesoplodon bidens|Cetacea|Hyperoodontidae|Mesoplodon|bidens|180515|Non-human_mammal
-dense-beaked whale|Mesoplodon densirostris|Cetacea|Hyperoodontidae|Mesoplodon|densirostris|180517|Non-human_mammal
-Beluga|Delphinapterus leucas|Cetacea|Monodontidae|Delphinapterus|leucas|180483|Non-human_mammal
-harbor porpoise|Phocoena phocoena|Cetacea|Phocoenidae|Phocoena|phocoena|180473|Non-human_mammal
-whale|Cetacea|Cetacea|Unknown|Unknown|Unknown|180403|Non-human_mammal
-Stejneger's beaked whale|Mesoplodon stejnegeri|Cetacea|Ziphiidae|Mesoplodon|stejnegeri|180514|Non-human_mammal
+red panda|Ailurus fulgens|Carnivora|Ailuridae|Ailurus|fulgens|621846|Non-human Mammal
+coyote|Canis latrans|Carnivora|Canidae|Canis|latrans|180559|Non-human Mammal
+eastern coyote|Canis latrans x Canis lycaon|Carnivora|Canidae|Canis|latrans|NA|Non-human Mammal
+dog|Canis lupus familiaris|Carnivora|Canidae|Canis|lupus familiaris|726821|Non-human Mammal
+gray fox|Urocyon cinereoargenteus|Carnivora|Canidae|Urocyon|cinereoargenteus|180609|Non-human Mammal
+red fox|Vulpes vulpes|Carnivora|Canidae|Vulpes|vulpes|180604|Non-human Mammal
+fennec fox|Vulpes zerda|Carnivora|Canidae|Vulpes|zerda|621865|Non-human Mammal
+cheetah|Acinonyx jubatus|Carnivora|Felidae|Acinonyx|jubatus|183813|Non-human Mammal
+cat|Felis catus|Carnivora|Felidae|Felis|catus|183798|Non-human Mammal
+serval|Leptailurus serval|Carnivora|Felidae|Leptailurus|serval|552766|Non-human Mammal
+bobcat|Lynx rufus|Carnivora|Felidae|Lynx|rufus|180582|Non-human Mammal
+lion|Panthera leo|Carnivora|Felidae|Panthera|leo|183803|Non-human Mammal
+leopard|Panthera pardus|Carnivora|Felidae|Panthera|pardus|183804|Non-human Mammal
+Malayan tiger|Panthera tigris tigris|Carnivora|Felidae|Panthera|tigris tigris|183806|Non-human Mammal
+mountain lion|Puma concolor|Carnivora|Felidae|Puma|concolor|552479|Non-human Mammal
+meerkat|Suricata suricatta|Carnivora|Herpestidae|Suricata|suricatta|621906|Non-human Mammal
+striped skunk|Mephitis mephitis|Carnivora|Mephitidae|Mephitis|mephitis|180562|Non-human Mammal
+sea otter|Enhydra lutris|Carnivora|Mustelidae|Enhydra|lutris|180547|Non-human Mammal
+northern sea otter|Enhydra lutris kenyoni|Carnivora|Mustelidae|Enhydra|lutris kenyoni|622038|Non-human Mammal
+southern sea otter|Enhydra lutris nereis|Carnivora|Mustelidae|Enhydra|lutris nereis|202390|Non-human Mammal
+North American river otter|Lontra canadensis|Carnivora|Mustelidae|Lontra|canadensis|180549|Non-human Mammal
+marine otter|Lontra felina|Carnivora|Mustelidae|Lontra|felina|621913|Non-human Mammal
+southern river otter|Lontra provocax|Carnivora|Mustelidae|Lontra|provocax|621915|Non-human Mammal
+black-footed ferret|Mustela nigripes|Carnivora|Mustelidae|Mustela|nigripes|180557|Non-human Mammal
+ferret|Mustela sp.|Carnivora|Mustelidae|Mustela|Unknown|180552|Non-human Mammal
+weasel|Mustela sp.|Carnivora|Mustelidae|Mustela|Unknown|180552|Non-human Mammal
+American mink|Mustela vison|Carnivora|Mustelidae|Mustela|vison|180553|Non-human Mammal
+fisher|Pekania pennanti|Carnivora|Mustelidae|Pekania|pennanti|1086061|Non-human Mammal
+mink|Mustelidae|Carnivora|Mustelidae|Unknown|Unknown|180545|Non-human Mammal
+otter|Mustelidae|Carnivora|Mustelidae|Unknown|Unknown|180545|Non-human Mammal
+Pacific walrus|Odobenus rosmarus divergens|Carnivora|Odobenidae|Odobenus|rosmarus divergens|622045|Non-human Mammal
+walrus|Odobenidae|Carnivora|Odobenidae|Unknown|Unknown|180637|Non-human Mammal
+Guadalupe fur seal|Arctocephalus townsendi|Carnivora|Otariidae|Arctocephalus|townsendi|180636|Non-human Mammal
+northern fur seal|Callorhinus ursinus|Carnivora|Otariidae|Callorhinus|ursinus|180627|Non-human Mammal
+Steller sea lion|Eumetopias jubatus|Carnivora|Otariidae|Eumetopias|jubatus|180625|Non-human Mammal
+South American sea lion|Otaria flavescens|Carnivora|Otariidae|Otaria|flavescens|180619|Non-human Mammal
+sea lion|Otariidae|Carnivora|Otariidae|Unknown|Unknown|180615|Non-human Mammal
+California sea lion|Zalophus californianus|Carnivora|Otariidae|Zalophus|californianus|180621|Non-human Mammal
+Galapagos sea lion|Zalophus wollebaeki|Carnivora|Otariidae|Zalophus|wollebaeki|622014|Non-human Mammal
+hooded seal|Cystophora cristata|Carnivora|Phocidae|Cystophora|cristata|180657|Non-human Mammal
+bearded seal|Erignathus barbatus|Carnivora|Phocidae|Erignathus|barbatus|180655|Non-human Mammal
+gray seal|Halichoerus grypus|Carnivora|Phocidae|Halichoerus|grypus|180653|Non-human Mammal
+ribbon seal|Histriophoca fasciata|Carnivora|Phocidae|Histriophoca|fasciata|622021|Non-human Mammal
+Weddell seal|Leptonychotes weddellii|Carnivora|Phocidae|Leptonychotes|weddellii|180669|Non-human Mammal
+northern elephant seal|Mirounga angustirostris|Carnivora|Phocidae|Mirounga|angustirostris|180672|Non-human Mammal
+southern elephant seal|Mirounga leonina|Carnivora|Phocidae|Mirounga|leonina|180671|Non-human Mammal
+Hawaiian monk seal|Monachus schauinslandi|Carnivora|Phocidae|Monachus|schauinslandi|180661|Non-human Mammal
+harp seal|Pagophilus groenlandicus|Carnivora|Phocidae|Pagophilus|groenlandicus|622022|Non-human Mammal
+spotted seal|Phoca largha|Carnivora|Phocidae|Phoca|largha|180642|Non-human Mammal
+harbor seal|Phoca vitulina|Carnivora|Phocidae|Phoca|vitulina|180649|Non-human Mammal
+Pacific harbor seal|Phoca vitulina richardii|Carnivora|Phocidae|Phoca|vitulina richardii|622092|Non-human Mammal
+ringed seal|Pusa hispida|Carnivora|Phocidae|Pusa|hispida|622018|Non-human Mammal
+seal|Phocidae|Carnivora|Phocidae|Unknown|Unknown|180640|Non-human Mammal
+raccoon|Procyon lotor|Carnivora|Procyonidae|Procyon|lotor|180575|Non-human Mammal
+carnivore|Carnivora|Carnivora|Unknown|Unknown|Unknown|180539|Non-human Mammal
+pinniped|Carnivora|Carnivora|Unknown|Unknown|Unknown|180539|Non-human Mammal
+sloth bear|Melursus ursinus|Carnivora|Ursidae|Melursus|ursinus|621848|Non-human Mammal
+black bear|Ursus americanus|Carnivora|Ursidae|Ursus|americanus|180544|Non-human Mammal
+civet|Paguma larvata|Carnivora|Viverridae|Paguma|larvata|621984|Non-human Mammal
+minke whale|Balaenoptera acutorostrata|Cetacea|Balaenopteridae|Balaenoptera|acutorostrata|180524|Non-human Mammal
+fin whale|Balaenoptera physalus|Cetacea|Balaenopteridae|Balaenoptera|physalus|180527|Non-human Mammal
+humpback whale|Megaptera novaeangliae|Cetacea|Balaenopteridae|Megaptera|novaeangliae|180530|Non-human Mammal
+Chilean dolphin|Cephalorhynchus eutropia|Cetacea|Delphinidae|Cephalorhynchus|eutropia|180450|Non-human Mammal
+short-beaked common dolphin|Delphinus delphis|Cetacea|Delphinidae|Delphinus|delphis|180438|Non-human Mammal
+dolphin|Delphinus sp.|Cetacea|Delphinidae|Delphinus|Unknown|180437|Non-human Mammal
+short-finned pilot whale|Globicephala macrorhynchus|Cetacea|Delphinidae|Globicephala|macrorhynchus|180466|Non-human Mammal
+long-finned pilot whale|Globicephala melas|Cetacea|Delphinidae|Globicephala|melas|552461|Non-human Mammal
+Atlantic white-sided dolphin|Lagenorhynchus acutus|Cetacea|Delphinidae|Lagenorhynchus|acutus|180443|Non-human Mammal
+northern right whale dolphin|Lissodelphis borealis|Cetacea|Delphinidae|Lissodelphis|borealis|180454|Non-human Mammal
+killer whale|Orcinus orca|Cetacea|Delphinidae|Orcinus|orca|180469|Non-human Mammal
+striped dolphin|Stenella coeruleoalba|Cetacea|Delphinidae|Stenella|coeruleoalba|180434|Non-human Mammal
+bottlenose dolphin|Tursiops truncatus|Cetacea|Delphinidae|Tursiops|truncatus|180426|Non-human Mammal
+dolphin|Delphinidae|Cetacea|Delphinidae|Unknown|Unknown|180415|Non-human Mammal
+gray whale|Eschrichtius robustus|Cetacea|Eschrichtiidae|Eschrichtius|robustus|180521|Non-human Mammal
+North Atlantic beaked whale|Mesoplodon bidens|Cetacea|Hyperoodontidae|Mesoplodon|bidens|180515|Non-human Mammal
+dense-beaked whale|Mesoplodon densirostris|Cetacea|Hyperoodontidae|Mesoplodon|densirostris|180517|Non-human Mammal
+Beluga|Delphinapterus leucas|Cetacea|Monodontidae|Delphinapterus|leucas|180483|Non-human Mammal
+harbor porpoise|Phocoena phocoena|Cetacea|Phocoenidae|Phocoena|phocoena|180473|Non-human Mammal
+Burmeister's porpoise|Phocoena spinipinnis|Cetacea|Phocoenidae|Phocoena|spinipinnis|180476|Non-human Mammal
+whale|Cetacea|Cetacea|Unknown|Unknown|Unknown|180403|Non-human Mammal
+Stejneger's beaked whale|Mesoplodon stejnegeri|Cetacea|Ziphiidae|Mesoplodon|stejnegeri|180514|Non-human Mammal
 crested auklet|Aethia cristatella|Charadriiformes|Alcidae|Aethia|cristatella|177019|Avian
 least auklet|Aethia pusilla|Charadriiformes|Alcidae|Aethia|pusilla|177020|Avian
 razorbill|Alca torda|Charadriiformes|Alcidae|Alca|torda|176971|Avian
@@ -328,6 +340,7 @@ two-banded plover|Charadrius falklandicus|Charadriiformes|Charadriidae|Charadriu
 Forbes's plover|Charadrius forbesi|Charadriiformes|Charadriidae|Charadrius|forbesi|176531|Avian
 common ringed plover|Charadrius hiaticula|Charadriiformes|Charadriidae|Charadrius|hiaticula|176504|Avian
 greater sandplover|Charadrius leschenaultii|Charadriiformes|Charadriidae|Charadrius|leschenaultii|176532|Avian
+piping plover|Charadrius melodus|Charadriiformes|Charadriidae|Charadrius|melodus|176507|Avian
 lesser sand-plover|Charadrius mongolus|Charadriiformes|Charadriidae|Charadrius|mongolus|176514|Avian
 Eurasian dotterel|Charadrius morinellus|Charadriiformes|Charadriidae|Charadrius|morinellus|176545|Avian
 red-capped plover|Charadrius ruficapillus|Charadriiformes|Charadriidae|Charadrius|ruficapillus|176541|Avian
@@ -383,10 +396,12 @@ great black-headed gull|Ichthyaetus ichthyaetus|Charadriiformes|Laridae|Ichthyae
 Pallas's gull|Ichthyaetus ichthyaetus|Charadriiformes|Laridae|Ichthyaetus|ichthyaetus|824068|Avian
 Mediterranean gull|Ichthyaetus melanocephalus|Charadriiformes|Laridae|Ichthyaetus|melanocephalus|824070|Avian
 relict gull|Ichthyaetus relictus|Charadriiformes|Laridae|Ichthyaetus|relictus|824071|Avian
+Inca tern|Larosterna inca|Charadriiformes|Laridae|Larosterna|inca|176950|Avian
 European herring gull|Larus argentatus|Charadriiformes|Laridae|Larus|argentatus|176824|Avian
 herring gull|Larus argentatus|Charadriiformes|Laridae|Larus|argentatus|176824|Avian
 Armenian gull|Larus armenicus|Charadriiformes|Laridae|Larus|armenicus|560740|Avian
 Olrog's gull|Larus atlanticus|Charadriiformes|Laridae|Larus|atlanticus|560741|Avian
+band-tailed gull|Larus belcheri|Charadriiformes|Laridae|Larus|belcheri|176843|Avian
 Caspian gull|Larus cachinnans|Charadriiformes|Laridae|Larus|cachinnans|554270|Avian
 Californian gull|Larus californicus|Charadriiformes|Laridae|Larus|californicus|176829|Avian
 common gull|Larus canus|Charadriiformes|Laridae|Larus|canus|NA|Avian
@@ -414,9 +429,11 @@ dolphin gull|Leucophaeus scoresbii|Charadriiformes|Laridae|Leucophaeus|scoresbii
 red-legged kittiwake|Rissa brevirostris|Charadriiformes|Laridae|Rissa|brevirostris|176845|Avian
 black-legged kittiwake|Rissa tridactyla|Charadriiformes|Laridae|Rissa|tridactyla|176875|Avian
 Indian skimmer|Rynchops albicollis|Charadriiformes|Laridae|Rynchops|albicollis|176964|Avian
+roseate tern|Sterna dougallii|Charadriiformes|Laridae|Sterna|dougallii|176891|Avian
 snowy-crowned tern|Sterna trudeaui|Charadriiformes|Laridae|Sterna|trudeaui|176886|Avian
 tern|Sterna sp.|Charadriiformes|Laridae|Sterna|Unknown|176885|Avian
 little tern|Sternula albifrons|Charadriiformes|Laridae|Sternula|albifrons|824126|Avian
+least tern|Sternula antillarum|Charadriiformes|Laridae|Sternula|antillarum|824127|Avian
 Cabot's tern|Thalasseus acuflavidus eurygnatha|Charadriiformes|Laridae|Thalasseus|acuflavidus eurygnatha|825115|Avian
 elegant tern|Thalasseus elegans|Charadriiformes|Laridae|Thalasseus|elegans|176931|Avian
 Sandwich tern|Thalasseus sandvicensis|Charadriiformes|Laridae|Thalasseus|sandvicensis|176932|Avian
@@ -498,6 +515,7 @@ sandpiper|Scolopacidae|Charadriiformes|Scolopacidae|Unknown|Unknown|176568|Avian
 terek sandpiper|Xenus cinereus|Charadriiformes|Scolopacidae|Xenus|cinereus|176718|Avian
 brown skua|Stercorarius antarcticus|Charadriiformes|Stercorariidae|Stercorarius|antarcticus|660061|Avian
 skua|Stercorarius antarcticus lonnbergi|Charadriiformes|Stercorariidae|Stercorarius|antarcticus lonnbergi|660065|Avian
+Chilean skua|Stercorarius chilensis|Charadriiformes|Stercorariidae|Stercorarius|chilensis|660060|Avian
 long-tailed jaeger|Stercorarius longicaudus|Charadriiformes|Stercorariidae|Stercorarius|longicaudus|176794|Avian
 south polar skua|Stercorarius maccormicki|Charadriiformes|Stercorariidae|Stercorarius|maccormicki|660062|Avian
 parasitic jaeger|Stercorarius parasiticus|Charadriiformes|Stercorariidae|Stercorarius|parasiticus|176793|Avian
@@ -515,76 +533,76 @@ royal tern|Thalasseus maximus|Charadriiformes|Sternidae|Thalasseus|maximus|82414
 barred buttonquail|Turnix suscitator|Charadriiformes|Turnicidae|Turnix|suscitator|176162|Avian
 common buttonquail|Turnix sylvaticus|Charadriiformes|Turnicidae|Turnix|sylvaticus|678962|Avian
 shorebird|Charadriiformes|Charadriiformes|Unknown|Unknown|Unknown|176445|Avian
-black-bearded tomb bat|Taphozous melanopogon|Chiroptera|Emballonuridae|Taphozous|melanopogon|631735|Non-human_mammal
-Egyptian tomb bat|Taphozous perforatus|Chiroptera|Emballonuridae|Taphozous|perforatus|631737|Non-human_mammal
-great roundleaf bat|Hipposideros armiger|Chiroptera|Hipposideridae|Hipposideros|armiger|631482|Non-human_mammal
-ashy roundleaf bat|Hipposideros cineraceus|Chiroptera|Hipposideridae|Hipposideros|cineraceus|631491|Non-human_mammal
-Cantor's roundleaf bat|Hipposideros galeritus|Chiroptera|Hipposideridae|Hipposideros|galeritus|631505|Non-human_mammal
-intermediate roundleaf bat|Hipposideros larvatus|Chiroptera|Hipposideridae|Hipposideros|larvatus|631511|Non-human_mammal
-Pomona roundleaf bat|Hipposideros pomona|Chiroptera|Hipposideridae|Hipposideros|pomona|631522|Non-human_mammal
-Pratt's roundleaf bat|Hipposideros pratti|Chiroptera|Hipposideridae|Hipposideros|pratti|631523|Non-human_mammal
-roundleaf bat|Hipposideros sp.|Chiroptera|Hipposideridae|Hipposideros|Unknown|631266|Non-human_mammal
-greater false vampire bat|Megaderma lyra|Chiroptera|Megadermatidae|Megaderma|lyra|631755|Non-human_mammal
-lesser false vampire bat|Megaderma spasma|Chiroptera|Megadermatidae|Megaderma|spasma|631756|Non-human_mammal
-Schreibers' long-fingered bat|Miniopterus schreibersii|Chiroptera|Miniopteridae|Miniopterus|schreibersii|946266|Non-human_mammal
-dwarf bonneted bat|Eumops bonariensis|Chiroptera|Molossidae|Eumops|bonariensis|632205|Non-human_mammal
-Patagonian dwarf bonneted bat|Eumops patagonicus|Chiroptera|Molossidae|Eumops|patagonicus|946099|Non-human_mammal
-Pallas's mastiff bat|Molossus molossus|Chiroptera|Molossidae|Molossus|molossus|180083|Non-human_mammal
-velvety free-tailed bat|Molossus sp.|Chiroptera|Molossidae|Molossus|Unknown|180082|Non-human_mammal
-Brazilian free-tailed bat|Tadarida brasiliensis|Chiroptera|Molossidae|Tadarida|brasiliensis|180088|Non-human_mammal
-Egyptian slit-faced bat|Nycteris thebaica|Chiroptera|Nycteridae|Nycteris|thebaica|631749|Non-human_mammal
-lesser short-nosed fruit bat|Cynopterus brachyotis|Chiroptera|Pteropodidae|Cynopterus|brachyotis|631552|Non-human_mammal
-greater short-nosed fruit bat|Cynopterus sphinx|Chiroptera|Pteropodidae|Cynopterus|sphinx|631555|Non-human_mammal
-Rodriguez flying fox|Pteropus rodricensis|Chiroptera|Pteropodidae|Pteropus|rodricensis|203459|Non-human_mammal
-large flying fox bat|Pteropus vampyrus|Chiroptera|Pteropodidae|Pteropus|vampyrus|631662|Non-human_mammal
-Egyptian fruit bat|Rousettus aegyptiacus|Chiroptera|Pteropodidae|Rousettus|aegyptiacus|632267|Non-human_mammal
-Leschenault's rousette bat|Rousettus leschenaultii|Chiroptera|Pteropodidae|Rousettus|leschenaultii|945995|Non-human_mammal
-flying fox bat|Rousettus sp.|Chiroptera|Pteropodidae|Rousettus|Unknown|631301|Non-human_mammal
-flying fox|Pteropodidae|Chiroptera|Pteropodidae|Unknown|Unknown|180029|Non-human_mammal
-acuminate horseshoe bat|Rhinolophus acuminatus|Chiroptera|Rhinolophidae|Rhinolophus|acuminatus|631408|Non-human_mammal
-intermediate horseshoe bat|Rhinolophus affinis|Chiroptera|Rhinolophidae|Rhinolophus|affinis|631410|Non-human_mammal
-Blasius's horseshoe bat|Rhinolophus blasii|Chiroptera|Rhinolophidae|Rhinolophus|blasii|631414|Non-human_mammal
-Bornean horseshoe bat|Rhinolophus borneensis|Chiroptera|Rhinolophidae|Rhinolophus|borneensis|631415|Non-human_mammal
-Mediterranean horseshoe bat|Rhinolophus euryale|Chiroptera|Rhinolophidae|Rhinolophus|euryale|631428|Non-human_mammal
-greater horseshoe bat|Rhinolophus ferrumequinum|Chiroptera|Rhinolophidae|Rhinolophus|ferrumequinum|631430|Non-human_mammal
-lesser horseshoe bat|Rhinolophus hipposideros|Chiroptera|Rhinolophidae|Rhinolophus|hipposideros|631434|Non-human_mammal
-Blyth's horseshoe bat|Rhinolophus lepidus|Chiroptera|Rhinolophidae|Rhinolophus|lepidus|631439|Non-human_mammal
-Malayan horseshoe bat|Rhinolophus malayanus|Chiroptera|Rhinolophidae|Rhinolophus|malayanus|631443|Non-human_mammal
-Mehely's horseshoe bat|Rhinolophus mehelyi|Chiroptera|Rhinolophidae|Rhinolophus|mehelyi|631446|Non-human_mammal
-least horseshoe bat|Rhinolophus pusillus|Chiroptera|Rhinolophidae|Rhinolophus|pusillus|631454|Non-human_mammal
-Shamel's horseshoe bat|Rhinolophus shameli|Chiroptera|Rhinolophidae|Rhinolophus|shameli|631460|Non-human_mammal
-Chinese rufous horseshoe bat|Rhinolophus sinicus|Chiroptera|Rhinolophidae|Rhinolophus|sinicus|946010|Non-human_mammal
-lesser brown horseshoe bat|Rhinolophus stheno|Chiroptera|Rhinolophidae|Rhinolophus|stheno|631464|Non-human_mammal
-horseshoe bat|Rhinolophus sp.|Chiroptera|Rhinolophidae|Rhinolophus|Unknown|631260|Non-human_mammal
-bat|Chiroptera|Chiroptera|Unknown|Unknown|Unknown|179985|Non-human_mammal
-diminutive serotine|Eptesicus diminutus|Chiroptera|Vespertilionidae|Eptesicus|diminutus|631950|Non-human_mammal
-Argentinian brown bat|Eptesicus furinalis|Chiroptera|Vespertilionidae|Eptesicus|furinalis|631954|Non-human_mammal
-big brown bat|Eptesicus fuscus|Chiroptera|Vespertilionidae|Eptesicus|fuscus|180008|Non-human_mammal
-Meridional serotine bat|Eptesicus serotinus isabellinus|Chiroptera|Vespertilionidae|Eptesicus|serotinus isabellinus|948404|Non-human_mammal
-Blanford's bat|Hesperoptenus blanfordi|Chiroptera|Vespertilionidae|Hesperoptenus|blanfordi|631977|Non-human_mammal
-Savi's pipistrelle|Hypsugo savii|Chiroptera|Vespertilionidae|Hypsugo|savii|946208|Non-human_mammal
-Hardwicke's woolly bat|Kerivoula hardwickii|Chiroptera|Vespertilionidae|Kerivoula|hardwickii|631911|Non-human_mammal
-vesper bat|Kerivoula sp.|Chiroptera|Vespertilionidae|Kerivoula|Unknown|631374|Non-human_mammal
-eastern red bat|Lasiurus borealis|Chiroptera|Vespertilionidae|Lasiurus|borealis|180016|Non-human_mammal
-hoary bat|Lasiurus cinereus|Chiroptera|Vespertilionidae|Lasiurus|cinereus|180017|Non-human_mammal
-round-eared tube-nosed bat|Murina cyclotis|Chiroptera|Vespertilionidae|Murina|cyclotis|632164|Non-human_mammal
-long-fingered bat|Myotis capaccinii|Chiroptera|Vespertilionidae|Myotis|capaccinii|632007|Non-human_mammal
-Geoffroy's bat|Myotis emarginatus|Chiroptera|Vespertilionidae|Myotis|emarginatus|632015|Non-human_mammal
-Horsfield's bat|Myotis horsfieldii|Chiroptera|Vespertilionidae|Myotis|horsfieldii|632021|Non-human_mammal
-eastern small-footed myotis|Myotis leibii|Chiroptera|Vespertilionidae|Myotis|leibii|179999|Non-human_mammal
-little brown bat|Myotis lucifugus|Chiroptera|Vespertilionidae|Myotis|lucifugus|179988|Non-human_mammal
-Felten's myotis|Myotis punicus|Chiroptera|Vespertilionidae|Myotis|punicus|946256|Non-human_mammal
-northern long-eared bat|Myotis septentrionalis|Chiroptera|Vespertilionidae|Myotis|septentrionalis|180000|Non-human_mammal
-Himalayan whiskered bat|Myotis siligorensis|Chiroptera|Vespertilionidae|Myotis|siligorensis|632056|Non-human_mammal
-mouse-eared bat|Myotis sp.|Chiroptera|Vespertilionidae|Myotis|Unknown|632035|Non-human_mammal
-evening bat|Nycticeius humeralis|Chiroptera|Vespertilionidae|Nycticeius|humeralis|180022|Non-human_mammal
-eastern pipistrelle bat|Perimyotis subflavus|Chiroptera|Vespertilionidae|Perimyotis|subflavus|947299|Non-human_mammal
-Egyptian pipistrelle|Pipistrellus deserti|Chiroptera|Vespertilionidae|Pipistrellus|deserti|946159|Non-human_mammal
-Java pipistrelle bat|Pipistrellus javanicus|Chiroptera|Vespertilionidae|Pipistrellus|javanicus|632105|Non-human_mammal
-Kuhl's pipistrelle|Pipistrellus kuhlii|Chiroptera|Vespertilionidae|Pipistrellus|kuhlii|632108|Non-human_mammal
-greater Asiatic yellow bat|Scotophilus heathii|Chiroptera|Vespertilionidae|Scotophilus|heathii|946144|Non-human_mammal
-lesser Asiatic yellow bat|Scotophilus kuhlii|Chiroptera|Vespertilionidae|Scotophilus|kuhlii|632151|Non-human_mammal
-lesser bamboo bat|Tylonycteris pachypus|Chiroptera|Vespertilionidae|Tylonycteris|pachypus|632157|Non-human_mammal
+black-bearded tomb bat|Taphozous melanopogon|Chiroptera|Emballonuridae|Taphozous|melanopogon|631735|Non-human Mammal
+Egyptian tomb bat|Taphozous perforatus|Chiroptera|Emballonuridae|Taphozous|perforatus|631737|Non-human Mammal
+great roundleaf bat|Hipposideros armiger|Chiroptera|Hipposideridae|Hipposideros|armiger|631482|Non-human Mammal
+ashy roundleaf bat|Hipposideros cineraceus|Chiroptera|Hipposideridae|Hipposideros|cineraceus|631491|Non-human Mammal
+Cantor's roundleaf bat|Hipposideros galeritus|Chiroptera|Hipposideridae|Hipposideros|galeritus|631505|Non-human Mammal
+intermediate roundleaf bat|Hipposideros larvatus|Chiroptera|Hipposideridae|Hipposideros|larvatus|631511|Non-human Mammal
+Pomona roundleaf bat|Hipposideros pomona|Chiroptera|Hipposideridae|Hipposideros|pomona|631522|Non-human Mammal
+Pratt's roundleaf bat|Hipposideros pratti|Chiroptera|Hipposideridae|Hipposideros|pratti|631523|Non-human Mammal
+roundleaf bat|Hipposideros sp.|Chiroptera|Hipposideridae|Hipposideros|Unknown|631266|Non-human Mammal
+greater false vampire bat|Megaderma lyra|Chiroptera|Megadermatidae|Megaderma|lyra|631755|Non-human Mammal
+lesser false vampire bat|Megaderma spasma|Chiroptera|Megadermatidae|Megaderma|spasma|631756|Non-human Mammal
+Schreibers' long-fingered bat|Miniopterus schreibersii|Chiroptera|Miniopteridae|Miniopterus|schreibersii|946266|Non-human Mammal
+dwarf bonneted bat|Eumops bonariensis|Chiroptera|Molossidae|Eumops|bonariensis|632205|Non-human Mammal
+Patagonian dwarf bonneted bat|Eumops patagonicus|Chiroptera|Molossidae|Eumops|patagonicus|946099|Non-human Mammal
+Pallas's mastiff bat|Molossus molossus|Chiroptera|Molossidae|Molossus|molossus|180083|Non-human Mammal
+velvety free-tailed bat|Molossus sp.|Chiroptera|Molossidae|Molossus|Unknown|180082|Non-human Mammal
+Brazilian free-tailed bat|Tadarida brasiliensis|Chiroptera|Molossidae|Tadarida|brasiliensis|180088|Non-human Mammal
+Egyptian slit-faced bat|Nycteris thebaica|Chiroptera|Nycteridae|Nycteris|thebaica|631749|Non-human Mammal
+lesser short-nosed fruit bat|Cynopterus brachyotis|Chiroptera|Pteropodidae|Cynopterus|brachyotis|631552|Non-human Mammal
+greater short-nosed fruit bat|Cynopterus sphinx|Chiroptera|Pteropodidae|Cynopterus|sphinx|631555|Non-human Mammal
+Rodriguez flying fox|Pteropus rodricensis|Chiroptera|Pteropodidae|Pteropus|rodricensis|203459|Non-human Mammal
+large flying fox bat|Pteropus vampyrus|Chiroptera|Pteropodidae|Pteropus|vampyrus|631662|Non-human Mammal
+Egyptian fruit bat|Rousettus aegyptiacus|Chiroptera|Pteropodidae|Rousettus|aegyptiacus|632267|Non-human Mammal
+Leschenault's rousette bat|Rousettus leschenaultii|Chiroptera|Pteropodidae|Rousettus|leschenaultii|945995|Non-human Mammal
+flying fox bat|Rousettus sp.|Chiroptera|Pteropodidae|Rousettus|Unknown|631301|Non-human Mammal
+flying fox|Pteropodidae|Chiroptera|Pteropodidae|Unknown|Unknown|180029|Non-human Mammal
+acuminate horseshoe bat|Rhinolophus acuminatus|Chiroptera|Rhinolophidae|Rhinolophus|acuminatus|631408|Non-human Mammal
+intermediate horseshoe bat|Rhinolophus affinis|Chiroptera|Rhinolophidae|Rhinolophus|affinis|631410|Non-human Mammal
+Blasius's horseshoe bat|Rhinolophus blasii|Chiroptera|Rhinolophidae|Rhinolophus|blasii|631414|Non-human Mammal
+Bornean horseshoe bat|Rhinolophus borneensis|Chiroptera|Rhinolophidae|Rhinolophus|borneensis|631415|Non-human Mammal
+Mediterranean horseshoe bat|Rhinolophus euryale|Chiroptera|Rhinolophidae|Rhinolophus|euryale|631428|Non-human Mammal
+greater horseshoe bat|Rhinolophus ferrumequinum|Chiroptera|Rhinolophidae|Rhinolophus|ferrumequinum|631430|Non-human Mammal
+lesser horseshoe bat|Rhinolophus hipposideros|Chiroptera|Rhinolophidae|Rhinolophus|hipposideros|631434|Non-human Mammal
+Blyth's horseshoe bat|Rhinolophus lepidus|Chiroptera|Rhinolophidae|Rhinolophus|lepidus|631439|Non-human Mammal
+Malayan horseshoe bat|Rhinolophus malayanus|Chiroptera|Rhinolophidae|Rhinolophus|malayanus|631443|Non-human Mammal
+Mehely's horseshoe bat|Rhinolophus mehelyi|Chiroptera|Rhinolophidae|Rhinolophus|mehelyi|631446|Non-human Mammal
+least horseshoe bat|Rhinolophus pusillus|Chiroptera|Rhinolophidae|Rhinolophus|pusillus|631454|Non-human Mammal
+Shamel's horseshoe bat|Rhinolophus shameli|Chiroptera|Rhinolophidae|Rhinolophus|shameli|631460|Non-human Mammal
+Chinese rufous horseshoe bat|Rhinolophus sinicus|Chiroptera|Rhinolophidae|Rhinolophus|sinicus|946010|Non-human Mammal
+lesser brown horseshoe bat|Rhinolophus stheno|Chiroptera|Rhinolophidae|Rhinolophus|stheno|631464|Non-human Mammal
+horseshoe bat|Rhinolophus sp.|Chiroptera|Rhinolophidae|Rhinolophus|Unknown|631260|Non-human Mammal
+bat|Chiroptera|Chiroptera|Unknown|Unknown|Unknown|179985|Non-human Mammal
+diminutive serotine|Eptesicus diminutus|Chiroptera|Vespertilionidae|Eptesicus|diminutus|631950|Non-human Mammal
+Argentinian brown bat|Eptesicus furinalis|Chiroptera|Vespertilionidae|Eptesicus|furinalis|631954|Non-human Mammal
+big brown bat|Eptesicus fuscus|Chiroptera|Vespertilionidae|Eptesicus|fuscus|180008|Non-human Mammal
+Meridional serotine bat|Eptesicus serotinus isabellinus|Chiroptera|Vespertilionidae|Eptesicus|serotinus isabellinus|948404|Non-human Mammal
+Blanford's bat|Hesperoptenus blanfordi|Chiroptera|Vespertilionidae|Hesperoptenus|blanfordi|631977|Non-human Mammal
+Savi's pipistrelle|Hypsugo savii|Chiroptera|Vespertilionidae|Hypsugo|savii|946208|Non-human Mammal
+Hardwicke's woolly bat|Kerivoula hardwickii|Chiroptera|Vespertilionidae|Kerivoula|hardwickii|631911|Non-human Mammal
+vesper bat|Kerivoula sp.|Chiroptera|Vespertilionidae|Kerivoula|Unknown|631374|Non-human Mammal
+eastern red bat|Lasiurus borealis|Chiroptera|Vespertilionidae|Lasiurus|borealis|180016|Non-human Mammal
+hoary bat|Lasiurus cinereus|Chiroptera|Vespertilionidae|Lasiurus|cinereus|180017|Non-human Mammal
+round-eared tube-nosed bat|Murina cyclotis|Chiroptera|Vespertilionidae|Murina|cyclotis|632164|Non-human Mammal
+long-fingered bat|Myotis capaccinii|Chiroptera|Vespertilionidae|Myotis|capaccinii|632007|Non-human Mammal
+Geoffroy's bat|Myotis emarginatus|Chiroptera|Vespertilionidae|Myotis|emarginatus|632015|Non-human Mammal
+Horsfield's bat|Myotis horsfieldii|Chiroptera|Vespertilionidae|Myotis|horsfieldii|632021|Non-human Mammal
+eastern small-footed myotis|Myotis leibii|Chiroptera|Vespertilionidae|Myotis|leibii|179999|Non-human Mammal
+little brown bat|Myotis lucifugus|Chiroptera|Vespertilionidae|Myotis|lucifugus|179988|Non-human Mammal
+Felten's myotis|Myotis punicus|Chiroptera|Vespertilionidae|Myotis|punicus|946256|Non-human Mammal
+northern long-eared bat|Myotis septentrionalis|Chiroptera|Vespertilionidae|Myotis|septentrionalis|180000|Non-human Mammal
+Himalayan whiskered bat|Myotis siligorensis|Chiroptera|Vespertilionidae|Myotis|siligorensis|632056|Non-human Mammal
+mouse-eared bat|Myotis sp.|Chiroptera|Vespertilionidae|Myotis|Unknown|632035|Non-human Mammal
+evening bat|Nycticeius humeralis|Chiroptera|Vespertilionidae|Nycticeius|humeralis|180022|Non-human Mammal
+eastern pipistrelle bat|Perimyotis subflavus|Chiroptera|Vespertilionidae|Perimyotis|subflavus|947299|Non-human Mammal
+Egyptian pipistrelle|Pipistrellus deserti|Chiroptera|Vespertilionidae|Pipistrellus|deserti|946159|Non-human Mammal
+Java pipistrelle bat|Pipistrellus javanicus|Chiroptera|Vespertilionidae|Pipistrellus|javanicus|632105|Non-human Mammal
+Kuhl's pipistrelle|Pipistrellus kuhlii|Chiroptera|Vespertilionidae|Pipistrellus|kuhlii|632108|Non-human Mammal
+greater Asiatic yellow bat|Scotophilus heathii|Chiroptera|Vespertilionidae|Scotophilus|heathii|946144|Non-human Mammal
+lesser Asiatic yellow bat|Scotophilus kuhlii|Chiroptera|Vespertilionidae|Scotophilus|kuhlii|632151|Non-human Mammal
+lesser bamboo bat|Tylonycteris pachypus|Chiroptera|Vespertilionidae|Tylonycteris|pachypus|632157|Non-human Mammal
 cattle egret|Bubulcus ibis|Ciconiiformes|Ardeidae|Bubulcus|ibis|174803|Avian
 Asian openbill|Anastomus oscitans|Ciconiiformes|Ciconiidae|Anastomus|oscitans|174904|Avian
 white stork|Ciconia ciconia|Ciconiiformes|Ciconiidae|Ciconia|ciconia|174907|Avian
@@ -665,6 +683,7 @@ lesser coucal|Centropus bengalensis|Cuculiformes|Cuculidae|Centropus|bengalensis
 Senegal coucal|Centropus senegalensis|Cuculiformes|Cuculidae|Centropus|senegalensis|554771|Avian
 greater coucal|Centropus sinensis|Cuculiformes|Cuculidae|Centropus|sinensis|554758|Avian
 dideric cuckoo|Chrysococcyx caprius|Cuculiformes|Cuculidae|Chrysococcyx|caprius|554713|Avian
+yellow-billed cuckoo|Coccyzus americanus|Cuculiformes|Cuculidae|Coccyzus|americanus|177831|Avian
 black-billed cucktoo|Coccyzus erythropthalmus|Cuculiformes|Cuculidae|Coccyzus|erythropthalmus|177834|Avian
 smooth-billed ani|Crotophaga ani|Cuculiformes|Cuculidae|Crotophaga|ani|177838|Avian
 groove-billed ani|Crotophaga sulcirostris|Cuculiformes|Cuculidae|Crotophaga|sulcirostris|177839|Avian
@@ -674,9 +693,10 @@ koel|Eudynamys sp.|Cuculiformes|Cuculidae|Eudynamys|Unknown|553631|Avian
 squirrel cuckoo|Piaya cayana|Cuculiformes|Cuculidae|Piaya|cayana|554785|Avian
 black-bellied cuckoo|Piaya melanogaster|Cuculiformes|Cuculidae|Piaya|melanogaster|554786|Avian
 green-billed malkoha|Rhopodytes tristis|Cuculiformes|Cuculidae|Rhopodytes|tristis|705308|Avian
-red kangaroo|Macropus rufus|Diprotodontia|Macropodidae|Macropus|rufus|552740|Non-human_mammal
-short-nosed rat kangaroo|Bettongia sp.|Diprotodontia|Potoroidae|Bettongia|Unknown|552438|Non-human_mammal
-African hedgehog|Atelerix sp.|Erinaceomorpha|Erinaceidae|Atelerix|Unknown|633445|Non-human_mammal
+Virginia opossum|Didelphis virginiana|Didelphimorphia|Didelphidae|Didelphis|virginiana|179921|Non-human Mammal
+red kangaroo|Macropus rufus|Diprotodontia|Macropodidae|Macropus|rufus|552740|Non-human Mammal
+short-nosed rat kangaroo|Bettongia sp.|Diprotodontia|Potoroidae|Bettongia|Unknown|552438|Non-human Mammal
+African hedgehog|Atelerix sp.|Erinaceomorpha|Erinaceidae|Atelerix|Unknown|633445|Non-human Mammal
 northern crested caracara|Caracara cheriway|Falconiformes|Falconidae|Caracara|cheriway|175595|Avian
 southern caracara|Caracara plancus|Falconiformes|Falconidae|Caracara|plancus|554146|Avian
 southern crested caracara|Caracara plancus|Falconiformes|Falconidae|Caracara|plancus|554146|Avian
@@ -699,6 +719,7 @@ crested guan|Penelope purpurascens|Galliformes|Cracidae|Penelope|purpurascens|17
 helmeted guineafowl|Numida meleagris|Galliformes|Numididae|Numida|meleagris|176126|Avian
 guinea fowl|Numida sp.|Galliformes|Numididae|Numida|Unknown|176125|Avian
 crested bobwhite|Colinus cristatus|Galliformes|Odontophoridae|Colinus|cristatus|175869|Avian
+northern bobwhite|Colinus virginianus|Galliformes|Odontophoridae|Colinus|virginianus|175863|Avian
 chukar|Alectoris chukar|Galliformes|Phasianidae|Alectoris|chukar|175908|Avian
 chukar partridge|Alectoris chukar|Galliformes|Phasianidae|Alectoris|chukar|175908|Avian
 red-legged partridge|Alectoris rufa|Galliformes|Phasianidae|Alectoris|rufa|175913|Avian
@@ -779,9 +800,9 @@ water rail|Rallus aquaticus|Gruiformes|Rallidae|Rallus|aquaticus|176223|Avian
 king rail|Rallus elegans|Gruiformes|Rallidae|Rallus|elegans|176207|Avian
 Virginia rail|Rallus limicola|Gruiformes|Rallidae|Rallus|limicola|176221|Avian
 leech|Hirudinida|Hirudinida|Unknown|Unknown|Unknown|1048708|Other
-European rabbit|Oryctolagus cuniculus|Lagomorpha|Leporidae|Oryctolagus|cuniculus|180129|Non-human_mammal
-Eastern cottontail|Sylvilagus floridanus|Lagomorpha|Leporidae|Sylvilagus|floridanus|180124|Non-human_mammal
-rabbit|Leporidae|Lagomorpha|Leporidae|Unknown|Unknown|180110|Non-human_mammal
+European rabbit|Oryctolagus cuniculus|Lagomorpha|Leporidae|Oryctolagus|cuniculus|180129|Non-human Mammal
+Eastern cottontail|Sylvilagus floridanus|Lagomorpha|Leporidae|Sylvilagus|floridanus|180124|Non-human Mammal
+rabbit|Leporidae|Lagomorpha|Leporidae|Unknown|Unknown|180110|Non-human Mammal
 great bustard|Otis tarda|Otidiformes|Otididae|Otis|tarda|176419|Avian
 paddyfield warbler|Acrocephalus agricola|Passeriformes|Acrocephalidae|Acrocephalus|agricola|558407|Avian
 great reed warbler|Acrocephalus arundinaceus|Passeriformes|Acrocephalidae|Acrocephalus|arundinaceus|558408|Avian
@@ -805,6 +826,7 @@ indigo bunting|Passerina cyanea|Passeriformes|Cardinalidae|Passerina|cyanea|1791
 rose-breasted grosbeak|Pheucticus ludovicianus|Passeriformes|Cardinalidae|Pheucticus|ludovicianus|179139|Avian
 black-headed grosbeak|Pheucticus melanocephalus|Passeriformes|Cardinalidae|Pheucticus|melanocephalus|179140|Avian
 western tanager|Piranga ludoviciana|Passeriformes|Cardinalidae|Piranga|ludoviciana|179882|Avian
+scarlet tanager|Piranga olivacea|Passeriformes|Cardinalidae|Piranga|olivacea|179883|Avian
 summer tanager|Piranga rubra|Passeriformes|Cardinalidae|Piranga|rubra|179888|Avian
 black-headed saltator|Saltator atriceps|Passeriformes|Cardinalidae|Saltator|atriceps|562807|Avian
 greyish saltator|Saltator coerulescens|Passeriformes|Cardinalidae|Saltator|coerulescens|562812|Avian
@@ -844,6 +866,7 @@ hooded crow|Corvus cornix|Passeriformes|Corvidae|Corvus|cornix|179740|Avian
 carrion crow|Corvus corone|Passeriformes|Corvidae|Corvus|corone|559494|Avian
 rook|Corvus frugilegus|Passeriformes|Corvidae|Corvus|frugilegus|179738|Avian
 large-billed crow|Corvus macrorhynchos|Passeriformes|Corvidae|Corvus|macrorhynchos|559503|Avian
+fish crow|Corvus ossifragus|Passeriformes|Corvidae|Corvus|ossifragus|179737|Avian
 house crow|Corvus splendens|Passeriformes|Corvidae|Corvus|splendens|559513|Avian
 crow|Corvus sp.|Passeriformes|Corvidae|Corvus|Unknown|179724|Avian
 racket-tailed treepie|Crypsirina temia|Passeriformes|Corvidae|Crypsirina|temia|559594|Avian
@@ -1389,6 +1412,7 @@ little bittern|Ixobrychus minutus|Pelecaniformes|Ardeidae|Ixobrychus|minutus|174
 yellow bittern|Ixobrychus sinensis|Pelecaniformes|Ardeidae|Ixobrychus|sinensis|174851|Avian
 dwarf bittern|Ixobrychus sturmii|Pelecaniformes|Ardeidae|Ixobrychus|sturmii|174852|Avian
 bitterns|Ixobrychus sp.|Pelecaniformes|Ardeidae|Ixobrychus|Unknown|174845|Avian
+yellow-crowned night-heron|Nyctanassa violacea|Pelecaniformes|Ardeidae|Nyctanassa|violacea|174842|Avian
 rufous night heron|Nycticorax caledonicus|Pelecaniformes|Ardeidae|Nycticorax|caledonicus|174837|Avian
 black-crowned night-heron|Nycticorax nycticorax|Pelecaniformes|Ardeidae|Nycticorax|nycticorax|174832|Avian
 heron|Ardeidae|Pelecaniformes|Ardeidae|Unknown|Unknown|174771|Avian
@@ -1406,14 +1430,15 @@ Eurasian spoonbill|Platalea leucorodia|Pelecaniformes|Threskiornithidae|Platalea
 royal spoonbill|Platalea regia|Pelecaniformes|Threskiornithidae|Platalea|regia|174938|Avian
 white-faced ibis|Plegadis chihi|Pelecaniformes|Threskiornithidae|Plegadis|chihi|174926|Avian
 glossy ibis|Plegadis falcinellus|Pelecaniformes|Threskiornithidae|Plegadis|falcinellus|174924|Avian
+buff-necked ibis|Theristicus caudatus|Pelecaniformes|Threskiornithidae|Theristicus|caudatus|174965|Avian
 black-headed ibis|Threskiornis melanocephalus|Pelecaniformes|Threskiornithidae|Threskiornis|melanocephalus|174944|Avian
 straw-necked ibis|Threskiornis spinicollis|Pelecaniformes|Threskiornithidae|Threskiornis|spinicollis|174946|Avian
-donkey|Equus asinus|Perissodactyla|Equidae|Equus|asinus|180690|Non-human_mammal
-mule|Equus asinus x Equus caballus|Perissodactyla|Equidae|Equus|asinus|NA|Non-human_mammal
-horse|Equus caballus|Perissodactyla|Equidae|Equus|caballus|180691|Non-human_mammal
-Russian wild horse|Equus ferus|Perissodactyla|Equidae|Equus|ferus|926143|Non-human_mammal
-equine|Equus sp.|Perissodactyla|Equidae|Equus|Unknown|180689|Non-human_mammal
-tapir|Tapirus sp.|Perissodactyla|Tapiridae|Tapirus|Unknown|926066|Non-human_mammal
+donkey|Equus asinus|Perissodactyla|Equidae|Equus|asinus|180690|Non-human Mammal
+mule|Equus asinus x Equus caballus|Perissodactyla|Equidae|Equus|asinus|NA|Non-human Mammal
+horse|Equus caballus|Perissodactyla|Equidae|Equus|caballus|180691|Non-human Mammal
+Russian wild horse|Equus ferus|Perissodactyla|Equidae|Equus|ferus|926143|Non-human Mammal
+equine|Equus sp.|Perissodactyla|Equidae|Equus|Unknown|180689|Non-human Mammal
+tapir|Tapirus sp.|Perissodactyla|Tapiridae|Tapirus|Unknown|926066|Non-human Mammal
 Andean flamingo|Phoenicoparrus andinus|Phoenicopteriformes|Phoenicopteridae|Phoenicoparrus|andinus|174980|Avian
 Chilean flamingo|Phoenicopterus chilensis|Phoenicopteriformes|Phoenicopteridae|Phoenicopterus|chilensis|562025|Avian
 greater flamingo|Phoenicopterus roseus|Phoenicopteriformes|Phoenicopteridae|Phoenicopterus|roseus|824111|Avian
@@ -1431,6 +1456,7 @@ lesser spotted woodpecker|Dendrocopos minor|Piciformes|Picidae|Dendrocopos|minor
 Gabon woodpecker|Dendropicos gabonensis|Piciformes|Picidae|Dendropicos|gabonensis|554014|Avian
 speckle-breasted woodpecker|Dendropicos poecilolaemus|Piciformes|Picidae|Dendropicos|poecilolaemus|554010|Avian
 flame-backed woodpecker|Dinopium javanense|Piciformes|Picidae|Dinopium|javanense|554150|Avian
+pileated woodpecker|Dryocopus pileatus|Piciformes|Picidae|Dryocopus|pileatus|178166|Avian
 Eurasian wryneck|Jynx torquilla|Piciformes|Picidae|Jynx|torquilla|178150|Avian
 golden-fronted woodpecker|Melanerpes aurifrons|Piciformes|Picidae|Melanerpes|aurifrons|178194|Avian
 red-bellied woodpecker|Melanerpes carolinus|Piciformes|Picidae|Melanerpes|carolinus|178195|Avian
@@ -1444,36 +1470,38 @@ red-breasted sapsucker|Sphyrapicus ruber|Piciformes|Picidae|Sphyrapicus|ruber|17
 yellow-bellied sapsucker|Sphyrapicus varius|Piciformes|Picidae|Sphyrapicus|varius|178202|Avian
 lettered aracari|Pteroglossus inscriptus|Piciformes|Ramphastidae|Pteroglossus|inscriptus|554283|Avian
 keel-billed toucan|Ramphastos sulfuratus|Piciformes|Ramphastidae|Ramphastos|sulfuratus|554307|Avian
-three-toed sloth|Bradypus sp.|Pilosa|Bradypodidae|Bradypus|Unknown|624874|Non-human_mammal
-Hoffmann's two-toed sloth|Choloepus hoffmanni|Pilosa|Megalonychidae|Choloepus|hoffmanni|624909|Non-human_mammal
-two-toed sloth|Choloepus sp.|Pilosa|Megalonychidae|Choloepus|Unknown|624882|Non-human_mammal
-giant anteater|Myrmecophaga tridactyla|Pilosa|Myrmecophagidae|Myrmecophaga|tridactyla|624911|Non-human_mammal
+three-toed sloth|Bradypus sp.|Pilosa|Bradypodidae|Bradypus|Unknown|624874|Non-human Mammal
+Hoffmann's two-toed sloth|Choloepus hoffmanni|Pilosa|Megalonychidae|Choloepus|hoffmanni|624909|Non-human Mammal
+two-toed sloth|Choloepus sp.|Pilosa|Megalonychidae|Choloepus|Unknown|624882|Non-human Mammal
+giant anteater|Myrmecophaga tridactyla|Pilosa|Myrmecophagidae|Myrmecophaga|tridactyla|624911|Non-human Mammal
 western grebe|Aechmophorus occidentalis|Podicipediformes|Podicipedidae|Aechmophorus|occidentalis|174503|Avian
 horned grebe|Podiceps auritus|Podicipediformes|Podicipedidae|Podiceps|auritus|174482|Avian
 great crested grebe|Podiceps cristatus|Podicipediformes|Podicipedidae|Podiceps|cristatus|174491|Avian
 red-necked grebe|Podiceps grisegena|Podicipediformes|Podicipedidae|Podiceps|grisegena|174479|Avian
+great grebe|Podiceps major|Podicipediformes|Podicipedidae|Podiceps|major|174492|Avian
 eared grebe|Podiceps nigricollis|Podicipediformes|Podicipedidae|Podiceps|nigricollis|174485|Avian
 pied-billed grebe|Podilymbus podiceps|Podicipediformes|Podicipedidae|Podilymbus|podiceps|174505|Avian
 Australasian grebe|Tachybaptus novaehollandiae|Podicipediformes|Podicipedidae|Tachybaptus|novaehollandiae|563257|Avian
 little grebe|Tachybaptus ruficollis|Podicipediformes|Podicipedidae|Tachybaptus|ruficollis|563259|Avian
-golden lion tamarin|Leontopithecus rosalia|Primates|Callitrichidae|Leontopithecus|rosalia|572922|Non-human_mammal
-tamarin|Saguinus sp.|Primates|Callitrichidae|Saguinus|Unknown|572809|Non-human_mammal
-capuchin monkey|Cebus sp.|Primates|Cebidae|Cebinae|Unknown|552350|Non-human_mammal
-De Brazza's monkey|Cercopithecus neglectus|Primates|Cercopithecidae|Cercopithecus|neglectus|573007|Non-human_mammal
-cynomolgus monkey|Macaca fascicularis|Primates|Cercopithecidae|Macaca|fascicularis|180098|Non-human_mammal
-macaque|Macaca sp.|Primates|Cercopithecidae|Macaca|Unknown|180097|Non-human_mammal
-lemur|Cheirogaleidae|Primates|Cheirogaleidae|Unknown|Unknown|572766|Non-human_mammal
+golden lion tamarin|Leontopithecus rosalia|Primates|Callitrichidae|Leontopithecus|rosalia|572922|Non-human Mammal
+tamarin|Saguinus sp.|Primates|Callitrichidae|Saguinus|Unknown|572809|Non-human Mammal
+capuchin monkey|Cebus sp.|Primates|Cebidae|Cebinae|Unknown|552350|Non-human Mammal
+De Brazza's monkey|Cercopithecus neglectus|Primates|Cercopithecidae|Cercopithecus|neglectus|573007|Non-human Mammal
+cynomolgus monkey|Macaca fascicularis|Primates|Cercopithecidae|Macaca|fascicularis|180098|Non-human Mammal
+macaque|Macaca sp.|Primates|Cercopithecidae|Macaca|Unknown|180097|Non-human Mammal
+lemur|Cheirogaleidae|Primates|Cheirogaleidae|Unknown|Unknown|572766|Non-human Mammal
 human|Homo sapiens|Primates|Hominidae|Homo|sapiens|180092|Human
-ring-tailed lemur|Lemur catta|Primates|Lemuridae|Lemur|catta|572872|Non-human_mammal
-red ruffed lemur|Varecia rubra|Primates|Lemuridae|Varecia|rubra|944080|Non-human_mammal
-black-and-white ruffed lemur|Varecia variegata|Primates|Lemuridae|Varecia|variegata|572873|Non-human_mammal
-monkey|Primates|Primates|Unknown|Unknown|Unknown|180089|Non-human_mammal
-non-human primate|Primates|Primates|Unknown|Unknown|Unknown|180089|Non-human_mammal
+ring-tailed lemur|Lemur catta|Primates|Lemuridae|Lemur|catta|572872|Non-human Mammal
+red ruffed lemur|Varecia rubra|Primates|Lemuridae|Varecia|rubra|944080|Non-human Mammal
+black-and-white ruffed lemur|Varecia variegata|Primates|Lemuridae|Varecia|variegata|572873|Non-human Mammal
+monkey|Primates|Primates|Unknown|Unknown|Unknown|180089|Non-human Mammal
+non-human primate|Primates|Primates|Unknown|Unknown|Unknown|180089|Non-human Mammal
 fork-tailed storm petrel|Oceanodroma furcata|Procellariiformes|Hydrobatidae|Oceanodroma|furcata|174625|Avian
 ashy storm petrel|Oceanodroma homochroa|Procellariiformes|Hydrobatidae|Oceanodroma|homochroa|174634|Avian
 Leach's storm petrel|Oceanodroma leucorhoa|Procellariiformes|Hydrobatidae|Oceanodroma|leucorhoa|174628|Avian
 Tristram's storm petrel|Oceanodroma tristrami|Procellariiformes|Hydrobatidae|Oceanodroma|tristrami|174641|Avian
 storm petrel|Hydrobatidae|Procellariiformes|Hydrobatidae|Unknown|Unknown|174619|Avian
+Cory's shearwater|Calonectris diomedea|Procellariiformes|Procellariidae|Calonectris|diomedea|203446|Avian
 northern fulmar|Fulmarus glacialis|Procellariiformes|Procellariidae|Fulmarus|glacialis|174536|Avian
 southern giant petrel|Macronectes giganteus|Procellariiformes|Procellariidae|Macronectes|giganteus|174594|Avian
 great shearwater|Puffinus gravis|Procellariiformes|Procellariidae|Puffinus|gravis|174549|Avian
@@ -1497,6 +1525,7 @@ Military macaw|Ara militaris|Psittaciformes|Psittacidae|Ara|militaris|554897|Avi
 macaw|Ara sp.|Psittaciformes|Psittacidae|Ara|Unknown|177659|Avian
 orange-chinned parakeet|Brotogeris jugularis|Psittaciformes|Psittacidae|Brotogeris|jugularis|177741|Avian
 little corella|Cacatua sanguinea|Psittaciformes|Psittacidae|Cacatua|sanguinea|554845|Avian
+slender-billed parakeet|Enicognathus leptorhynchus|Psittaciformes|Psittacidae|Enicognathus|leptorhynchus|177721|Avian
 yellow-eared parrot|Ognorhynchus icterotis|Psittaciformes|Psittacidae|Ognorhynchus|icterotis|554905|Avian
 blue-headed parrot|Pionus menstruus|Psittaciformes|Psittacidae|Pionus|menstruus|554917|Avian
 parakeet|Psittacula sp.|Psittaciformes|Psittacidae|Psittacula|Unknown|177640|Avian
@@ -1509,32 +1538,39 @@ budgerigar|Melopsittacus undulatus|Psittaciformes|Psittaculidae|Melopsittacus|un
 rose-ringed parakeet|Psittacula krameri|Psittaciformes|Psittaculidae|Psittacula|krameri|177650|Avian
 blossom-headed parakeet|Psittacula roseata|Psittaciformes|Psittaculidae|Psittacula|roseata|177652|Avian
 four-banded sandgrouse|Pterocles quadricinctus|Pteroclidiformes|Pteroclididae|Pterocles|quadricinctus|177057|Avian
-beaver|Castor sp.|Rodentia|Castoridae|Castor|Unknown|180211|Non-human_mammal
-guinea pig|Cavia porcellus|Rodentia|Caviidae|Cavia|porcellus|584713|Non-human_mammal
-woodrat|Neotoma sp.|Rodentia|Cricetidae|Neotoma|Unknown|180369|Non-human_mammal
-marsh rice rat|Oryzomys palustris|Rodentia|Cricetidae|Oryzomys|palustris|180336|Non-human_mammal
-deer mouse|Peromyscus sp.|Rodentia|Cricetidae|Peromyscus|Unknown|180275|Non-human_mammal
-hispid cotton rat|Sigmodon hispidus|Rodentia|Cricetidae|Sigmodon|hispidus|180349|Non-human_mammal
-agouti|Dasyprocta sp.|Rodentia|Dasyproctidae|Dasyprocta|Unknown|584623|Non-human_mammal
-porcupine|Erethizon dorsatus|Rodentia|Erethizontidae|Erethizon|dorsatus|825295|Non-human_mammal
-Asian garden dormouse|Eliomys melanurus|Rodentia|Gliridae|Eliomys|melanurus|584969|Non-human_mammal
-hispid pocket mouse|Chaetodipus hispidus|Rodentia|Heteromyidae|Chaetodipus|hispidus|552483|Non-human_mammal
-golden spiny mouse|Acomys russatus|Rodentia|Muridae|Acomys|russatus|585109|Non-human_mammal
-yellow-necked field mouse|Apodemus flavicollis|Rodentia|Muridae|Apodemus|flavicollis|585132|Non-human_mammal
-field mouse|Apodemus mystacinus|Rodentia|Muridae|Apodemus|mystacinus|585137|Non-human_mammal
-Wagner's dipodil|Dipodillus dasyurus|Rodentia|Muridae|Dipodillus|dasyurus|970775|Non-human_mammal
-Cheesman's gerbil|Gerbillus cheesmani|Rodentia|Muridae|Gerbillus|cheesmani|632927|Non-human_mammal
-Baluchistan gerbil|Gerbillus nanus|Rodentia|Muridae|Gerbillus|nanus|632954|Non-human_mammal
-Sundevall's jird|Meriones crassus|Rodentia|Muridae|Meriones|crassus|632978|Non-human_mammal
-Libyan jird|Meriones libycus|Rodentia|Muridae|Meriones|libycus|632980|Non-human_mammal
-Macedonian mouse|Mus macedonicus|Rodentia|Muridae|Mus|macedonicus|585389|Non-human_mammal
-house mouse|Mus musculus|Rodentia|Muridae|Mus|musculus|180366|Non-human_mammal
-mouse|Mus musculus|Rodentia|Muridae|Mus|musculus|180366|Non-human_mammal
-Norway rat|Rattus norvegicus|Rodentia|Muridae|Rattus|norvegicus|180363|Non-human_mammal
-rat|Rattus rattus|Rodentia|Muridae|Rattus|rattus|180362|Non-human_mammal
-gray squirrel|Sciurus carolinensis|Rodentia|Sciuridae|Sciurus|carolinensis|180175|Non-human_mammal
-fox squirrel|Sciurus niger|Rodentia|Sciuridae|Sciurus|niger|180172|Non-human_mammal
-bicolored shrew|Crocidura leucodon|Soricomorpha|Soricidae|Crocidura|leucodon|633616|Non-human_mammal
+American beaver|Castor canadensis|Rodentia|Castoridae|Castor|canadensis|180212|Non-human Mammal
+beaver|Castor sp.|Rodentia|Castoridae|Castor|Unknown|180211|Non-human Mammal
+guinea pig|Cavia porcellus|Rodentia|Caviidae|Cavia|porcellus|584713|Non-human Mammal
+golden hamster|Mesocricetus auratus|Rodentia|Cricetidae|Mesocricetus|auratus|632735|Non-human Mammal
+woodrat|Neotoma sp.|Rodentia|Cricetidae|Neotoma|Unknown|180369|Non-human Mammal
+muskrat|Ondatra zibethicus|Rodentia|Cricetidae|Ondatra|zibethicus|180318|Non-human Mammal
+marsh rice rat|Oryzomys palustris|Rodentia|Cricetidae|Oryzomys|palustris|180336|Non-human Mammal
+deer mouse|Peromyscus sp.|Rodentia|Cricetidae|Peromyscus|Unknown|180275|Non-human Mammal
+hispid cotton rat|Sigmodon hispidus|Rodentia|Cricetidae|Sigmodon|hispidus|180349|Non-human Mammal
+agouti|Dasyprocta sp.|Rodentia|Dasyproctidae|Dasyprocta|Unknown|584623|Non-human Mammal
+porcupine|Erethizon dorsatus|Rodentia|Erethizontidae|Erethizon|dorsatus|825295|Non-human Mammal
+Asian garden dormouse|Eliomys melanurus|Rodentia|Gliridae|Eliomys|melanurus|584969|Non-human Mammal
+hispid pocket mouse|Chaetodipus hispidus|Rodentia|Heteromyidae|Chaetodipus|hispidus|552483|Non-human Mammal
+golden spiny mouse|Acomys russatus|Rodentia|Muridae|Acomys|russatus|585109|Non-human Mammal
+yellow-necked field mouse|Apodemus flavicollis|Rodentia|Muridae|Apodemus|flavicollis|585132|Non-human Mammal
+field mouse|Apodemus mystacinus|Rodentia|Muridae|Apodemus|mystacinus|585137|Non-human Mammal
+Wagner's dipodil|Dipodillus dasyurus|Rodentia|Muridae|Dipodillus|dasyurus|970775|Non-human Mammal
+Cheesman's gerbil|Gerbillus cheesmani|Rodentia|Muridae|Gerbillus|cheesmani|632927|Non-human Mammal
+Baluchistan gerbil|Gerbillus nanus|Rodentia|Muridae|Gerbillus|nanus|632954|Non-human Mammal
+Sundevall's jird|Meriones crassus|Rodentia|Muridae|Meriones|crassus|632978|Non-human Mammal
+Libyan jird|Meriones libycus|Rodentia|Muridae|Meriones|libycus|632980|Non-human Mammal
+Macedonian mouse|Mus macedonicus|Rodentia|Muridae|Mus|macedonicus|585389|Non-human Mammal
+house mouse|Mus musculus|Rodentia|Muridae|Mus|musculus|180366|Non-human Mammal
+mouse|Mus musculus|Rodentia|Muridae|Mus|musculus|180366|Non-human Mammal
+Norway rat|Rattus norvegicus|Rodentia|Muridae|Rattus|norvegicus|180363|Non-human Mammal
+rat|Rattus rattus|Rodentia|Muridae|Rattus|rattus|180362|Non-human Mammal
+woodchuck|Marmota monax|Rodentia|Sciuridae|Marmota|monax|180137|Non-human Mammal
+groundhog|Marmota monax|Rodentia|Sciuridae|Marmota|monax|180137|Non-human Mammal
+gray squirrel|Sciurus carolinensis|Rodentia|Sciuridae|Sciurus|carolinensis|180175|Non-human Mammal
+fox squirrel|Sciurus niger|Rodentia|Sciuridae|Sciurus|niger|180172|Non-human Mammal
+chipmunk|Tamias sp.|Rodentia|Sciuridae|Tamias|Unknown|180188|Non-human Mammal
+red squirrel|Tamiasciurus hudsonicus|Rodentia|Sciuridae|Tamiasciurus|hudsonicus|180166|Non-human Mammal
+bicolored shrew|Crocidura leucodon|Soricomorpha|Soricidae|Crocidura|leucodon|633616|Non-human Mammal
 Adelie penguin|Pygoscelis adeliae|Sphenisciformes|Spheniscidae|Pygoscelis|adeliae|174445|Avian
 chinstrap penguin|Pygoscelis antarcticus|Sphenisciformes|Spheniscidae|Pygoscelis|antarcticus|723249|Avian
 gentoo penguin|Pygoscelis papua|Sphenisciformes|Spheniscidae|Pygoscelis|papua|174447|Avian
@@ -1553,6 +1589,7 @@ moila snake|Rhagerhis moilensis|Squamata|Lamprophiidae|Rhagerhis|moilensis|10820
 ocellated skink|Chalcides ocellatus|Squamata|Scincidae|Chalcides|ocellatus|NA|Other
 bridled skink|Trachylepis quinquetaeniata|Squamata|Scincidae|Trachylepis|quinquetaeniata|NA|Other
 desert monitor|Varanus griseus|Squamata|Varanidae|Varanus|griseus|202167|Other
+northern saw-whet owl|Aegolius acadicus|Strigiformes|Strigidae|Aegolius|acadicus|177942|Avian
 short-eared owl|Asio flammeus|Strigiformes|Strigidae|Asio|flammeus|177935|Avian
 long-eared owl|Asio otus|Strigiformes|Strigidae|Asio|otus|177932|Avian
 spotted owlet|Athene brama|Strigiformes|Strigidae|Athene|brama|555472|Avian
@@ -1560,20 +1597,24 @@ burrowing owl|Athene cunicularia|Strigiformes|Strigidae|Athene|cunicularia|17794
 little owl|Athene noctua|Strigiformes|Strigidae|Athene|noctua|555471|Avian
 Eurasian eagle-owl|Bubo bubo|Strigiformes|Strigidae|Bubo|bubo|555404|Avian
 Magellanic horned owl|Bubo magellanicus|Strigiformes|Strigidae|Bubo|magellanicus|686684|Avian
+snowy owl|Bubo scandiacus|Strigiformes|Strigidae|Bubo|scandiacus|686683|Avian
 great horned owl|Bubo virginianus|Strigiformes|Strigidae|Bubo|virginianus|177884|Avian
 ferruginous pygmy owl|Glaucidium brasilianum|Strigiformes|Strigidae|Glaucidium|brasilianum|177908|Avian
 collared owlet|Glaucidium brodiei|Strigiformes|Strigidae|Glaucidium|brodiei|555446|Avian
 Asian barred owlet|Glaucidium cuculoides|Strigiformes|Strigidae|Glaucidium|cuculoides|555461|Avian
+eastern screech owl|Megascops asio|Strigiformes|Strigidae|Megascops|asio|686658|Avian
 brown hawk owl|Ninox scutulata|Strigiformes|Strigidae|Ninox|scutulata|555481|Avian
 Indian scops owl|Otus bakkamoena|Strigiformes|Strigidae|Otus|bakkamoena|555382|Avian
 Eurasian scops-owl|Otus scops|Strigiformes|Strigidae|Otus|scops|555376|Avian
 Oriental scops-owl|Otus sunia|Strigiformes|Strigidae|Otus|sunia|177882|Avian
+barred owl|Strix varia|Strigiformes|Strigidae|Strix|varia|177921|Avian
 barn owl|Tyto alba|Strigiformes|Tytonidae|Tyto|alba|177851|Avian
 emu|Dromaius novaehollandiae|Struthioniformes|Dromaiidae|Dromaius|novaehollandiae|174385|Avian
 greater rhea|Rhea americana|Struthioniformes|Rheidae|Rhea|americana|174379|Avian
 ostrich|Struthio camelus|Struthioniformes|Struthionidae|Struthio|camelus|174375|Avian
 darter|Anhinga melanogaster|Suliformes|Anhingidae|Anhinga|melanogaster|174758|Avian
 imperial shag|Leucocarbo atriceps|Suliformes|Phalacrocoracidae|Leucocarbo|atriceps|824003|Avian
+guanay cormorant|Leucocarbo bougainvillii|Suliformes|Phalacrocoracidae|Leucocarbo|bougainvillii|824002|Avian
 little cormorant|Microcarbo niger|Suliformes|Phalacrocoracidae|Microcarbo|niger|823999|Avian
 pygmy cormorant|Microcarbo pygmeus|Suliformes|Phalacrocoracidae|Microcarbo|pygmeus|824000|Avian
 European shag|Phalacrocorax aristotelis|Suliformes|Phalacrocoracidae|Phalacrocorax|aristotelis|174733|Avian
@@ -1585,6 +1626,7 @@ pelagic cormorant|Phalacrocorax pelagicus|Suliformes|Phalacrocoracidae|Phalacroc
 Brandt's cormorant|Phalacrocorax penicillatus|Suliformes|Phalacrocoracidae|Phalacrocorax|penicillatus|174724|Avian
 cormorant|Phalacrocorax sp.|Suliformes|Phalacrocoracidae|Phalacrocorax|Unknown|174714|Avian
 northern gannet|Morus bassanus|Suliformes|Sulidae|Morus|bassanus|174712|Avian
+Peruvian booby|Sula variegata|Suliformes|Sulidae|Sula|variegata|174710|Avian
 Kemp's ridley sea turtle|Lepidochelys kempii|Testudines|Cheloniidae|Lepidochelys|kempii|551770|Other
 spur-thighed tortoise|Testudo graeca|Testudines|Testudinidae|Testudo|graeca|551865|Other
 Egyptian tortoise|Testudo kleinmanni|Testudines|Testudinidae|Testudo|kleinmanni|551868|Other
