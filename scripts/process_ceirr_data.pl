@@ -63,7 +63,8 @@ while( my $line = <FH> ){
     my @lines = $csv->fields();
     push (@data, \@lines);   
   } else {
-    print STDERR "WARNING: Line could not be parsed: $line\n";
+    my ($cde, $str, $pos) = $csv->error_diag();
+    die "ERROR: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
   }
 }
 close FH;

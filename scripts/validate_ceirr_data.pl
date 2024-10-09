@@ -115,7 +115,7 @@ while( my $line = <FH> ){
     push (@data, \@lines);
   } else {
     my ($cde, $str, $pos) = $csv->error_diag ();
-    print STDERR "WARNING: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
+    die "ERROR: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
   }
 }
 close FH;

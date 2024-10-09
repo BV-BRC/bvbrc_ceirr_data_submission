@@ -245,7 +245,8 @@ if ( -e "${processed_file}" ){
         push @records, $record;
       }
     }else{
-      print STDERR "WARNING: Line could not be parsed: $entry\n";
+      my ($cde, $str, $pos) = $csv->error_diag();
+      die "ERROR: Line could not be parsed: $entry\nREASON: $cde, $str, $pos\n";
     }
   }
   close FH;
