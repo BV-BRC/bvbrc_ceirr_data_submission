@@ -141,7 +141,7 @@ if ( -e "${processed_file}" ){
         my $sampleid;
         my $virusid;
         #next unless scalar @attribs == scalar @values;
-        for (my $i=0; $i<scalar @attribs; $i++){
+        for (my $i=0; $i < scalar(@attribs) - 1; $i++){ #One less to avoid extra empty column for BVBRC_Accession_ID
           if ( lc $attribs[$i] ne "row" ) {
             # skip if value is null or na
 	    $values[$i]  =~ s/\"//g;

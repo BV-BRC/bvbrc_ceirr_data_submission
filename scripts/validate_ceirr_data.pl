@@ -40,7 +40,7 @@ $para = new Bio::BVBRC::CEIRR::Config;
 $para->setType($type);
 my $jobDir = dirname($file);
 
-my $valid_file   = "sample_valid.csv";
+my $valid_file_name   = "sample_valid.csv";
 my $invalid_file = "sample_invalid.csv";
 my $validation_report_file = "validation_report.csv";
 
@@ -57,7 +57,7 @@ my $value_check  = "P";
 print STDERR "Validating $file header...\n";
 
 # define csv parser object
-my $csv = Text::CSV->new({ binary => 1, sep_char => $delimiter }); 
+my $csv = Text::CSV->new({ sep_char => $delimiter, eol => $/ });
 
 # Read the header of data file for validation
 open(FH, '<', "$file") or die "Failed to open $file: $!";
@@ -127,11 +127,14 @@ my %vocab      = $para->getDataVocab();
 my %datacode   = $para->getDataCode();
 my %species    = $para->getSpecies();
 
-
-my @headers  = @{$data[1]};
 my $row_size = scalar @data;
-my $col_size = scalar @headers;
+my $col_size = scalar @{$data[1]};
 my $sample_size = $row_size - 2;
+
+my @headers;
+for (my $h = 0; $h < $col_size; $h++){
+   push @headers, lc $data[1][$h];
+}
 
 print STDERR "Sample count: $sample_size, Column size: $col_size\n";
 
@@ -146,9 +149,12 @@ for( my $j = 0; $j < $row_size; $j++ ){
 my $api = P3DataAPI->new; 
 
 # Write headers
+# TODO: use csv parser for all
 $para->write_to_file($invalid_file,"$dummy_line","new");
 $para->write_to_file($invalid_file,"$header_line\n");
-$para->write_to_file($valid_file,"Row,$header_line\n", "new");
+
+open(my $valid_file, ">", $valid_file_name) or die "Failed to open $valid_file_name: $!";
+$csv->print($valid_file, ["Row", @headers]);
 $para->write_to_file($validation_report_file, "Row,Field,Value,Message\n", "new");
 
 my $valid_sample_count = 0;
@@ -157,6 +163,7 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
    my $row_number = $j - 1;
    my $invalid_values = "";
    my $data_row = "";
+   my @data_line = ();
 
    for ( my $i = 0; $i < $col_size; $i++ ) {
       my $header = lc $headers[$i];
@@ -280,6 +287,7 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
 
       #$data_row .= '"'.$dval.'",';
       $data_row .= '"'.$check.'",';
+      push(@data_line, ($check));
 
       if ( $check =~ m/(Invalid:)/ ) {
          $invalid_values .= "$row_number,$header,\"$dval\",$check\n";  
@@ -295,7 +303,7 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
       $para->write_to_file($validation_report_file, "$invalid_values");
       $invalid_sample_count++;
    } else {
-      $para->write_to_file($valid_file,"$row_number,$data_row\n");
+      $csv->print($valid_file, [$row_number, @data_line]);
       $valid_sample_count++;
    }
 }   

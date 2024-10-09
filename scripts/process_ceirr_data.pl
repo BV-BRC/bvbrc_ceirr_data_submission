@@ -323,8 +323,8 @@ for( my $s = 1; $s < $row_size; $s++ ){
        $vasoactive = join(',',@new);
        $vasoactive = '"'.$vasoactive.'"';
     }
-    if ( $nval =~ /,/) {
-      $newval .= '"'.$nval.'"'.$delimiter;
+    if ( $nval =~ /,|"/) {  # Check if $nval contains a comma or a double quote
+       $newval .= '"' . $nval =~ s/"/""/gr . '"' . $delimiter;
     } else {
       $newval .= $nval.$delimiter;
     }
@@ -340,7 +340,8 @@ for( my $s = 1; $s < $row_size; $s++ ){
   if ( $csv->parse($newval)) {
     @newlines = $csv->fields();
   } else {
-    die "New line could not be parsed: $newval\n"
+    my ($cde, $str, $pos) = $csv->error_diag();
+    die "New line could not be parsed: $newval\nREASON: $cde, $str, $pos\n"
   }
 
   if($size1){
