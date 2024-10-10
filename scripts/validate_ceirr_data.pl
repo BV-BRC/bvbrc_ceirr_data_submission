@@ -42,7 +42,7 @@ my $jobDir = dirname($file);
 
 my $valid_file_name   = "sample_valid.csv";
 my $invalid_file = "sample_invalid.csv";
-my $validation_report_file = "validation_report.csv";
+my $validation_report_file_name = "validation_report.csv";
 
 my %header  = $para->getFileHeader($type);
 my %headermap = $para->getHeaderMap();
@@ -155,13 +155,14 @@ $para->write_to_file($invalid_file,"$header_line\n");
 
 open(my $valid_file, ">", $valid_file_name) or die "Failed to open $valid_file_name: $!";
 $csv->print($valid_file, ["Row", @headers]);
-$para->write_to_file($validation_report_file, "Row,Field,Value,Message\n", "new");
+open(my $validation_report_file, ">", $validation_report_file_name) or die "Failed to open $validation_report_file_name: $!";
+$csv->print($validation_report_file, ["Row", "Field", "Value", "Message"]);
 
 my $valid_sample_count = 0;
 my $invalid_sample_count = 0;
 for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate and header)
    my $row_number = $j - 1;
-   my $invalid_values = "";
+   my $is_valid = 1;
    my $data_row = "";
    my @data_line = ();
 
@@ -290,17 +291,15 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
       push(@data_line, ($check));
 
       if ( $check =~ m/(Invalid:)/ ) {
-         $invalid_values .= "$row_number,$header,\"$dval\",$check\n";  
-         #$invalid_values .= "$header: ".$dval." - $check\n"; 
+         $csv->print($validation_report_file, [$row_number, $header, $dval, $check]);
+         $is_valid = 0;
       }
    }
    
    chop $data_row;
 
-   if ( $invalid_values =~ m/(Invalid)/ ) {
-      #print STDERR "DATA_ROW: $data_row\n";
+   if ( not $is_valid ) {
       $para->write_to_file($invalid_file,"$data_row\n");
-      $para->write_to_file($validation_report_file, "$invalid_values");
       $invalid_sample_count++;
    } else {
       $csv->print($valid_file, [$row_number, @data_line]);
