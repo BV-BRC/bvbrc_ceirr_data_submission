@@ -234,7 +234,7 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
          $check = validate_value($header,"$dval","$exp_value");
       } elsif ( $header =~ /use_of_personal_protective_equipment/ ) {
          my $exp_value;
-         if ( $type eq "human_sh" ){
+         if ( $type eq "human-sh" ){
             $exp_value = "$hash_data{covid_human_exposure}->{$j}";
          }else{
             $exp_value = "$hash_data{poultry_exposure}->{$j},$hash_data{wild_bird_exposure}->{$j},$hash_data{swine_exposure}->{$j},$hash_data{human_exposure}->{$j}";
@@ -1029,7 +1029,8 @@ sub validate_value{
    }
    ## Use_of_Personal_Protective_Equipment
    ## Maximum allowed length: 50 characters
-   ## If N is entered for Poultry_Exposure, Wild_Bird_Exposure, Swine_Exposure, and Human_Exposure, Use_of_Personal_Protective_Equipment must be NA.
+   ## Human: If N is entered for Poultry_Exposure, Wild_Bird_Exposure, Swine_Exposure, and Human_Exposure, Use_of_Personal_Protective_Equipment must be NA.
+   ## Human SH: If N is entered for COVID_Human_Exposure, Use_of_Personal_Protective_Equipment must be NA.
    if ( $header =~ /use_of_personal_protective_equipment/ ){
       my @expv = split (',', $parse_v);
       if ( $val_len > 50 ){
@@ -1048,7 +1049,11 @@ sub validate_value{
                   $check = $vocab{'use_of_personal_protective_equipment'}->{lc $dval};
                }else{
                   #SERVICE#print STDERR "  invalid data entry: $dval (at least one exposure is not N)\n";
-                  $check = "Invalid: If N is entered for Poultry_Exposure; Wild_Bird_Exposure; Swine_Exposure; and Human_Exposure; Use_of_Personal_Protective_Equipment must be NA. (Error_149_ONLY_NA_ALLOWED)";
+                  if ( scalar(@expv) > 1 ){
+                     $check = "Invalid: If N is entered for Poultry_Exposure; Wild_Bird_Exposure; Swine_Exposure; and Human_Exposure; Use_of_Personal_Protective_Equipment must be NA. (Error_149_ONLY_NA_ALLOWED)";
+                  }else{
+                     $check = "Invalid: If N is entered for COVID_Human_Exposure, Use_of_Personal_Protective_Equipment must be NA. (Error_149_ONLY_NA_ALLOWED)";
+                  }
                }
             }else{
                #SERVICE#print STDERR "  passed\n";
