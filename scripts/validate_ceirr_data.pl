@@ -41,7 +41,7 @@ $para->setType($type);
 my $jobDir = dirname($file);
 
 my $valid_file_name   = "sample_valid.csv";
-my $invalid_file = "sample_invalid.csv";
+my $invalid_file_name = "sample_invalid.csv";
 my $validation_report_file_name = "validation_report.csv";
 
 my %header  = $para->getFileHeader($type);
@@ -131,10 +131,14 @@ my $row_size = scalar @data;
 my $col_size = scalar @{$data[1]};
 my $sample_size = $row_size - 2;
 
+my ($data_template) = split(/,/, $dummy_line, 2);
+my @data_template_line = ($data_template);
 my @headers;
 for (my $h = 0; $h < $col_size; $h++){
    push @headers, lc $data[1][$h];
+   push @data_template_line, '';
 }
+pop @data_template_line;
 
 print STDERR "Sample count: $sample_size, Column size: $col_size\n";
 
@@ -149,9 +153,9 @@ for( my $j = 0; $j < $row_size; $j++ ){
 my $api = P3DataAPI->new; 
 
 # Write headers
-# TODO: use csv parser for all
-$para->write_to_file($invalid_file,"$dummy_line","new");
-$para->write_to_file($invalid_file,"$header_line\n");
+open(my $invalid_file, ">", $invalid_file_name) or die "Failed to open $invalid_file_name: $!";
+$csv->print($invalid_file, \@data_template_line);
+$csv->print($invalid_file, \@headers);
 
 open(my $valid_file, ">", $valid_file_name) or die "Failed to open $valid_file_name: $!";
 $csv->print($valid_file, ["Row", @headers]);
@@ -163,7 +167,6 @@ my $invalid_sample_count = 0;
 for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate and header)
    my $row_number = $j - 1;
    my $is_valid = 1;
-   my $data_row = "";
    my @data_line = ();
 
    for ( my $i = 0; $i < $col_size; $i++ ) {
@@ -286,20 +289,17 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
          $check = validate_value($header,$dval);
       }
 
-      #$data_row .= '"'.$dval.'",';
-      $data_row .= '"'.$check.'",';
-      push(@data_line, ($check));
-
       if ( $check =~ m/(Invalid:)/ ) {
          $csv->print($validation_report_file, [$row_number, $header, $dval, $check]);
          $is_valid = 0;
+         push(@data_line, ($dval)); # Write the original invalid data to invalid file
+      }else{
+         push(@data_line, ($check));
       }
    }
    
-   chop $data_row;
-
    if ( not $is_valid ) {
-      $para->write_to_file($invalid_file,"$data_row\n");
+      $csv->print($invalid_file, \@data_line);
       $invalid_sample_count++;
    } else {
       $csv->print($valid_file, [$row_number, @data_line]);
