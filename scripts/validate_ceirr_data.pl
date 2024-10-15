@@ -40,9 +40,9 @@ $para = new Bio::BVBRC::CEIRR::Config;
 $para->setType($type);
 my $jobDir = dirname($file);
 
-my $valid_file   = "sample_valid.csv";
-my $invalid_file = "sample_invalid.csv";
-my $validation_report_file = "validation_report.csv";
+my $valid_file_name   = "sample_valid.csv";
+my $invalid_file_name = "sample_invalid.csv";
+my $validation_report_file_name = "validation_report.csv";
 
 my %header  = $para->getFileHeader($type);
 my %headermap = $para->getHeaderMap();
@@ -57,7 +57,7 @@ my $value_check  = "P";
 print STDERR "Validating $file header...\n";
 
 # define csv parser object
-my $csv = Text::CSV->new({ binary => 1, sep_char => $delimiter }); 
+my $csv = Text::CSV->new({ sep_char => $delimiter, eol => $/ });
 
 # Read the header of data file for validation
 open(FH, '<', "$file") or die "Failed to open $file: $!";
@@ -115,7 +115,7 @@ while( my $line = <FH> ){
     push (@data, \@lines);
   } else {
     my ($cde, $str, $pos) = $csv->error_diag ();
-    print STDERR "WARNING: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
+    die "ERROR: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
   }
 }
 close FH;
@@ -127,11 +127,18 @@ my %vocab      = $para->getDataVocab();
 my %datacode   = $para->getDataCode();
 my %species    = $para->getSpecies();
 
-
-my @headers  = @{$data[1]};
 my $row_size = scalar @data;
-my $col_size = scalar @headers;
+my $col_size = scalar @{$data[1]};
 my $sample_size = $row_size - 2;
+
+my ($data_template) = split(/,/, $dummy_line, 2);
+my @data_template_line = ($data_template);
+my @headers;
+for (my $h = 0; $h < $col_size; $h++){
+   push @headers, lc $data[1][$h];
+   push @data_template_line, '';
+}
+pop @data_template_line;
 
 print STDERR "Sample count: $sample_size, Column size: $col_size\n";
 
@@ -146,17 +153,21 @@ for( my $j = 0; $j < $row_size; $j++ ){
 my $api = P3DataAPI->new; 
 
 # Write headers
-$para->write_to_file($invalid_file,"$dummy_line","new");
-$para->write_to_file($invalid_file,"$header_line\n");
-$para->write_to_file($valid_file,"Row,$header_line\n", "new");
-$para->write_to_file($validation_report_file, "Row,Field,Value,Message\n", "new");
+open(my $invalid_file, ">", $invalid_file_name) or die "Failed to open $invalid_file_name: $!";
+$csv->print($invalid_file, \@data_template_line);
+$csv->print($invalid_file, \@headers);
+
+open(my $valid_file, ">", $valid_file_name) or die "Failed to open $valid_file_name: $!";
+$csv->print($valid_file, ["Row", @headers]);
+open(my $validation_report_file, ">", $validation_report_file_name) or die "Failed to open $validation_report_file_name: $!";
+$csv->print($validation_report_file, ["Row", "Field", "Value", "Message"]);
 
 my $valid_sample_count = 0;
 my $invalid_sample_count = 0;
 for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate and header)
    my $row_number = $j - 1;
-   my $invalid_values = "";
-   my $data_row = "";
+   my $is_valid = 1;
+   my @data_line = ();
 
    for ( my $i = 0; $i < $col_size; $i++ ) {
       my $header = lc $headers[$i];
@@ -223,7 +234,7 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
          $check = validate_value($header,"$dval","$exp_value");
       } elsif ( $header =~ /use_of_personal_protective_equipment/ ) {
          my $exp_value;
-         if ( $type eq "human_sh" ){
+         if ( $type eq "human-sh" ){
             $exp_value = "$hash_data{covid_human_exposure}->{$j}";
          }else{
             $exp_value = "$hash_data{poultry_exposure}->{$j},$hash_data{wild_bird_exposure}->{$j},$hash_data{swine_exposure}->{$j},$hash_data{human_exposure}->{$j}";
@@ -278,24 +289,20 @@ for( my $j = 2; $j < $row_size; $j++ ){  # Ignore first two rows (DataTemplate a
          $check = validate_value($header,$dval);
       }
 
-      #$data_row .= '"'.$dval.'",';
-      $data_row .= '"'.$check.'",';
-
       if ( $check =~ m/(Invalid:)/ ) {
-         $invalid_values .= "$row_number,$header,\"$dval\",$check\n";  
-         #$invalid_values .= "$header: ".$dval." - $check\n"; 
+         $csv->print($validation_report_file, [$row_number, $header, $dval, $check]);
+         $is_valid = 0;
+         push(@data_line, ($dval)); # Write the original invalid data to invalid file
+      }else{
+         push(@data_line, ($check));
       }
    }
    
-   chop $data_row;
-
-   if ( $invalid_values =~ m/(Invalid)/ ) {
-      #print STDERR "DATA_ROW: $data_row\n";
-      $para->write_to_file($invalid_file,"$data_row\n");
-      $para->write_to_file($validation_report_file, "$invalid_values");
+   if ( not $is_valid ) {
+      $csv->print($invalid_file, \@data_line);
       $invalid_sample_count++;
    } else {
-      $para->write_to_file($valid_file,"$row_number,$data_row\n");
+      $csv->print($valid_file, [$row_number, @data_line]);
       $valid_sample_count++;
    }
 }   
@@ -318,6 +325,9 @@ sub validate_value{
    my $lcval = lc $dval;
    my $val_len = length($dval);
    my $check = $dval;
+
+   # Define the regex pattern based on iDPCC_Allowed_Characters_v.1.2
+   my $allowed_chars_regex = qr/[a-zA-Z0-9 _:\-<>\(\)\[\],;\/\\=@\+\.'"]/;
 
    ## study_identifier
    ## A unique Study Identifier generated by the iDPCC by combining the Center-generated Study Code and a random 5-digit number
@@ -610,11 +620,11 @@ sub validate_value{
             #SERVICE#print STDERR " passed\n";
             $check = $vocab{'collector_name'}->{lc $dval};
          }else{
-            if ( $dval =~ /[\*\!\@\#\$\%\^\&\(\)=\+\<\?\"\/\:\']/g ){ # checking special characters
-               #SERVICE#print STDERR "  invalid subject_age entry: $dval (must not contain a special character)\n";
-               $check = "Invalid: Value must not contain special characters. (Error_1_INVALID_VALUE)";
+            if ( $dval =~ $allowed_chars_regex ) {
+                #SERVICE#print STDERR " passed\n";
             }else{
-               #SERVICE#print STDERR " passed\n";
+               #SERVICE#print STDERR "  invalid collector_name entry: $dval (must not contain a special character)\n";
+               $check = "Invalid: Value must not contain special characters. Please check iDPCC allowed characters (Error_1_INVALID_VALUE)";
             }
          }
       }
@@ -763,9 +773,12 @@ sub validate_value{
                   if ( uc $re eq "NA"){
                      #SERVICE#print STDERR " passed\n";
                      $check .= "NA,";
+                  }elsif ( uc $re eq "U"){
+                     #SERVICE#print STDERR " passed\n";
+                     $check .= "U,";
                   }else{
                      #SERVICE#print STDERR "  invalid data entry: $rt (test type entry: NA)\n";
-                     $check .= "Invalid: $field value must be NA if test type is NA (Error_1_INVALID_VALUE),";
+                     $check .= "Invalid: $field value must be NA or U if test type is NA (Error_1_INVALID_VALUE),";
                   }
                }else{
                   #SERVICE#print STDERR " passed\n";
@@ -1016,7 +1029,8 @@ sub validate_value{
    }
    ## Use_of_Personal_Protective_Equipment
    ## Maximum allowed length: 50 characters
-   ## If N is entered for Poultry_Exposure, Wild_Bird_Exposure, Swine_Exposure, and Human_Exposure, Use_of_Personal_Protective_Equipment must be NA.
+   ## Human: If N is entered for Poultry_Exposure, Wild_Bird_Exposure, Swine_Exposure, and Human_Exposure, Use_of_Personal_Protective_Equipment must be NA.
+   ## Human SH: If N is entered for COVID_Human_Exposure, Use_of_Personal_Protective_Equipment must be NA.
    if ( $header =~ /use_of_personal_protective_equipment/ ){
       my @expv = split (',', $parse_v);
       if ( $val_len > 50 ){
@@ -1035,7 +1049,11 @@ sub validate_value{
                   $check = $vocab{'use_of_personal_protective_equipment'}->{lc $dval};
                }else{
                   #SERVICE#print STDERR "  invalid data entry: $dval (at least one exposure is not N)\n";
-                  $check = "Invalid: If N is entered for Poultry_Exposure; Wild_Bird_Exposure; Swine_Exposure; and Human_Exposure; Use_of_Personal_Protective_Equipment must be NA. (Error_149_ONLY_NA_ALLOWED)";
+                  if ( scalar(@expv) > 1 ){
+                     $check = "Invalid: If N is entered for Poultry_Exposure; Wild_Bird_Exposure; Swine_Exposure; and Human_Exposure; Use_of_Personal_Protective_Equipment must be NA. (Error_149_ONLY_NA_ALLOWED)";
+                  }else{
+                     $check = "Invalid: If N is entered for COVID_Human_Exposure, Use_of_Personal_Protective_Equipment must be NA. (Error_149_ONLY_NA_ALLOWED)";
+                  }
                }
             }else{
                #SERVICE#print STDERR "  passed\n";
@@ -1471,7 +1489,7 @@ sub validate_value{
             foreach my $v (@oval){
                $v =~ s/^\s+//g; 
                $v =~ s/\s+$//g;   
-               if ( "$v" =~ /^(([\w\s]+?),[-]?(\d+),(\d+))|(([\w\s]+?),[-]?(\d+),U)|(([\w\s]+?),U,[-]?(\d+))|(([\w\s]+?),U,U)/ ){
+               if ( $v =~ /^((($allowed_chars_regex+),[-]?(\d+),(\d+))|(($allowed_chars_regex+),[-]?(\d+),U)|(($allowed_chars_regex+),U,[-]?(\d+))|(($allowed_chars_regex+),U,U))/ ) {
                   #SERVICE#print STDERR "  passed\n";
                   $check .= "$v;";
                }else{
@@ -1592,12 +1610,7 @@ sub validate_value{
                $check = $vocab{'packs_per_day_for_how_many_years'}->{lc $dval};
             }
          }else{
-            if ( $dval =~ m/^(\d+|(\d+\.?\d+)) (pack|pk)\/day for (\d+|(\d+\.?\d+)) year/i ){
-               #SERVICE#print STDERR " passed\n";
-            }else{
-               #SERVICE#print STDERR "  invalid data entry: $dval\n";
-               $check = "Invalid: Please correct the value based on iDPCC data standards. (Error_1_INVALID_VALUE)";
-            }
+            #SERVICE#print STDERR " passed\n";
          }
       }
    }
@@ -1661,16 +1674,11 @@ sub validate_value{
          #SERVICE#print STDERR "  invalid data entry: $dval (maximum length: 2000 characters)\n";
          $check = "Invalid: Value length is $val_len. Maximum allowed length is 2000 characters (Error_70_INVALID_FIELD_LENGTH)";
       }else{
-         if ( $vocab{'comments'}->{lc $dval} ){
+         if ( $dval =~ $allowed_chars_regex ) {
             #SERVICE#print STDERR " passed\n";
-            $check = $vocab{'comments'}->{lc $dval};
          }else{
-            if ( $dval =~ /^\w+/ ){
-               #SERVICE#print STDERR " passed\n";
-            }else{
-               #SERVICE#print STDERR "  invalid data entry: $dval\n";
-               $check = "Invalid: Please correct the value based on iDPCC data standards. (Error_1_INVALID_VALUE)";
-            }
+            #SERVICE#print STDERR "  invalid collector_name entry: $dval (must not contain a special character)\n";
+            $check = "Invalid: Value must not contain special characters. Please check iDPCC allowed characters (Error_1_INVALID_VALUE)";
          }
       }
    }
@@ -1781,6 +1789,10 @@ sub validate_value{
                $check = uc $dval;
             }elsif ( uc $parse_v eq "WLD" and uc($dval) =~ /MIG|RES|U/ ){
                #SERVICE#print STDERR " passed\n";
+               $check = uc $dval;
+            }elsif ( uc $parse_v eq "CPW" and uc($dval) =~ /MAR|RES|U/ ){
+               $check = uc $dval;
+            }elsif ( uc $parse_v eq "DMF" and uc $dval eq "U" ){
                $check = uc $dval;
             }else{
                #SERVICE#print STDERR "  invalid data entry: $dval\n";

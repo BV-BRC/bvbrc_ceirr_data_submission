@@ -603,3 +603,25 @@ TEST_TYPE|VI/MDCK-SIAT|Madin-Darby canine kidney cells (MDCK) over expressing α
 TEST_TYPE|VI/Mouse|Mouse (whole organism)
 TEST_TYPE|VI/PMK|primary monkey kidney cells
 TEST_TYPE|VI/VERO|Vero cells
+TEST_TYPE|RRT-PCR/RdRp/WHO|WHO RdRp and E gene panel
+TEST_TYPE|RRT-PCR/E/WHO|WHO RdRp and E gene panel
+TEST_TYPE|RRT-PCR/multiple genes/WHO|WHO RdRp and E gene panel
+TEST_TYPE|RRT-PCR/N/Hong Kong|Hong Kong N and ns14 gene panel
+TEST_TYPE|RRT-PCR/nsp14/Hong Kong|Hong Kong N and ns14 gene panel
+TEST_TYPE|RRT-PCR/multiple genes/Hong Kong|Hong Kong N and ns14 gene panel
+TEST_TYPE|RRT-PCR/N/CDC|CDC N gene panel
+TEST_TYPE|RRT-PCR/N1/CDC|CDC N gene panel
+TEST_TYPE|RRT-PCR/N2/CDC|CDC N gene panel
+TEST_TYPE|RRT-PCR/N/GeneXpert|Cepheid GeneXpert Xpert Xpress SARS-CoV-2 N2 and E gene panel
+TEST_TYPE|RRT-PCR/E/GeneXpert|Cepheid GeneXpert Xpert Xpress SARS-CoV-2 N2 and E gene panel
+TEST_TYPE|RRT-PCR/multiple genes/GeneXpert|Cepheid GeneXpert Xpert Xpress SARS-CoV-2 N2 and E gene panel
+TEST_TYPE|MT-PCR/ORF1ab/AusDiagnostics|AusDiagnostics ORF1ab and ORF8 gene panel
+TEST_TYPE|MT-PCR/ORF8/AusDiagnostics|AusDiagnostics ORF1ab and ORF8 gene panel
+TEST_TYPE|MT-PCR/multiple genes/AusDiagnostics|AusDiagnostics ORF1ab and ORF8 gene panel
+TEST_TYPE|RRT-PCR/E/Roche|Roche-Tib Molbiol LightMix E gene assay
+TEST_TYPE|RRT-PCR/E/Allplex|Seegene 2019-nCoV Assay gene panel
+TEST_TYPE|RRT-PCR/N/Allplex|Seegene 2019-nCoV Assay gene panel
+TEST_TYPE|RRT-PCR/S/Allplex|Seegene 2019-nCoV Assay gene panel
+TEST_TYPE|RRT-PCR/RdRp/Allplex|Seegene 2019-nCoV Assay gene panel
+TEST_TYPE|RRT-PCR/multiple genes/Allplex|Seegene 2019-nCoV Assay gene panel
+TEST_TYPE|RRT-PCR/RdRp/NA|Not Applicable

@@ -164,6 +164,7 @@ ROC|ROC101|irdsupport@niaidceirs.org|University of Chicago-CEIRS2|
 ROC|ROC102|irdsupport@niaidceirs.org|University of Massachusetts-CEIRS2|
 ROC|ROC103|irdsupport@niaidceirs.org|University of Washington-CEIRS2|
 ROC|ROC104|irdsupport@niaidceirs.org|Cornell University-CEIRS2|
+ROC|ROC108|irdsupport@niaidceirs.org|Children's Hospital Westmead|
 SDI|SDI|irdsupport@niaidceirs.org|SDI|28-Jan-09
 SEP|SEP100|irdsupport@niaidceirs.org|Southeast Poultry Research Laboratory-CEIRS2|
 SEP|SEP200|irdsupport@niaidceirs.org|United States Department of Agriculture, Southeast Poultry Research Laboratory|1-Dec-22

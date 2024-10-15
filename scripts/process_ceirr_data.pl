@@ -63,7 +63,8 @@ while( my $line = <FH> ){
     my @lines = $csv->fields();
     push (@data, \@lines);   
   } else {
-    print STDERR "WARNING: Line could not be parsed: $line\n";
+    my ($cde, $str, $pos) = $csv->error_diag();
+    die "ERROR: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
   }
 }
 close FH;
@@ -216,8 +217,7 @@ for( my $s = 1; $s < $row_size; $s++ ){
       # convert ISO8601
       # ISO8601 format: 2018-10-25T00:00:00Z
 
-      my $now = time();
-      my $tz =  strftime("T%H:%M:%S", localtime($now))."Z";
+      my $tz = "T00:00:00Z";
       my %hash=( JAN => "01",
         FEB => "02",
         MAR => "03",
@@ -263,7 +263,7 @@ for( my $s = 1; $s < $row_size; $s++ ){
           my $arr_size = @arr;
           if( $arr_size == 3 ){     # val=10-Feb-2021 or 10-Feb-21
             my ($dd, $mon, $yy) = @{arr};
-            $dday = $dd;
+            $dday = sprintf("%02d", $dd);
             $dmon = $hash{uc $mon};
             $dyy = $yy;
             if( $dyy =~ /^([0-9]{2})$/ ){
@@ -294,8 +294,10 @@ for( my $s = 1; $s < $row_size; $s++ ){
         $nval = "NULL";
       }
       # 2018-10-25T00:00:00Z
-      if($nval !~ /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$/){
-        print STDERR "Invalid ISO8601 format of collection_date for $sample_id, $nval \n";
+      if( ($header_value eq "collection_date" or $header_value eq "embargo_end_date") and $val eq "NA"){
+        $nval = "";
+      }elsif($nval !~ /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})Z$/){
+        print STDERR "Invalid ISO8601 format of $header_value for $sample_id, $nval \n";
         $nval = "";
       }
       if($type =~ /human/ and $header_value eq "collection_season"){
@@ -322,8 +324,8 @@ for( my $s = 1; $s < $row_size; $s++ ){
        $vasoactive = join(',',@new);
        $vasoactive = '"'.$vasoactive.'"';
     }
-    if ( $nval =~ /,/) {
-      $newval .= '"'.$nval.'"'.$delimiter;
+    if ( $nval =~ /,|"/) {  # Check if $nval contains a comma or a double quote
+       $newval .= '"' . $nval =~ s/"/""/gr . '"' . $delimiter;
     } else {
       $newval .= $nval.$delimiter;
     }
@@ -339,7 +341,8 @@ for( my $s = 1; $s < $row_size; $s++ ){
   if ( $csv->parse($newval)) {
     @newlines = $csv->fields();
   } else {
-    die "New line could not be parsed: $newval\n"
+    my ($cde, $str, $pos) = $csv->error_diag();
+    die "New line could not be parsed: $newval\nREASON: $cde, $str, $pos\n"
   }
 
   if($size1){
