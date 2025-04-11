@@ -1598,12 +1598,12 @@ sub validate_value{
       }else{
          if ( $vocab{'packs_per_day_for_how_many_years'}->{lc $dval} ){
             if ( uc $dval eq "NA" ){
-               if ( uc $parse_v eq "N" ){
-                  #SERVICE#print STDERR " passed\n";
-                  $check = "NA";
-               }else{
+               if ( uc $parse_v eq "Y" ){
                   #SERVICE#print STDERR "  invalid data entry: $dval\n";
                   $check = "Invalid: If Tobacco_Use is 'Y'; then 'NA' is not allowed. (Error_148_NA_NOT_ALLOWED)";
+               }else{
+                  #SERVICE#print STDERR " passed\n";
+                  $check = "NA";
                }
             }else{
                #SERVICE#print STDERR " passed\n";
