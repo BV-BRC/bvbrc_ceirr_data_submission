@@ -467,6 +467,7 @@ TEST_TYPE|RT-PCR/NA|Reverse transcribed polymerase chain reaction assay targetin
 TEST_TYPE|RT-PCR/PB1|Reverse transcribed polymerase chain reaction assay targeting PB1 gene
 TEST_TYPE|RT-PCR/U|Reverse transcribed polymerase chain reaction assay targeting an unknown analyte
 TEST_TYPE|RT-PCR/multiple genes|Reverse transcribed polymerase chain reaction assay targeting multiple genes
+TEST_TYPE|RRT-PCR/H1N1|Influenza A virus subytpe
 TEST_TYPE|Rapid Detect|Rapid Detect/
 TEST_TYPE|SER|Ser
 TEST_TYPE|Sequencing|Sequencing
