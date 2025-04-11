@@ -133,7 +133,7 @@ Treatment,Vasoactive_Treatment_Type,treatment_type,,Y
 ,Duration_of_Vasoactive_Treatment,duration_of_treatment,,Y
 ,Treatment_Dosage,treatment_dosage,,Y
 ,Vasoactive_Treatment_Dosage,treatment_dosage,,Y
-Vaccination,Influenza_Vaccination_Type,vaccination_type,,Y
+Vaccination,Influenza_Vaccination_Type,vaccination_type,,N
 ,Days_Elapsed_to_Influenza_Vaccination,days_elapsed_to_vaccination,,Y
 ,Source_of_Above_Vaccine_Information,source_of_vaccine_information,,Y
 ,Vaccine_Dosage,vaccine_dosage,,Y
