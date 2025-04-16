@@ -729,6 +729,29 @@ sub validate_value{
    ## Influenza_Test_Type, SARS-CoV-2_Test_Type
    ## iDPCC Data Dictionary
    ## The entry must be one or more comma-separated members of the Value List.
+   ## Validate against regex provided by CEIRR
+
+   # Define acceptable methods and targets
+   my @methods = qw(
+      HA HI NI MNA VI ELISA RRT-PCR RT-PCR Nucleotide\ sequencing RAT
+      AIV-AB-ELISA-KIT ESI-MS IFA ELLA bELISA U
+   );
+   my @targets = qw(
+      antigen multiple\ genes antibody PB2 PB1 PA HA NP NA MP NS P3 HE P42
+      BM2 CM1 CM2 M1 M2 M42 NB NS1 NS2 NS3 PA-N155 PA-N182 PA-X
+      PB1-F2 PB1-N40 HA-B-Vic HA-B-Yam NA-B-Vic NA-B-Yam
+      MDCK PMK ECE VERO MDCK-SIAT Mouse
+   );
+
+   # Add subtype pattern H1-H18 and N1-N11
+   my $subtype_pattern = '(H[1-9]|H1[0-8])?(N[1-9]|N1[0-1])?';
+
+   # Build regex pattern
+   my $method_re = join('|', @methods);
+   my $target_re = join('|', @targets);
+   my $test_item_re = qr/(NA|(?:$method_re)\/(?:$target_re|$subtype_pattern))/;
+   my $test_type_re = qr/^$test_item_re(,\s*$test_item_re)*$/;
+
    foreach my $field ("influenza_test_type","sars-cov-2_test_type"){
       if ( $header =~ m/$field/ ){
          my @ttype = split (',', $dval);
@@ -743,6 +766,8 @@ sub validate_value{
                if ( $datacode{'TEST_TYPE'}->{lc $t} ){
                   #SERVICE#print STDERR "  passed\n";
                   $check .= "$datacode{'TEST_TYPE'}->{lc $t},";
+               } elsif ($t =~ /^$test_item_re$/) {
+                  $check .= "$t,";
                }else{
                   #SERVICE#print STDERR "  invalid data entry: $t\n";
                   $check .= "Invalid: Values must reference iDPCC Data Dictionary. (Error_13_REFER_TO_DATA_DICTIONARY),";
