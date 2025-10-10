@@ -1644,3 +1644,6 @@ Harris's sparrow|Zonotrichia querula|Passeriformes|Emberizidae|Zonotrichia|queru
 Japanese white-eye|Zosterops japonicus|Passeriformes|Zosteropidae|Zosterops|japonicus|179912|Avian
 Oriental white-eye|Zosterops palpebrosus|Passeriformes|Zosteropidae|Zosterops|palpebrosus|563865|Avian
 African yellow white-eye|Zosterops senegalensis|Passeriformes|Zosteropidae|Zosterops|senegalensis|563872|Avian
+eastern whip-poor-will|Antrostomus vociferus|Caprimulgiformes|Caprimulgidae|Antrostomus|vociferus|1077358|Avian
+hooded warbler|Setophaga citrina|Passeriformes|Parulidae|Setophaga|citrina|950029|Avian
+Louisiana waterthrush|Parkesia motacilla|Passeriformes|Parulidae|Parkesia|motacilla|950009|Avian
