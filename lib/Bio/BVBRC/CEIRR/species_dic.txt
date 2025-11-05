@@ -1647,3 +1647,4 @@ African yellow white-eye|Zosterops senegalensis|Passeriformes|Zosteropidae|Zoste
 eastern whip-poor-will|Antrostomus vociferus|Caprimulgiformes|Caprimulgidae|Antrostomus|vociferus|1077358|Avian
 hooded warbler|Setophaga citrina|Passeriformes|Parulidae|Setophaga|citrina|950029|Avian
 Louisiana waterthrush|Parkesia motacilla|Passeriformes|Parulidae|Parkesia|motacilla|950009|Avian
+short-billed gull|Larus brachyrhynchus|Charadriiformes|Laridae|Larus|brachyrhynchus|1192602|Avian
