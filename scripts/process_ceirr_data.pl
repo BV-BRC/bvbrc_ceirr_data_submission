@@ -55,13 +55,13 @@ my $api = P3DataAPI->new;
 my $csv = Text::CSV->new({ sep_char => $delimiter, eol => $/});
 
 my @data;
-open(FH, '<', "$file") or die "Failed to open $file: $!"; 
+open(FH, '<', "$file") or die "Failed to open $file: $!";
 while( my $line = <FH> ){
   chomp $line;
 
   if ($csv->parse($line)) {
     my @lines = $csv->fields();
-    push (@data, \@lines);   
+    push (@data, \@lines);
   } else {
     my ($cde, $str, $pos) = $csv->error_diag();
     die "ERROR: Line could not be parsed: $line\nREASON: $cde, $str, $pos\n";
@@ -76,14 +76,14 @@ for (my $h = 0; $h < $col_size; $h++){
   push @headers, lc $data[0][$h];
 }
 
-my %hash_data; 
+my %hash_data;
 for( my $i = 0; $i < $row_size; $i++ ){
   for( my $j = 0; $j < $col_size; $j++ ){
     $hash_data{$headers[$j]}->{$i} = $data[$i][$j];
-  } 
+  }
 }
 
-# temp file for solr 
+# temp file for solr
 my $temp_file = "sample_processed.csv";
 open(my $processed_file, ">", $temp_file) or die "Failed to open $temp_file: $!";
 
@@ -109,14 +109,14 @@ for( my $s = 1; $s < $row_size; $s++ ){
   my $species = $hash_data{'host_species'}->{$s};
   my $taxon_id;
   my $sample_id = $hash_data{'sample_identifier'}->{$s};
- 
+
   my $strain  =  uc $hash_data{'strain_name'}->{$s};
   my $subtype =  uc $hash_data{'influenza_subtype'}->{$s};
 
   my $ftype = "unidentified influenza virus";
   if($strain){
     if($strain eq "FLU A" || $strain =~ /^A[\/w+]/){
-      $ftype = "Influenza A virus"; 
+      $ftype = "Influenza A virus";
     }elsif($strain eq "FLU B" || $strain =~ /^B[\/w+]/){
       $ftype = "Influenza B virus";
     }elsif($strain eq "FLU C" || $strain =~ /^C[\/w+]/){
@@ -151,7 +151,7 @@ for( my $s = 1; $s < $row_size; $s++ ){
         $subtype =~ s/B0/B/;
         $subtype =~ s/C0/C/;
         $taxstring = "$ftype $subtype";
-        #$ftype = "$ftype $subtype"; 
+        #$ftype = "$ftype $subtype";
       }elsif($strain =~ /^DENV-/){
         $taxstring = "$ftype $subtype";
         #$ftype = "$ftype $subtype";
@@ -166,7 +166,7 @@ for( my $s = 1; $s < $row_size; $s++ ){
         $taxon_id = getTaxonIDByName($1);
       }
     }
-  } 
+  }
   if(!$taxon_id){
     my $taxstring = $ftype;
     $taxon_id = getTaxonIDByName($taxstring);
@@ -181,7 +181,7 @@ for( my $s = 1; $s < $row_size; $s++ ){
   my @tis = split (',', $ti);
   my $ps = $hash_data{'definition_of_positive_sample'}->{$s};
   my @pss= split (',',$ps);
-  my $st = $hash_data{'influenza_subtype'}->{$s}; 
+  my $st = $hash_data{'influenza_subtype'}->{$s};
   my @sts= split (',',$st);
 
   # added to split Sars-Covid-2 for  Southern Hemisphere
@@ -329,7 +329,7 @@ for( my $s = 1; $s < $row_size; $s++ ){
     } else {
       $newval .= $nval.$delimiter;
     }
-    
+
     $j++;
   }
 
@@ -369,10 +369,10 @@ for( my $s = 1; $s < $row_size; $s++ ){
         #  $nval = '"'.$nval.'"';
         #}
         push(@new_line, ($nval));
-        $j++;     
+        $j++;
       }
 
-      #Push create date and file name for additional_metadata 
+      #Push create date and file name for additional_metadata
       my $file_name = basename($original_file);
       push(@new_line, ($cdate, $file_name));
 
@@ -484,7 +484,7 @@ sub getTaxonIDByName {
           $taxon_lineage_map{$taxon_id} = $lineage_ids_str;
         }
       }
-   
+
       #Assign value even if empty to avoid query every time
       $taxon_id_map{$taxon_name} = $taxon_id;
     }
