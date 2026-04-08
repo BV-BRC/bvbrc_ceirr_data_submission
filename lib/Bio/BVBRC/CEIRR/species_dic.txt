@@ -85,6 +85,7 @@ silver Bahama pintail|Anas bahamensis bahamensis|Anseriformes|Anatidae|Anas|baha
 green-winged teal|Anas carolinensis|Anseriformes|Anatidae|Anas|carolinensis|NA|Avian
 chestnut teal|Anas castanea|Anseriformes|Anatidae|Anas|castanea|175100|Avian
 northern shoveler|Anas clypeata|Anseriformes|Anatidae|Anas|clypeata|175096|Avian
+American green-winged teal|Anas crecca|Anseriformes|Anatidae|Anas|crecca|175081|Avian
 common teal|Anas crecca|Anseriformes|Anatidae|Anas|crecca|NA|Avian
 Eurasian teal|Anas crecca|Anseriformes|Anatidae|Anas|crecca|175081|Avian
 green-winged teal|Anas crecca|Anseriformes|Anatidae|Anas|crecca|175081|Avian
@@ -138,6 +139,7 @@ domestic greylag goose|Anser anser anser|Anseriformes|Anatidae|Anser|anser anser
 domestic goose|Anser anser domesticus|Anseriformes|Anatidae|Anser|anser domesticus|NA|Avian
 domestic greylag goose|Anser anser domesticus|Anseriformes|Anatidae|Anser|anser domesticus|NA|Avian
 pink-footed goose|Anser brachyrhynchus|Anseriformes|Anatidae|Anser|brachyrhynchus|175036|Avian
+emperor goose|Anser canagicus|Anseriformes|Anatidae|Anser|cangicus|175031|Avian
 swan goose|Anser cygnoides|Anseriformes|Anatidae|Anser|cygnoides|175032|Avian
 lesser white-fronted goose|Anser erythropus|Anseriformes|Anatidae|Anser|erythropus|175033|Avian
 bean goose|Anser fabalis|Anseriformes|Anatidae|Anser|fabalis|175024|Avian
@@ -228,6 +230,7 @@ small ruminant|Bovidae|Artiodactyla|Bovidae|Unknown|Unknown|180704|Non-human Mam
 marbled murrelet|Brachyramphus marmoratus|Charadriiformes|Alcidae|Brachyramphus|marmoratus|176996|Avian
 pale flycatcher|Bradornis pallidus|Passeriformes|Muscicapidae|Bradornis|pallidus|558918|Avian
 three-toed sloth|Bradypus sp.|Pilosa|Bradypodidae|Bradypus|Unknown|624874|Non-human Mammal
+black brant|Branta bernicla|Anseriformes|Anatidae|Brant|bernicla|175011|Avian
 brant|Branta bernicla|Anseriformes|Anatidae|Branta|bernicla|175011|Avian
 Brent goose|Branta bernicla|Anseriformes|Anatidae|Branta|bernicla|175011|Avian
 Canada goose|Branta canadensis|Anseriformes|Anatidae|Branta|canadensis|174999|Avian
@@ -902,6 +905,9 @@ red kangaroo|Macropus rufus|Diprotodontia|Macropodidae|Macropus|rufus|552740|Non
 yellow longbill|Macrosphenus flavicans|Passeriformes|Macrosphenidae|Macrosphenus|flavicans|560932|Avian
 white-chested puffbird|Malacoptila fusca|Piciformes|Bucconidae|Malacoptila|fusca|554360|Avian
 pink-eared duck|Malacorhynchus membranaceus|Anseriformes|Anatidae|Malacorhynchus|membranaceus|175224|Avian
+American wigeon|Mareca americana|Anseriformes|Anatidae|Mareca|americana|175095|Avian
+Eurasian wigeon|Mareca penelope|Anseriformes|Anatidae|Mareca|penelope|1192583|Avian
+gadwall|Mareca strepera|Anseriformes|Anatidae|Mareca|strepera|1192581|Avian
 crested malimbe|Malimbus malimbicus|Passeriformes|Ploceidae|Malimbus|malimbicus|560963|Avian
 blue-billed malimbe|Malimbus nitens|Passeriformes|Ploceidae|Malimbus|nitens|560964|Avian
 green twinspot|Mandingoa nitidula|Passeriformes|Estrildidae|Mandingoa|nitidula|560985|Avian
@@ -918,10 +924,12 @@ boat-billed flycatcher|Megarynchus pitangua|Passeriformes|Tyrannidae|Megarynchus
 eastern screech owl|Megascops asio|Strigiformes|Strigidae|Megascops|asio|686658|Avian
 golden-fronted woodpecker|Melanerpes aurifrons|Piciformes|Picidae|Melanerpes|aurifrons|178194|Avian
 red-bellied woodpecker|Melanerpes carolinus|Piciformes|Picidae|Melanerpes|carolinus|178195|Avian
+Red-headed Woodpecker|Melanerpes erythrocephalus|Piciformes|Picidae|Melanerpes|erythrocephalus|178186|Avian
 white-winged scoter|Melanitta deglandi|Anseriformes|Anatidae|Melanitta|deglandi|NA|Avian
 velvet scoter|Melanitta fusca|Anseriformes|Anatidae|Melanitta|fusca|175163|Avian
 white-winged scoter|Melanitta fusca|Anseriformes|Anatidae|Melanitta|fusca|175163|Avian
 white-winged scoter|Melanitta fusca deglandi|Anseriformes|Anatidae|Melanitta|fusca deglandi|175165|Avian
+black scoter|Melanitta nigra|Anseriformes|Anatidae|Melanitta|nigra|175171|Avian
 black scoter|Melanitta nigra americana|Anseriformes|Anatidae|Melanitta|nigra americana|175173|Avian
 surf scoter|Melanitta perspicillata|Anseriformes|Anatidae|Melanitta|perspicillata|175170|Avian
 scoter|Melanitta sp.|Anseriformes|Anatidae|Melanitta|Unknown|175162|Avian
@@ -1372,6 +1380,7 @@ black skimmer|Rynchops niger|Charadriiformes|Rynchopidae|Rynchops|niger|554447|A
 tamarin|Saguinus sp.|Primates|Callitrichidae|Saguinus|Unknown|572809|Non-human Mammal
 black-headed saltator|Saltator atriceps|Passeriformes|Cardinalidae|Saltator|atriceps|562807|Avian
 greyish saltator|Saltator coerulescens|Passeriformes|Cardinalidae|Saltator|coerulescens|562812|Avian
+brown creeper|Certhia americana|Passeriformes|Certhiidae|Certhia|americana|178803|Avian
 knob-billed duck|Sarkidiornis melanotos|Anseriformes|Anatidae|Sarkidiornis|melanotos|553913|Avian
 African piculet|Sasia africana|Piciformes|Picidae|Sasia|africana|553976|Avian
 white-browed piculet|Sasia ochracea|Piciformes|Picidae|Sasia|ochracea|553978|Avian
@@ -1395,10 +1404,12 @@ European serin|Serinus serinus|Passeriformes|Fringillidae|Serinus|serinus|562967
 northern parula|Setophaga americana|Passeriformes|Parulidae|Setophaga|americana|950033|Avian
 Audubon's warbler|Setophaga auduboni|Passeriformes|Parulidae|Setophaga|auduboni|950047|Avian
 black-throated blue warbler|Setophaga caerulescens|Passeriformes|Parulidae|Setophaga|caerulescens|950042|Avian
+Bay-breasted Warbler|Setophaga castanea|Passeriformes|Parulidae|Setophaga|castanea|950036|Avian
 myrtle warbler|Setophaga coronata|Passeriformes|Parulidae|Setophaga|coronata|950046|Avian
 yellow-rumped warbler|Setophaga coronata|Passeriformes|Parulidae|Setophaga|coronata|950046|Avian
 prairie warbler|Setophaga discolor|Passeriformes|Parulidae|Setophaga|discolor|950052|Avian
 yellow-throated warbler|Setophaga dominica|Passeriformes|Parulidae|Setophaga|dominica|950049|Avian
+Blackburnian warbler|Setophaga fusca|Passeriformes|Parulidae|Setophaga|fusca|950037|Avian
 magnolia warbler|Setophaga magnolia|Passeriformes|Parulidae|Setophaga|magnolia|950035|Avian
 hermit warbler|Setophaga occidentalis|Passeriformes|Parulidae|Setophaga|occidentalis|950059|Avian
 palm warbler|Setophaga palmarum palmarum|Passeriformes|Parulidae|Setophaga|palmarum palmarum|950185|Avian
@@ -1423,6 +1434,7 @@ common eider|Somateria mollissima|Anseriformes|Anatidae|Somateria|mollissima|175
 eider|Somateria sp.|Anseriformes|Anatidae|Somateria|Unknown|175154|Avian
 king eider|Somateria spectabilis|Anseriformes|Anatidae|Somateria|spectabilis|175160|Avian
 diadem snake|Spalerosophis diadema|Squamata|Colubridae|Spalerosophis|diadema|1082361|Other
+Northern shoveler|Spatula clypeata|Anseriformes|Anatidae|Spatula|clypeata|1192580|Avian
 blue-winged teal|Spatula discors|Anseriformes|Anatidae|Spatula|discors|1192577|Avian
 western bluebill|Spermophaga haematina|Passeriformes|Estrildidae|Spermophaga|haematina|563053|Avian
 Grant's bluebill|Spermophaga poliogenys|Passeriformes|Estrildidae|Spermophaga|poliogenys|563054|Avian
@@ -1621,6 +1633,7 @@ warbling vireo|Vireo gilvus|Passeriformes|Vireonidae|Vireo|gilvus|179023|Avian
 white-eyed vireo|Vireo griseus|Passeriformes|Vireonidae|Vireo|griseus|178991|Avian
 red-eyed vireo|Vireo olivaceus|Passeriformes|Vireonidae|Vireo|olivaceus|179021|Avian
 Philadelphia vireo|Vireo philadelphicus|Passeriformes|Vireonidae|Vireo|philadelphicus|179022|Avian
+blue-headed vireo|Vireo solitarius|Passeriformes|Vireonidae|Vireo|solitarius|179010|Avian
 blue-black grassquit|Volatinia jacarina|Passeriformes|Thraupidae|Volatinia|jacarina|563697|Avian
 red fox|Vulpes vulpes|Carnivora|Canidae|Vulpes|vulpes|180604|Non-human Mammal
 fennec fox|Vulpes zerda|Carnivora|Canidae|Vulpes|zerda|621865|Non-human Mammal
